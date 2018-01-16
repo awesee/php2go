@@ -3,5 +3,5 @@
 ---
 ### 下载安装
 ```shell
-go get github.com/openset/php2go
+go get github.com/openset/php2go/php
 ```
