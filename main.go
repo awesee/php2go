@@ -11,4 +11,6 @@ func main() {
 	println(php.Chr(65))
 	println(php.Ord('A'))
 	fmt.Println(php.Array(1, 'a', "ABC"))
+	fmt.Println(php.Strrev("Hello world!"))
+	fmt.Println(php.Strrev("中华人民共和国"))
 }
