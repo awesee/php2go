@@ -1,5 +1,6 @@
 package php
 
+//反转字符串
 func Strrev(s string) string {
 	runes := []rune(s)
 	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
