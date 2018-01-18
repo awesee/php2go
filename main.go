@@ -12,6 +12,6 @@ func main() {
 	println(php.Ord('A'))
 	fmt.Println(php.Array(1, 'a', "ABC"))
 	fmt.Println(php.Strrev("Hello world!"))
-	fmt.Println(php.Strrev("中华人民共和国"))
+	fmt.Println(php.Strrev("你好，世界"))
 	fmt.Println(php.ArrayReverse(php.Array(1, 'a', "ABC")))
 }
