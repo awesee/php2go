@@ -14,4 +14,5 @@ func main() {
 	fmt.Println(php.Strrev("Hello world!"))
 	fmt.Println(php.Strrev("你好，世界"))
 	fmt.Println(php.ArrayReverse(php.Array(1, 'a', "ABC")))
+	println(php.SysGetTempDir())
 }
