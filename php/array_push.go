@@ -1,6 +1,6 @@
 package php
 
-//将一个或多个单元压入数组的末尾（入栈）
+//Push one or more elements onto the end of array
 func ArrayPush(s *[]string, args ...string) {
 	for _, v := range args {
 		*s = append(*s, v)

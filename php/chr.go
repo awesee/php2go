@@ -1,6 +1,6 @@
 package php
 
-//返回指定的字符
+//Return a specific character
 func Chr(int int) string {
 	return string(int)
 }

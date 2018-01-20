@@ -2,7 +2,7 @@ package php
 
 import "os/exec"
 
-//执行一个外部程序
+//Execute an external program
 func Exec(s string) {
 	exec.Command(s).Run()
 }

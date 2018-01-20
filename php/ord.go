@@ -1,6 +1,6 @@
 package php
 
-//返回字符的 ASCII 码值
+//Return ASCII value of character
 func Ord(s byte) byte {
 	return s
 }

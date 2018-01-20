@@ -1,6 +1,6 @@
 package php
 
-//输出字符串
+//Output a string
 func Print(s string) {
 	print(s)
 }
