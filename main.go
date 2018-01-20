@@ -1,8 +1,8 @@
 package main
 
 import (
-	"./php"
 	"fmt"
+	"github.com/openset/php2go/php"
 )
 
 func main() {
