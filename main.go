@@ -1,8 +1,8 @@
 package main
 
 import (
+	"./php"
 	"fmt"
-	"github.com/openset/php2go/php"
 )
 
 func main() {
@@ -15,4 +15,5 @@ func main() {
 	fmt.Println(php.Strrev("你好，世界"))
 	fmt.Println(php.ArrayReverse(php.Array(1, 'a', "ABC")))
 	println(php.SysGetTempDir())
+	println(php.IsNumeric("-123.45"))
 }
