@@ -1,2 +1,8 @@
+# This file tells which files and directories should be ignored
+
+# git files
 .gitattributes export-ignore
-*_test export-ignore
+# .gitignore
+
+# Test files...
+php/*_test.go export-ignore
