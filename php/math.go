@@ -101,6 +101,11 @@ func Min(x, y float64) float64 {
 	return math.Min(x, y)
 }
 
+//Hyperbolic sine
+func Sinh(x float64) float64 {
+	return math.Sinh(x)
+}
+
 //Square root
 func Sqrt(x float64) float64 {
 	return math.Sqrt(x)
