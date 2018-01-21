@@ -86,6 +86,11 @@ func Floor(x float64) float64 {
 	return math.Floor(x)
 }
 
+//Natural logarithm
+func Log(x float64) float64 {
+	return math.Log(x)
+}
+
 //Find highest value
 func Max(x, y float64) float64 {
 	return math.Max(x, y)
