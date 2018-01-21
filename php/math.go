@@ -101,6 +101,11 @@ func Min(x, y float64) float64 {
 	return math.Min(x, y)
 }
 
+//Sine
+func Sin(x float64) float64 {
+	return math.Sin(x)
+}
+
 //Hyperbolic sine
 func Sinh(x float64) float64 {
 	return math.Sinh(x)
