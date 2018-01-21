@@ -54,3 +54,8 @@ func BaseConvert(num string, frombase, tobase int) (string, error) {
 func Ceil(x float64) float64 {
 	return math.Ceil(x)
 }
+
+//Cosine
+func Cos(x float64) float64 {
+	return math.Cos(x)
+}
