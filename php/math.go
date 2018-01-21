@@ -31,6 +31,11 @@ func Asinh(x complex128) complex128 {
 	return cmplx.Asinh(x)
 }
 
+//Arc tangent of two variables
+func Atan2(y, x float64) float64 {
+	return math.Atan2(y, x)
+}
+
 //Arc tangent
 func Atan(x complex128) complex128 {
 	return cmplx.Atan(x)
