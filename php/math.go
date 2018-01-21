@@ -96,6 +96,12 @@ func Log10(x float64) float64 {
 	return math.Log10(x)
 }
 
+// Returns log(1 + number)
+// computed in a way that is accurate even when the value of number is close to zero
+func Log1p(x float64) float64 {
+	return math.Log1p(x)
+}
+
 //Find highest value
 func Max(x, y float64) float64 {
 	return math.Max(x, y)
