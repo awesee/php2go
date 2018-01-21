@@ -101,6 +101,11 @@ func Min(x, y float64) float64 {
 	return math.Min(x, y)
 }
 
+//Get value of pi
+func Pi() float64 {
+	return math.Pi
+}
+
 //Exponential expression
 func Pow(x, y float64) float64 {
 	return math.Pow(x, y)
