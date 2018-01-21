@@ -101,6 +101,11 @@ func Min(x, y float64) float64 {
 	return math.Min(x, y)
 }
 
+//Exponential expression
+func Pow(x, y float64) float64 {
+	return math.Pow(x, y)
+}
+
 //Rounds a float
 func Round(x float64) float64 {
 	return math.Floor(x + 0.5)
