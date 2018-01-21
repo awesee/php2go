@@ -101,6 +101,11 @@ func Min(x, y float64) float64 {
 	return math.Min(x, y)
 }
 
+//Square root
+func Sqrt(x float64) float64 {
+	return math.Sqrt(x)
+}
+
 //Tangent
 func Tan(x float64) float64 {
 	return math.Tan(x)
