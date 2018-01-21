@@ -91,6 +91,11 @@ func Log(x float64) float64 {
 	return math.Log(x)
 }
 
+//Base-10 logarithm
+func Log10(x float64) float64 {
+	return math.Log10(x)
+}
+
 //Find highest value
 func Max(x, y float64) float64 {
 	return math.Max(x, y)
