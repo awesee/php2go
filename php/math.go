@@ -3,6 +3,7 @@ package php
 import (
 	"math"
 	"math/cmplx"
+	"strconv"
 )
 
 //Absolute xue
@@ -38,4 +39,13 @@ func Atan(x complex128) complex128 {
 //Inverse hyperbolic tangent
 func Atanh(x complex128) complex128 {
 	return cmplx.Atanh(x)
+}
+
+//Convert a number between arbitrary bases
+func BaseConvert(num string, frombase, tobase int) (string, error) {
+	i, err := strconv.ParseInt(num, frombase, 0)
+	if err != nil {
+		return "", err
+	}
+	return strconv.FormatInt(i, tobase), nil
 }
