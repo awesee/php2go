@@ -81,6 +81,11 @@ func Expm1(x float64) float64 {
 	return math.Exp(x) - 1
 }
 
+//Round fractions down
+func Floor(x float64) float64 {
+	return math.Floor(x)
+}
+
 //Find lowest value
 func Min(x, y float64) float64 {
 	return math.Min(x, y)
