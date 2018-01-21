@@ -59,3 +59,8 @@ func Ceil(x float64) float64 {
 func Cos(x float64) float64 {
 	return math.Cos(x)
 }
+
+//Hyperbolic cosine
+func Cosh(x float64) float64 {
+	return math.Cosh(x)
+}
