@@ -19,3 +19,8 @@ func Acos(x complex128) complex128 {
 func Acosh(x complex128) complex128 {
 	return cmplx.Acosh(x)
 }
+
+//Arc sine
+func Asin(x complex128) complex128 {
+	return cmplx.Asin(x)
+}
