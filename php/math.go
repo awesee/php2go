@@ -101,6 +101,11 @@ func Min(x, y float64) float64 {
 	return math.Min(x, y)
 }
 
+//Tangent
+func Tan(x float64) float64 {
+	return math.Tan(x)
+}
+
 //Hyperbolic tangent
 func Tanh(x float64) float64 {
 	return math.Tanh(x)
