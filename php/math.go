@@ -75,6 +75,12 @@ func Exp(x float64) float64 {
 	return math.Exp(x)
 }
 
+// Returns exp(number) - 1
+// computed in a way that is accurate even when the value of number is close to zero
+func Expm1(x float64) float64 {
+	return math.Exp(x) - 1
+}
+
 //Find lowest value
 func Min(x, y float64) float64 {
 	return math.Min(x, y)
