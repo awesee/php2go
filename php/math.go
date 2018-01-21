@@ -70,6 +70,11 @@ func Cosh(x float64) float64 {
 	return math.Cosh(x)
 }
 
+//Calculates the exponent of e
+func Exp(x float64) float64 {
+	return math.Exp(x)
+}
+
 //Find lowest value
 func Min(x, y float64) float64 {
 	return math.Min(x, y)
