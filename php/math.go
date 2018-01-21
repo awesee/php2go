@@ -24,3 +24,8 @@ func Acosh(x complex128) complex128 {
 func Asin(x complex128) complex128 {
 	return cmplx.Asin(x)
 }
+
+//Inverse hyperbolic sine
+func Asinh(x complex128) complex128 {
+	return cmplx.Asinh(x)
+}
