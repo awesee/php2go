@@ -34,3 +34,8 @@ func Asinh(x complex128) complex128 {
 func Atan(x complex128) complex128 {
 	return cmplx.Atan(x)
 }
+
+//Inverse hyperbolic tangent
+func Atanh(x complex128) complex128 {
+	return cmplx.Atanh(x)
+}
