@@ -29,3 +29,8 @@ func Asin(x complex128) complex128 {
 func Asinh(x complex128) complex128 {
 	return cmplx.Asinh(x)
 }
+
+//Arc tangent
+func Atan(x complex128) complex128 {
+	return cmplx.Atan(x)
+}
