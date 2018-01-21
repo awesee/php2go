@@ -101,6 +101,11 @@ func Min(x, y float64) float64 {
 	return math.Min(x, y)
 }
 
+//Rounds a float
+func Round(x float64) float64 {
+	return math.Floor(x + 0.5)
+}
+
 //Sine
 func Sin(x float64) float64 {
 	return math.Sin(x)
