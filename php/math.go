@@ -14,3 +14,8 @@ func Abs(x float64) {
 func Acos(x complex128) complex128 {
 	return cmplx.Acos(x)
 }
+
+//Inverse hyperbolic cosine
+func Acosh(x complex128) complex128 {
+	return cmplx.Acosh(x)
+}
