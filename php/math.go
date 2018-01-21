@@ -2,9 +2,15 @@ package php
 
 import (
 	"math"
+	"math/cmplx"
 )
 
 //Absolute xue
 func Abs(x float64) {
 	math.Abs(x)
+}
+
+//Arc cosine
+func Acos(x complex128) complex128 {
+	return cmplx.Acos(x)
 }
