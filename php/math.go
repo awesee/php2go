@@ -64,3 +64,8 @@ func Cos(x float64) float64 {
 func Cosh(x float64) float64 {
 	return math.Cosh(x)
 }
+
+//Find lowest value
+func Min(x, y float64) float64 {
+	return math.Min(x, y)
+}
