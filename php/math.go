@@ -49,3 +49,8 @@ func BaseConvert(num string, frombase, tobase int) (string, error) {
 	}
 	return strconv.FormatInt(i, tobase), nil
 }
+
+//Round fractions up
+func Ceil(x float64) float64 {
+	return math.Ceil(x)
+}
