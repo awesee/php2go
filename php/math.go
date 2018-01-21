@@ -86,6 +86,11 @@ func Floor(x float64) float64 {
 	return math.Floor(x)
 }
 
+//Find highest value
+func Max(x, y float64) float64 {
+	return math.Max(x, y)
+}
+
 //Find lowest value
 func Min(x, y float64) float64 {
 	return math.Min(x, y)
