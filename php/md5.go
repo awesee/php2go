@@ -13,12 +13,12 @@ func Md5(s string) string {
 }
 
 //Calculates the md5 hash of a given file
-func Md5File(filename string) (string, error) {
+func Md5File(filename string) string {
 	data, err := ioutil.ReadFile(filename)
 	if err != nil {
-		return "", err
+		return ""
 	}
 	byte := md5.Sum(data)
 
-	return hex.EncodeToString(byte[:]), nil
+	return hex.EncodeToString(byte[:])
 }
