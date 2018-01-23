@@ -29,6 +29,11 @@ func Chr(ascii int) string {
 	return string(ascii)
 }
 
+//Return ASCII value of character
+func Ord(s byte) byte {
+	return s
+}
+
 //Find the position of the first occurrence of a substring in a string
 func Strpos(s, substr string) int {
 
