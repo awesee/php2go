@@ -41,6 +41,15 @@ func Strpos(s, substr string) int {
 	return strings.Index(s, substr)
 }
 
+//Find the position of the first occurrence of a case-insensitive substring in a string
+func Stripos(s, substr string) int {
+
+	s = strings.ToLower(s)
+	substr = strings.ToLower(substr)
+
+	return strings.Index(s, substr)
+}
+
 // Find the position of the last occurrence of a substring in a string
 func Strrpos(s, substr string) int {
 
