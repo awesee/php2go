@@ -19,6 +19,16 @@ func Hex2bin(x string) string {
 	return strconv.FormatInt(base, 2)
 }
 
+//Return a specific character
+func Chr(ascii int) string {
+	for ascii < 0 {
+		ascii += 256
+	}
+	ascii %= 256
+
+	return string(ascii)
+}
+
 //Find the position of the first occurrence of a substring in a string
 func Strpos(s, substr string) int {
 
