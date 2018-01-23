@@ -5,10 +5,18 @@ import (
 	"strings"
 )
 
+//Convert binary data into hexadecimal representation
 func Bin2hex(b string) string {
 
 	base, _ := strconv.ParseInt(b, 2, 64)
 	return strconv.FormatInt(base, 16)
+}
+
+//Decodes a hexadecimally encoded binary string
+func Hex2bin(x string) string {
+
+	base, _ := strconv.ParseInt(x, 16, 64)
+	return strconv.FormatInt(base, 2)
 }
 
 //Find the position of the first occurrence of a substring in a string
