@@ -1,8 +1,8 @@
 package main
 
 import (
-	"./php"
 	"fmt"
+	"github.com/openset/php2go/php"
 )
 
 func main() {
@@ -16,6 +16,6 @@ func main() {
 	fmt.Println(php.ArrayReverse(php.Array(1, 'a', "ABC")))
 	println(php.SysGetTempDir())
 	println(php.IsNumeric("-123.45"))
-
 	fmt.Println(php.Basename("abc/cde.ext", "xt"))
+	fmt.Println(php.Addcslashes("abc/cde.ext", 'c'))
 }
