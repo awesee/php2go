@@ -21,6 +21,7 @@ func Hex2bin(x string) string {
 
 //Return a specific character
 func Chr(ascii int) string {
+
 	for ascii < 0 {
 		ascii += 256
 	}
