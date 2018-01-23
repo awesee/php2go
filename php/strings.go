@@ -56,6 +56,15 @@ func Strrpos(s, substr string) int {
 	return strings.LastIndex(s, substr)
 }
 
+//Find the position of the last occurrence of a case-insensitive substring in a string
+func Strripos(s, substr string) int {
+
+	s = strings.ToLower(s)
+	substr = strings.ToLower(substr)
+
+	return strings.LastIndex(s, substr)
+}
+
 //Find the last occurrence of a character in a string
 func Strrchr(s, substr string) string {
 
