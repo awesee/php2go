@@ -92,6 +92,12 @@ func Rtrim(s, cutset string) string {
 	return strings.TrimRight(s, cutset)
 }
 
+//Make a string lowercase
+func Strtolower(s string) string {
+
+	return strings.ToLower(s)
+}
+
 //Find the first occurrence of a string
 func Strstr(s, substr string) int {
 
