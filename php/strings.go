@@ -52,6 +52,12 @@ func Ord(s byte) byte {
 	return s
 }
 
+//Strip whitespace (or other characters) from the beginning and end of a string
+func Trim(s, cutset string) string {
+
+	return strings.Trim(s, cutset)
+}
+
 //Find the position of the first occurrence of a substring in a string
 func Strpos(s, substr string) int {
 
