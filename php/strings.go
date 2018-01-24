@@ -69,6 +69,12 @@ func Htmlspecialchars(s string) string {
 	return html.EscapeString(s)
 }
 
+//Convert special HTML entities back to characters
+func HtmlspecialcharsDecode(s string) string {
+
+	return html.UnescapeString(s)
+}
+
 //Join array elements with a string
 func Implode(a []string, sep string) string {
 

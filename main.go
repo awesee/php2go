@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/openset/php2go/php"
+	"./php"
 )
 
 func main() {
@@ -19,4 +19,6 @@ func main() {
 	fmt.Println(php.Basename("abc/cde.ext", "xt"))
 	fmt.Println(php.Addcslashes("abc/cde.ext", 'c'))
 	fmt.Println(php.Addslashes("abc/'\"c\\de.ext"))
+
+	println(php.Htmlspecialchars("This is some <b>bold</b> text."))
 }
