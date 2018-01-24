@@ -32,7 +32,7 @@ func main() {
 
 ```
 
-[More](main.go)
+[More](https://github.com/openset/php2go/blob/master/main.go)
 
 ### 贡献代码
 
