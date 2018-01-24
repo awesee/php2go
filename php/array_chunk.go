@@ -8,6 +8,7 @@ import (
 type ArraySlice []interface{}
 
 func ArrayChunk(input ArraySlice, size int) ArraySlice {
+
 	length := len(input)
 	count := int(math.Ceil(float64(length) / float64(size)))
 	ret := make(ArraySlice, count)

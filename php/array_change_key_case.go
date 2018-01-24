@@ -11,6 +11,7 @@ const (
 
 //Changes the case of all keys in an array
 func ArrayChangeKeyCase(arr ArrayMap, Case int) ArrayMap {
+
 	var tmp = ArrayMap{}
 	for k, v := range arr {
 		if Case == CaseUPPER {
