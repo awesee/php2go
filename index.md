@@ -40,8 +40,8 @@ func main() {
 
 ## Contributors
 
-[Your contributions are always welcome!](https://github.com/openset/php2go/graphs/contributors)
+[Your contributions are always welcome!](https://github.com/openset/php2go/graphs/contributors){:target="_blank"}
 
 ## LICENSE
 
-Released under [MIT](https://github.com/openset/php2go/blob/master/LICENSE) LICENSE
+Released under [MIT](https://github.com/openset/php2go/blob/master/LICENSE){:target="_blank"} LICENSE
