@@ -5,6 +5,7 @@
 ### 下载安装
 
 ```shell
+
 go get github.com/openset/php2go/php
 ```
 
@@ -12,9 +13,24 @@ go get github.com/openset/php2go/php
 
 PHP下划线命名改为大驼峰命名。
 
-### 使用演示
+### Example:
 
-[Demo](https://github.com/openset/php2go/blob/master/main.go){:target="_blank"}
+```go
+
+package main
+
+import (
+	"github.com/openset/php2go/php"
+)
+
+func main() {
+
+	php.Echo("Hello ", "world!\n")
+
+}
+```
+
+[More](https://github.com/openset/php2go/blob/master/main.go){:target="_blank"}
 
 ### 贡献代码
 
