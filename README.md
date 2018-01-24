@@ -30,7 +30,7 @@ func main() {
 }
 ```
 
-[More:](main.go)
+[More](main.go)
 
 ### 贡献代码
 
