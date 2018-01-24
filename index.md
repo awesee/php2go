@@ -7,6 +7,7 @@
 ```shell
 
 go get github.com/openset/php2go/php
+
 ```
 
 ### 关于命名
@@ -28,6 +29,7 @@ func main() {
 	php.Echo("Hello ", "world!\n")
 
 }
+
 ```
 
 [More](https://github.com/openset/php2go/blob/master/main.go){:target="_blank"}
