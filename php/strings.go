@@ -58,6 +58,12 @@ func Trim(s, cutset string) string {
 	return strings.Trim(s, cutset)
 }
 
+//Strip whitespace (or other characters) from the beginning of a string
+func Ltrim(s, cutset string) string {
+
+	return strings.TrimLeft(s, cutset)
+}
+
 //Find the position of the first occurrence of a substring in a string
 func Strpos(s, substr string) int {
 
