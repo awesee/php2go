@@ -9,7 +9,7 @@ go get github.com/openset/php2go/php
 
 ### 关于命名
 
-PHP下划线命名函数全部改为大驼峰命名发。
+PHP下划线命名改为大驼峰命名。
 
 ### 使用演示
 
