@@ -21,12 +21,12 @@ PHP下划线命名改为大驼峰命名。
 package main
 
 import (
-	"github.com/openset/php2go/php"
+    "github.com/openset/php2go/php"
 )
 
 func main() {
 
-	php.Echo("Hello ", "world!\n")
+    php.Echo("Hello ", "world!\n")
 
 }
 
