@@ -7,8 +7,8 @@ import (
 )
 
 //Absolute xue
-func Abs(x float64) {
-	math.Abs(x)
+func Abs(x float64) float64 {
+	return math.Abs(x)
 }
 
 //Arc cosine
