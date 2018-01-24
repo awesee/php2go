@@ -98,6 +98,12 @@ func Strtolower(s string) string {
 	return strings.ToLower(s)
 }
 
+//Make a string uppercase
+func Strtoupper(s string) string {
+
+	return strings.ToUpper(s)
+}
+
 //Find the first occurrence of a string
 func Strstr(s, substr string) int {
 
