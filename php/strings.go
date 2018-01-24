@@ -3,6 +3,7 @@ package php
 import (
 	"strconv"
 	"strings"
+	"html"
 )
 
 //Convert binary data into hexadecimal representation
@@ -60,6 +61,12 @@ func Explode(s, sep string) ([]string) {
 	}
 
 	return strings.Split(s, sep)
+}
+
+//Convert special characters to HTML entities
+func Htmlspecialchars(s string) string {
+
+	return html.EscapeString(s)
 }
 
 //Join array elements with a string
