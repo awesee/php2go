@@ -52,6 +52,16 @@ func Ord(s byte) byte {
 	return s
 }
 
+//Split a string by string
+func Explode(s, sep string) ([]string) {
+
+	if s == "" {
+		return []string{s}
+	}
+
+	return strings.Split(s, sep)
+}
+
 //Strip whitespace (or other characters) from the beginning and end of a string
 func Trim(s, cutset string) string {
 
