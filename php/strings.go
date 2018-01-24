@@ -62,6 +62,12 @@ func Explode(s, sep string) ([]string) {
 	return strings.Split(s, sep)
 }
 
+//Join array elements with a string
+func Implode(a []string, sep string) string {
+
+	return strings.Join(a, sep)
+}
+
 //Strip whitespace (or other characters) from the beginning and end of a string
 func Trim(s, cutset string) string {
 
