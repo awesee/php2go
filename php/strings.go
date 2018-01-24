@@ -8,14 +8,30 @@ import (
 //Convert binary data into hexadecimal representation
 func Bin2hex(b string) string {
 
-	base, _ := strconv.ParseInt(b, 2, 64)
+	base, err := strconv.ParseInt(b, 2, 64)
+	if err != nil {
+		return ""
+	}
+
 	return strconv.FormatInt(base, 16)
+}
+
+//Binary to decimal
+func Bindec(b string) int64 {
+
+	i, _ := strconv.ParseInt(b, 2, 64)
+
+	return i
 }
 
 //Decodes a hexadecimally encoded binary string
 func Hex2bin(x string) string {
 
-	base, _ := strconv.ParseInt(x, 16, 64)
+	base, err := strconv.ParseInt(x, 16, 64)
+	if err != nil {
+		return ""
+	}
+
 	return strconv.FormatInt(base, 2)
 }
 
