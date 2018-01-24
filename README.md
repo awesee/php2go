@@ -18,3 +18,11 @@ PHP下划线命名改为大驼峰命名。
 ### 贡献代码
 
 这是一个开源项目，期待你的加入。
+
+## Contributors
+
+[Contributors](https://github.com/openset/php2go/graphs/contributors)
+
+## LICENSE
+
+[MIT](https://github.com/openset/php2go/blob/master/LICENSE)
