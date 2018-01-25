@@ -35,4 +35,6 @@ func main() {
 
 	println(php.Htmlspecialchars("This is some <b>bold</b> text."))
 
+	println(php.MbStrlen("你好，世界"))
+
 }

@@ -170,6 +170,12 @@ func Strlen(s string) int {
 	return len(s)
 }
 
+//Get string length
+func MbStrlen(s string) int {
+
+	return len([]rune(s))
+}
+
 //Reverse a string
 func Strrev(s string) string {
 
