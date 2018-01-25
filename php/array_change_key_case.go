@@ -9,7 +9,15 @@ const (
 	CaseUPPER
 )
 
-//Changes the case of all keys in an array
+// +------------------------------------------------------------
+// | @desc      Changes the case of all keys in an array
+// | @param     arr  ArrayMap
+// | @return    ArrayMap
+// |
+// | @author    Openset <openset.wang@gmail.com>
+// | @link      https://github.com/openset
+// | @date      2018/01/24
+// +------------------------------------------------------------
 func ArrayChangeKeyCase(arr ArrayMap, Case int) ArrayMap {
 
 	var tmp = ArrayMap{}
