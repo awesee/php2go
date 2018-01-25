@@ -1,7 +1,9 @@
 ## 项目进度
   * [ ] 未开始
-  * [-] 未测试
-  * [x] 已完成
+
+  <input type="checkbox" disabled indeterminate=true> 未测试
+
+  - [x] 已完成
 
 ## Array 函数
   - [x] [ ] array() 创建数组。
