@@ -163,81 +163,81 @@
 
 ## Filesystem 函数
   - [x] basename()	返回路径中的文件名部分。
-  - [ ] hgrp()	改变文件组。
-  - [ ] hmod()	改变文件模式。
-  - [ ] hown()	改变文件所有者。
-  - [ ] learstatcache()	清除文件状态缓存。
-  - [ ] opy()	复制文件。
-  - [ ] elete()	参见 unlink() 或 unset()。
-  - [ ] irname()	返回路径中的目录名称部分。
-  - [ ] isk_free_space()	返回目录的可用空间。
-  - [ ] isk_total_space()	返回一个目录的磁盘总容量。
-  - [ ] iskfreespace()	disk_free_space() 的别名。
-  - [ ] close()	关闭打开的文件。
-  - [ ] eof()	测试文件指针是否到了文件结束的位置。
-  - [ ] flush()	向打开的文件输出缓冲内容。
-  - [ ] getc()	从打开的文件中返回字符。
-  - [ ] getcsv()	从打开的文件中解析一行，校验 CSV 字段。
-  - [ ] gets()	从打开的文件中返回一行。
-  - [ ] getss()	从打开的文件中读取一行并过滤掉 HTML 和 PHP 标记。
-  - [ ] ile()	把文件读入一个数组中。
-  - [ ] ile_exists()	检查文件或目录是否存在。
-  - [ ] ile_get_contents()	将文件读入字符串。
-  - [ ] ile_put_contents()	将字符串写入文件。
-  - [ ] ileatime()	返回文件的上次访问时间。
-  - [ ] ilectime()	返回文件的上次改变时间。
-  - [ ] ilegroup()	返回文件的组 ID。
-  - [ ] ileinode()	返回文件的 inode 编号。
-  - [ ] ilemtime()	返回文件的上次修改时间。
-  - [ ] ileowner()	文件的 user ID （所有者）。
-  - [ ] ileperms()	返回文件的权限。
-  - [ ] ilesize()	返回文件大小。
-  - [ ] iletype()	返回文件类型。
-  - [ ] lock()	锁定或释放文件。
-  - [ ] nmatch()	根据指定的模式来匹配文件名或字符串。
-  - [ ] open()	打开一个文件或 URL。
-  - [ ] passthru()	从打开的文件中读数据，直到 EOF，并向输出缓冲写结果。
-  - [ ] putcsv()	将行格式化为 CSV 并写入一个打开的文件中。
-  - [ ] puts()	fwrite() 的别名。
-  - [ ] read()	读取打开的文件。
-  - [ ] scanf()	根据指定的格式对输入进行解析。
-  - [ ] seek()	在打开的文件中定位。
-  - [ ] stat()	返回关于一个打开的文件的信息。
-  - [ ] tell()	返回文件指针的读/写位置
-  - [ ] truncate()	将文件截断到指定的长度。
-  - [ ] write()	写入文件。
-  - [ ] lob()	返回一个包含匹配指定模式的文件名/目录的数组。
-  - [ ] s_dir()	判断指定的文件名是否是一个目录。
-  - [ ] s_executable()	判断文件是否可执行。
-  - [ ] s_file()	判断指定文件是否为常规的文件。
-  - [ ] s_link()	判断指定的文件是否是连接。
-  - [ ] s_readable()	判断文件是否可读。
-  - [ ] s_uploaded_file()	判断文件是否是通过 HTTP POST 上传的。
-  - [ ] s_writable()	判断文件是否可写。
-  - [ ] s_writeable()	is_writable() 的别名。
-  - [ ] ink()	创建一个硬连接。
-  - [ ] inkinfo()	返回有关一个硬连接的信息。
-  - [ ] stat()	返回关于文件或符号连接的信息。
-  - [ ] kdir()	创建目录。
-  - [ ] ove_uploaded_file()	将上传的文件移动到新位置。
-  - [ ] arse_ini_file()	解析一个配置文件。
-  - [ ] athinfo()	返回关于文件路径的信息。
-  - [ ] close()	关闭有 popen() 打开的进程。
-  - [ ] open()	打开一个进程。
-  - [ ] eadfile()	读取一个文件，并输出到输出缓冲。
-  - [ ] eadlink()	返回符号连接的目标。
-  - [ ] ealpath()	返回绝对路径名。
-  - [ ] ename()	重名名文件或目录。
-  - [ ] ewind()	倒回文件指针的位置。
-  - [ ] mdir()	删除空的目录。
-  - [ ] et_file_buffer()	设置已打开文件的缓冲大小。
-  - [ ] tat()	返回关于文件的信息。
-  - [ ] ymlink()	创建符号连接。
-  - [ ] empnam()	创建唯一的临时文件。
-  - [ ] mpfile()	建立临时文件。
-  - [ ] ouch()	设置文件的访问和修改时间。
-  - [ ] mask()	改变文件的文件权限。
-  - [ ] nlink()	删除文件。
+  - [ ] chgrp()	改变文件组。
+  - [ ] chmod()	改变文件模式。
+  - [ ] chown()	改变文件所有者。
+  - [ ] clearstatcache()	清除文件状态缓存。
+  - [ ] copy()	复制文件。
+  - [ ] delete()	参见 unlink() 或 unset()。
+  - [ ] dirname()	返回路径中的目录名称部分。
+  - [ ] disk_free_space()	返回目录的可用空间。
+  - [ ] disk_total_space()	返回一个目录的磁盘总容量。
+  - [ ] diskfreespace()	disk_free_space() 的别名。
+  - [ ] fclose()	关闭打开的文件。
+  - [ ] feof()	测试文件指针是否到了文件结束的位置。
+  - [ ] fflush()	向打开的文件输出缓冲内容。
+  - [ ] fgetc()	从打开的文件中返回字符。
+  - [ ] fgetcsv()	从打开的文件中解析一行，校验 CSV 字段。
+  - [ ] fgets()	从打开的文件中返回一行。
+  - [ ] fgetss()	从打开的文件中读取一行并过滤掉 HTML 和 PHP 标记。
+  - [ ] file()	把文件读入一个数组中。
+  - [ ] file_exists()	检查文件或目录是否存在。
+  - [ ] file_get_contents()	将文件读入字符串。
+  - [ ] file_put_contents()	将字符串写入文件。
+  - [ ] fileatime()	返回文件的上次访问时间。
+  - [ ] filectime()	返回文件的上次改变时间。
+  - [ ] filegroup()	返回文件的组 ID。
+  - [ ] fileinode()	返回文件的 inode 编号。
+  - [ ] filemtime()	返回文件的上次修改时间。
+  - [ ] fileowner()	文件的 user ID （所有者）。
+  - [ ] fileperms()	返回文件的权限。
+  - [ ] filesize()	返回文件大小。
+  - [ ] filetype()	返回文件类型。
+  - [ ] flock()	锁定或释放文件。
+  - [ ] fnmatch()	根据指定的模式来匹配文件名或字符串。
+  - [ ] fopen()	打开一个文件或 URL。
+  - [ ] fpassthru()	从打开的文件中读数据，直到 EOF，并向输出缓冲写结果。
+  - [ ] fputcsv()	将行格式化为 CSV 并写入一个打开的文件中。
+  - [ ] fputs()	fwrite() 的别名。
+  - [ ] fread()	读取打开的文件。
+  - [ ] fscanf()	根据指定的格式对输入进行解析。
+  - [ ] fseek()	在打开的文件中定位。
+  - [ ] fstat()	返回关于一个打开的文件的信息。
+  - [ ] ftell()	返回文件指针的读/写位置
+  - [ ] ftruncate()	将文件截断到指定的长度。
+  - [ ] fwrite()	写入文件。
+  - [ ] glob()	返回一个包含匹配指定模式的文件名/目录的数组。
+  - [ ] is_dir()	判断指定的文件名是否是一个目录。
+  - [ ] is_executable()	判断文件是否可执行。
+  - [ ] is_file()	判断指定文件是否为常规的文件。
+  - [ ] is_link()	判断指定的文件是否是连接。
+  - [ ] is_readable()	判断文件是否可读。
+  - [ ] is_uploaded_file()	判断文件是否是通过 HTTP POST 上传的。
+  - [ ] is_writable()	判断文件是否可写。
+  - [ ] is_writeable()	is_writable() 的别名。
+  - [ ] link()	创建一个硬连接。
+  - [ ] linkinfo()	返回有关一个硬连接的信息。
+  - [ ] lstat()	返回关于文件或符号连接的信息。
+  - [ ] mkdir()	创建目录。
+  - [ ] move_uploaded_file()	将上传的文件移动到新位置。
+  - [ ] parse_ini_file()	解析一个配置文件。
+  - [ ] pathinfo()	返回关于文件路径的信息。
+  - [ ] pclose()	关闭有 popen() 打开的进程。
+  - [ ] popen()	打开一个进程。
+  - [ ] readfile()	读取一个文件，并输出到输出缓冲。
+  - [ ] readlink()	返回符号连接的目标。
+  - [ ] realpath()	返回绝对路径名。
+  - [ ] rename()	重名名文件或目录。
+  - [ ] rewind()	倒回文件指针的位置。
+  - [ ] rmdir()	删除空的目录。
+  - [ ] set_file_buffer()	设置已打开文件的缓冲大小。
+  - [ ] stat()	返回关于文件的信息。
+  - [ ] symlink()	创建符号连接。
+  - [ ] tempnam()	创建唯一的临时文件。
+  - [ ] tmpfile()	建立临时文件。
+  - [ ] touch()	设置文件的访问和修改时间。
+  - [ ] umask()	改变文件的文件权限。
+  - [ ] unlink()	删除文件。
 
 ## Math 函数
   - [ ] abs()	绝对值。
@@ -288,3 +288,103 @@
   - [ ] srand()	播下随机数发生器种子。
   - [ ] tan()	正切。
   - [ ] tanh()	双曲正切。
+
+## String 函数
+  - [ ] addcslashes()	返回在指定的字符前添加反斜杠的字符串。
+  - [ ] addslashes()	返回在预定义的字符前添加反斜杠的字符串。
+  - [ ] bin2hex()	把 ASCII 字符的字符串转换为十六进制值。
+  - [ ] chop()	删除字符串右侧的空白字符或其他字符。
+  - [ ] chr()	从指定的 ASCII 值返回字符。
+  - [ ] chunk_split()	把字符串分割为一系列更小的部分。
+  - [ ] convert_cyr_string()	把字符串由一种 Cyrillic 字符集转换为另一种。
+  - [ ] convert_uudecode()	解码 uuencode 编码字符串。
+  - [ ] convert_uuencode()	使用 uuencode 算法对字符串进行编码。
+  - [ ] count_chars()	返回有关字符串中所用字符的信息。
+  - [ ] crc32()	计算字符串的 32 位 CRC。
+  - [ ] crypt()	单向的字符串加密法（hashing）。
+  - [ ] echo()	输出一个或多个字符串。
+  - [ ] explode()	把字符串打散为数组。
+  - [ ] fprintf()	把格式化的字符串写入到指定的输出流。
+  - [ ] get_html_translation_table()	返回由 htmlspecialchars() 和 htmlentities() 使用的翻译表。
+  - [ ] hebrev()	把希伯来文本转换为可见文本。
+  - [ ] hebrevc()	把希伯来文本转换为可见文本，并把新行（\n）转换为 <br>。
+  - [ ] hex2bin()	把十六进制值的字符串转换为 ASCII 字符。
+  - [ ] html_entity_decode()	把 HTML 实体转换为字符。
+  - [ ] htmlentities()	把字符转换为 HTML 实体。
+  - [ ] htmlspecialchars_decode()	把一些预定义的 HTML 实体转换为字符。
+  - [ ] htmlspecialchars()	把一些预定义的字符转换为 HTML 实体。
+  - [ ] implode()	返回由数组元素组合成的字符串。
+  - [ ] join()	implode() 的别名。
+  - [ ] lcfirst()	把字符串的首字符转换为小写。
+  - [ ] levenshtein()	返回两个字符串之间的 Levenshtein 距离。
+  - [ ] localeconv()	返回本地数字及货币格式信息。
+  - [ ] ltrim()	移除字符串左侧的空白字符或其他字符。
+  - [ ] md5()	计算字符串的 MD5 散列。
+  - [ ] md5_file()	计算文件的 MD5 散列。
+  - [ ] metaphone()	计算字符串的 metaphone 键。
+  - [ ] money_format()	返回格式化为货币字符串的字符串。
+  - [ ] nl_langinfo()	返回特定的本地信息。
+  - [ ] nl2br()	在字符串中的每个新行之前插入 HTML 换行符。
+  - [ ] number_format()	以千位分组来格式化数字。
+  - [ ] ord()	返回字符串中第一个字符的 ASCII 值。
+  - [ ] parse_str()	把查询字符串解析到变量中。
+  - [ ] print()	输出一个或多个字符串。
+  - [ ] printf()	输出格式化的字符串。
+  - [ ] quoted_printable_decode()	把 quoted-printable 字符串转换为 8 位字符串。
+  - [ ] quoted_printable_encode()	把 8 位字符串转换为 quoted-printable 字符串。
+  - [ ] quotemeta()	引用元字符。
+  - [ ] rtrim()	移除字符串右侧的空白字符或其他字符。
+  - [ ] setlocale()	设置地区信息（地域信息）。
+  - [ ] sha1()	计算字符串的 SHA-1 散列。
+  - [ ] sha1_file()	计算文件的 SHA-1 散列。
+  - [ ] similar_text()	计算两个字符串的相似度。
+  - [ ] soundex()	计算字符串的 soundex 键。
+  - [ ] sprintf()	把格式化的字符串写入变量中。
+  - [ ] sscanf()	根据指定的格式解析来自字符串的输入。
+  - [ ] str_getcsv()	把 CSV 字符串解析到数组中。
+  - [ ] str_ireplace()	替换字符串中的一些字符（对大小写不敏感）。
+  - [ ] str_pad()	把字符串填充为新的长度。
+  - [ ] str_repeat()	把字符串重复指定的次数。
+  - [ ] str_replace()	替换字符串中的一些字符（对大小写敏感）。
+  - [ ] str_rot13()	对字符串执行 ROT13 编码。
+  - [ ] str_shuffle()	随机地打乱字符串中的所有字符。
+  - [ ] str_split()	把字符串分割到数组中。
+  - [ ] str_word_count()	计算字符串中的单词数。
+  - [ ] strcasecmp()	比较两个字符串（对大小写不敏感）。
+  - [ ] strchr()	查找字符串在另一字符串中的第一次出现。（strstr() 的别名。）
+  - [ ] strcmp()	比较两个字符串（对大小写敏感）。
+  - [ ] strcoll()	比较两个字符串（根据本地设置）。
+  - [ ] strcspn()	返回在找到某些指定字符的任何部分之前，在字符串中查找的字符数。
+  - [ ] strip_tags()	剥去字符串中的 HTML 和 PHP 标签。
+  - [ ] stripcslashes()	删除由 addcslashes() 函数添加的反斜杠。
+  - [ ] stripslashes()	删除由 addslashes() 函数添加的反斜杠。
+  - [ ] stripos()	返回字符串在另一字符串中第一次出现的位置（对大小写不敏感）。
+  - [ ] stristr()	查找字符串在另一字符串中第一次出现的位置（大小写不敏感）。
+  - [ ] strlen()	返回字符串的长度。
+  - [ ] strnatcasecmp()	使用一种"自然排序"算法来比较两个字符串（对大小写不敏感）。
+  - [ ] strnatcmp()	使用一种"自然排序"算法来比较两个字符串（对大小写敏感）。
+  - [ ] strncasecmp()	前 n 个字符的字符串比较（对大小写不敏感）。
+  - [ ] strncmp()	前 n 个字符的字符串比较（对大小写敏感）。
+  - [ ] strpbrk()	在字符串中查找一组字符的任何一个字符。
+  - [ ] strpos()	返回字符串在另一字符串中第一次出现的位置（对大小写敏感）。
+  - [ ] strrchr()	查找字符串在另一个字符串中最后一次出现。
+  - [ ] strrev()	反转字符串。
+  - [ ] strripos()	查找字符串在另一字符串中最后一次出现的位置（对大小写不敏感）。
+  - [ ] strrpos()	查找字符串在另一字符串中最后一次出现的位置（对大小写敏感）。
+  - [ ] strspn()	返回在字符串中包含的特定字符的数目。
+  - [ ] strstr()	查找字符串在另一字符串中的第一次出现（对大小写敏感）。
+  - [ ] strtok()	把字符串分割为更小的字符串。
+  - [ ] strtolower()	把字符串转换为小写字母。
+  - [ ] strtoupper()	把字符串转换为大写字母。
+  - [ ] strtr()	转换字符串中特定的字符。
+  - [ ] substr()	返回字符串的一部分。
+  - [ ] substr_compare()	从指定的开始位置（二进制安全和选择性区分大小写）比较两个字符串。
+  - [ ] substr_count()	计算子串在字符串中出现的次数。
+  - [ ] substr_replace()	把字符串的一部分替换为另一个字符串。
+  - [ ] trim()	移除字符串两侧的空白字符和其他字符。
+  - [ ] ucfirst()	把字符串中的首字符转换为大写。
+  - [ ] ucwords()	把字符串中每个单词的首字符转换为大写。
+  - [ ] vfprintf()	把格式化的字符串写到指定的输出流。
+  - [ ] vprintf()	输出格式化的字符串。
+  - [ ] vsprintf()	把格式化字符串写入变量中。
+  - [ ] wordwrap()	打断字符串为指定数量的字串.
