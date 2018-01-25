@@ -28,7 +28,7 @@
 // +------------------------------------------------------------
 func FuncName(args ...Type) Type {
     //此处空一行
-	return args
+    return args
 }
 
 ```
