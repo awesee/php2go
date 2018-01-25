@@ -3,6 +3,9 @@
 # git files
 .gitattributes export-ignore
 # .gitignore
+.github/ export-ignore
 
 # Test files...
 php/*_test.go export-ignore
+
+TODO.md export-ignore
