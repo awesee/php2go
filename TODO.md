@@ -1,396 +1,393 @@
 ## 项目进度
   * [ ] 未开始
-
-  <input type="checkbox" disabled indeterminate=true> 未测试
-
-  - [x] 已完成
+  * [x] 已完成
 
 ## Array 函数
-  - [x] [ ] array() 创建数组。
-  - [ ] [ ] array_change_key_case() 把数组中所有键更改为小写或大写。
-  - [ ] [ ] array_chunk() 把一个数组分割为新的数组块。
-  - [ ] [ ] array_column()  返回输入数组中某个单一列的值。
-  - [ ] [ ] array_combine() 通过合并两个数组来创建一个新数组。
-  - [ ] [ ] array_count_values()  用于统计数组中所有值出现的次数。
-  - [ ] [ ] array_diff()  比较数组，返回差集（只比较键值）。
-  - [ ] [ ] array_diff_assoc()  比较数组，返回差集（比较键名和键值）。
-  - [ ] [ ] array_diff_key()  比较数组，返回差集（只比较键名）。
-  - [ ] [ ] array_diff_uassoc() 比较数组，返回差集（比较键名和键值，使用用户自定义的键名比较函数）。
-  - [ ] [ ] array_diff_ukey() 比较数组，返回差集（只比较键名，使用用户自定义的键名比较函数）。
-  - [ ] [ ] array_fill()  用给定的键值填充数组。
-  - [ ] [ ] array_fill_keys() 用指定键名的给定键值填充数组。
-  - [ ] [ ] array_filter()  用回调函数过滤数组中的元素。
-  - [ ] [ ] array_flip()  交换数组中的键和值。
-  - [ ] [ ] array_intersect() 比较数组，返回交集（只比较键值）。
-  - [ ] [ ] array_intersect_assoc() 比较数组，返回交集（比较键名和键值）。
-  - [ ] [ ] array_intersect_key() 比较数组，返回交集（只比较键名）。
-  - [ ] [ ] array_intersect_uassoc()  比较数组，返回交集（比较键名和键值，使用用户自定义的键名比较函数）。
-  - [ ] [ ] array_intersect_ukey()  比较数组，返回交集（只比较键名，使用用户自定义的键名比较函数）。
-  - [ ] [ ] array_key_exists()  检查指定的键名是否存在于数组中。
-  - [ ] [ ] array_keys()  返回数组中所有的键名。
-  - [ ] [ ] array_map() 把数组中的每个值发送到用户自定义函数，返回新的值。
-  - [ ] [ ] array_merge() 把一个或多个数组合并为一个数组。
-  - [ ] [ ] array_merge_recursive() 递归地合并一个或多个数组。
-  - [ ] [ ] array_multisort() 对多个数组或多维数组进行排序。
-  - [ ] [ ] array_pad() 用值将数组填补到指定长度。
-  - [ ] [ ] array_pop() 删除数组的最后一个元素（出栈）。
-  - [ ] [ ] array_product() 计算数组中所有值的乘积。
-  - [ ] [ ] array_push()  将一个或多个元素插入数组的末尾（入栈）。
-  - [ ] [ ] array_rand()  返回数组中一个或多个随机的键。
-  - [ ] [ ] array_reduce()  通过使用用户自定义函数，以字符串返回数组。
-  - [ ] [ ] array_replace() 使用后面数组的值替换第一个数组的值。
-  - [ ] [ ] array_replace_recursive() 递归地使用后面数组的值替换第一个数组的值。
-  - [ ] [ ] array_reverse() 以相反的顺序返回数组。
-  - [ ] [ ] array_search()  搜索数组中给定的值并返回键名。
-  - [ ] [ ] array_shift() 删除数组中首个元素，并返回被删除元素的值。
-  - [ ] [ ] array_slice() 返回数组中被选定的部分。
-  - [ ] [ ] array_splice()  删除并替换数组中指定的元素。
-  - [ ] [ ] array_sum() 返回数组中值的和。
-  - [ ] [ ] array_udiff() 比较数组，返回差集（只比较值，使用一个用户自定义的键名比较函数）。
-  - [ ] [ ] array_udiff_assoc() 比较数组，返回差集（比较键和值，使用内建函数比较键名，使用用户自定义函数比较键值）。
-  - [ ] [ ] array_udiff_uassoc()  比较数组，返回差集（比较键和值，使用两个用户自定义的键名比较函数）。
-  - [ ] [ ] array_uintersect()  比较数组，返回交集（只比较值，使用一个用户自定义的键名比较函数）。
-  - [ ] [ ] array_uintersect_assoc()  比较数组，返回交集（比较键和值，使用内建函数比较键名，使用用户自定义函数比较键值）。
-  - [ ] [ ] array_uintersect_uassoc() 比较数组，返回交集（比较键和值，使用两个用户自定义的键名比较函数）。
-  - [ ] [ ] array_unique()  删除数组中的重复值。
-  - [ ] [ ] array_unshift() 在数组开头插入一个或多个元素。
-  - [ ] [ ] array_values()  返回数组中所有的值。
-  - [ ] [ ] array_walk()  对数组中的每个成员应用用户函数。
-  - [ ] [ ] array_walk_recursive()  对数组中的每个成员递归地应用用户函数。
-  - [ ] [ ] arsort()  对关联数组按照键值进行降序排序。
-  - [ ] [ ] asort() 对关联数组按照键值进行升序排序。
-  - [ ] [ ] compact() 创建包含变量名和它们的值的数组。
-  - [ ] [ ] count() 返回数组中元素的数目。
-  - [ ] [ ] current() 返回数组中的当前元素。
-  - [ ] [ ] each()  返回数组中当前的键／值对。
-  - [ ] [ ] end() 将数组的内部指针指向最后一个元素。
-  - [ ] [ ] extract() 从数组中将变量导入到当前的符号表。
-  - [ ] [ ] in_array()  检查数组中是否存在指定的值。
-  - [ ] [ ] key() 从关联数组中取得键名。
-  - [ ] [ ] krsort()  对数组按照键名逆向排序。
-  - [ ] [ ] ksort() 对数组按照键名排序。
-  - [ ] [ ] list()  把数组中的值赋给一些变量。
-  - [ ] [ ] natcasesort() 用“自然排序”算法对数组进行不区分大小写字母的排序。
-  - [ ] [ ] natsort() 用“自然排序”算法对数组排序。
-  - [ ] [ ] next()  将数组中的内部指针向前移动一位。
-  - [ ] [ ] pos() current() 的别名。
-  - [ ] [ ] prev()  将数组的内部指针倒回一位。
-  - [ ] [ ] range() 创建包含指定范围单元的数组。
-  - [ ] [ ] reset() 将数组的内部指针指向第一个元素。
-  - [ ] [ ] rsort() 对数组逆向排序。
-  - [ ] [ ] shuffle() 将数组打乱。
-  - [ ] [ ] sizeof()  count() 的别名。
-  - [ ] [ ] sort()  对数组排序。
-  - [ ] [ ] uasort()  使用用户自定义的比较函数对数组中的键值进行排序。
-  - [ ] [ ] uksort()  使用用户自定义的比较函数对数组中的键名进行排序。
-  - [ ] [ ] usort() 使用用户自定义的比较函数对数组进行排序。
+  - [x] array() 创建数组。
+  - [x] array_change_key_case() 把数组中所有键更改为小写或大写。
+  - [ ] array_chunk() 把一个数组分割为新的数组块。
+  - [ ] array_column()  返回输入数组中某个单一列的值。
+  - [ ] array_combine() 通过合并两个数组来创建一个新数组。
+  - [ ] array_count_values()  用于统计数组中所有值出现的次数。
+  - [ ] array_diff()  比较数组，返回差集（只比较键值）。
+  - [ ] array_diff_assoc()  比较数组，返回差集（比较键名和键值）。
+  - [ ] array_diff_key()  比较数组，返回差集（只比较键名）。
+  - [ ] array_diff_uassoc() 比较数组，返回差集（比较键名和键值，使用用户自定义的键名比较函数）。
+  - [ ] array_diff_ukey() 比较数组，返回差集（只比较键名，使用用户自定义的键名比较函数）。
+  - [ ] array_fill()  用给定的键值填充数组。
+  - [ ] array_fill_keys() 用指定键名的给定键值填充数组。
+  - [ ] array_filter()  用回调函数过滤数组中的元素。
+  - [ ] array_flip()  交换数组中的键和值。
+  - [ ] array_intersect() 比较数组，返回交集（只比较键值）。
+  - [ ] array_intersect_assoc() 比较数组，返回交集（比较键名和键值）。
+  - [ ] array_intersect_key() 比较数组，返回交集（只比较键名）。
+  - [ ] array_intersect_uassoc()  比较数组，返回交集（比较键名和键值，使用用户自定义的键名比较函数）。
+  - [ ] array_intersect_ukey()  比较数组，返回交集（只比较键名，使用用户自定义的键名比较函数）。
+  - [ ] array_key_exists()  检查指定的键名是否存在于数组中。
+  - [ ] array_keys()  返回数组中所有的键名。
+  - [ ] array_map() 把数组中的每个值发送到用户自定义函数，返回新的值。
+  - [ ] array_merge() 把一个或多个数组合并为一个数组。
+  - [ ] array_merge_recursive() 递归地合并一个或多个数组。
+  - [ ] array_multisort() 对多个数组或多维数组进行排序。
+  - [ ] array_pad() 用值将数组填补到指定长度。
+  - [ ] array_pop() 删除数组的最后一个元素（出栈）。
+  - [ ] array_product() 计算数组中所有值的乘积。
+  - [ ] array_push()  将一个或多个元素插入数组的末尾（入栈）。
+  - [ ] array_rand()  返回数组中一个或多个随机的键。
+  - [ ] array_reduce()  通过使用用户自定义函数，以字符串返回数组。
+  - [ ] array_replace() 使用后面数组的值替换第一个数组的值。
+  - [ ] array_replace_recursive() 递归地使用后面数组的值替换第一个数组的值。
+  - [ ] array_reverse() 以相反的顺序返回数组。
+  - [ ] array_search()  搜索数组中给定的值并返回键名。
+  - [ ] array_shift() 删除数组中首个元素，并返回被删除元素的值。
+  - [ ] array_slice() 返回数组中被选定的部分。
+  - [ ] array_splice()  删除并替换数组中指定的元素。
+  - [ ] array_sum() 返回数组中值的和。
+  - [ ] array_udiff() 比较数组，返回差集（只比较值，使用一个用户自定义的键名比较函数）。
+  - [ ] array_udiff_assoc() 比较数组，返回差集（比较键和值，使用内建函数比较键名，使用用户自定义函数比较键值）。
+  - [ ] array_udiff_uassoc()  比较数组，返回差集（比较键和值，使用两个用户自定义的键名比较函数）。
+  - [ ] array_uintersect()  比较数组，返回交集（只比较值，使用一个用户自定义的键名比较函数）。
+  - [ ] array_uintersect_assoc()  比较数组，返回交集（比较键和值，使用内建函数比较键名，使用用户自定义函数比较键值）。
+  - [ ] array_uintersect_uassoc() 比较数组，返回交集（比较键和值，使用两个用户自定义的键名比较函数）。
+  - [ ] array_unique()  删除数组中的重复值。
+  - [ ] array_unshift() 在数组开头插入一个或多个元素。
+  - [ ] array_values()  返回数组中所有的值。
+  - [ ] array_walk()  对数组中的每个成员应用用户函数。
+  - [ ] array_walk_recursive()  对数组中的每个成员递归地应用用户函数。
+  - [ ] arsort()  对关联数组按照键值进行降序排序。
+  - [ ] asort() 对关联数组按照键值进行升序排序。
+  - [ ] compact() 创建包含变量名和它们的值的数组。
+  - [ ] count() 返回数组中元素的数目。
+  - [ ] current() 返回数组中的当前元素。
+  - [ ] each()  返回数组中当前的键／值对。
+  - [ ] end() 将数组的内部指针指向最后一个元素。
+  - [ ] extract() 从数组中将变量导入到当前的符号表。
+  - [ ] in_array()  检查数组中是否存在指定的值。
+  - [ ] key() 从关联数组中取得键名。
+  - [ ] krsort()  对数组按照键名逆向排序。
+  - [ ] ksort() 对数组按照键名排序。
+  - [ ] list()  把数组中的值赋给一些变量。
+  - [ ] natcasesort() 用“自然排序”算法对数组进行不区分大小写字母的排序。
+  - [ ] natsort() 用“自然排序”算法对数组排序。
+  - [ ] next()  将数组中的内部指针向前移动一位。
+  - [ ] pos() current() 的别名。
+  - [ ] prev()  将数组的内部指针倒回一位。
+  - [ ] range() 创建包含指定范围单元的数组。
+  - [ ] reset() 将数组的内部指针指向第一个元素。
+  - [ ] rsort() 对数组逆向排序。
+  - [ ] shuffle() 将数组打乱。
+  - [ ] sizeof()  count() 的别名。
+  - [ ] sort()  对数组排序。
+  - [ ] uasort()  使用用户自定义的比较函数对数组中的键值进行排序。
+  - [ ] uksort()  使用用户自定义的比较函数对数组中的键名进行排序。
+  - [ ] usort() 使用用户自定义的比较函数对数组进行排序。
 
 ## Calendar 函数
-  - [ ] [ ] cal_days_in_month() 针对指定的年份和历法，返回一个月中的天数。
-  - [ ] [ ] cal_from_jd() 把儒略日计数转换为指定历法的日期。
-  - [ ] [ ] cal_info()  返回有关指定历法的信息。
-  - [ ] [ ] cal_to_jd() 把指定历法中的日期转换为儒略日计数。
-  - [ ] [ ] easter_date() 返回指定年份的复活节午夜的 Unix 时间戳。
-  - [ ] [ ] easter_days() 返回指定年份的复活节与 3 月 21 日之间的天数。
-  - [ ] [ ] frenchtojd()  把法国共和历的日期转换成为儒略日计数。
-  - [ ] [ ] gregoriantojd() 把格利高里历法的日期转换成为儒略日计数。
-  - [ ] [ ] jddayofweek() 返回日期在周几。
-  - [ ] [ ] jdmonthname() 返回月的名称。
-  - [ ] [ ] jdtofrench()  把儒略日计数转换为法国共和历的日期。
-  - [ ] [ ] jdtogregorian() 将格利高里历法转换成为儒略日计数。
-  - [ ] [ ] jdtojewish()  把儒略日计数转换为犹太历法的日期。
-  - [ ] [ ] jdtojulian()  把儒略日计数转换为儒略历法的日期。
-  - [ ] [ ] jdtounix()  把儒略日计数转换为 Unix 时间戳。
-  - [ ] [ ] jewishtojd()  把犹太历法的日期转换为儒略日计数。
-  - [ ] [ ] juliantojd()  把儒略历法的日期转换为儒略日计数。
-  - [ ] [ ] unixtojd()  把 Unix 时间戳转换为儒略日计数。
+  - [ ] cal_days_in_month() 针对指定的年份和历法，返回一个月中的天数。
+  - [ ] cal_from_jd() 把儒略日计数转换为指定历法的日期。
+  - [ ] cal_info()  返回有关指定历法的信息。
+  - [ ] cal_to_jd() 把指定历法中的日期转换为儒略日计数。
+  - [ ] easter_date() 返回指定年份的复活节午夜的 Unix 时间戳。
+  - [ ] easter_days() 返回指定年份的复活节与 3 月 21 日之间的天数。
+  - [ ] frenchtojd()  把法国共和历的日期转换成为儒略日计数。
+  - [ ] gregoriantojd() 把格利高里历法的日期转换成为儒略日计数。
+  - [ ] jddayofweek() 返回日期在周几。
+  - [ ] jdmonthname() 返回月的名称。
+  - [ ] jdtofrench()  把儒略日计数转换为法国共和历的日期。
+  - [ ] jdtogregorian() 将格利高里历法转换成为儒略日计数。
+  - [ ] jdtojewish()  把儒略日计数转换为犹太历法的日期。
+  - [ ] jdtojulian()  把儒略日计数转换为儒略历法的日期。
+  - [ ] jdtounix()  把儒略日计数转换为 Unix 时间戳。
+  - [ ] jewishtojd()  把犹太历法的日期转换为儒略日计数。
+  - [ ] juliantojd()  把儒略历法的日期转换为儒略日计数。
+  - [ ] unixtojd()  把 Unix 时间戳转换为儒略日计数。
 
 ## Date / Time 函数
-  - [x] [ ] checkdate() 验证格利高里日期。
-  - [ ] [ ] date_add()  添加日、月、年、时、分和秒到日期。
-  - [ ] [ ] date_create_from_format() 返回根据指定格式进行格式化的新的 DateTime 对象。
-  - [ ] [ ] date_create() 返回新的 DateTime 对象。
-  - [ ] [ ] date_date_set() 设置新日期。
-  - [ ] [ ] date_default_timezone_get() 返回由所有的 Date/Time 函数使用的默认时区。
-  - [ ] [ ] date_default_timezone_set() 设置由所有的 Date/Time 函数使用的默认时区。
-  - [ ] [ ] date_diff() 返回两个日期间的差值。
-  - [ ] [ ] date_format() 返回根据指定格式进行格式化的日期。
-  - [ ] [ ] date_get_last_errors()  返回日期字符串中的警告/错误。
-  - [ ] [ ] date_interval_create_from_date_string() 从字符串的相关部分建立 DateInterval。
-  - [ ] [ ] date_interval_format()  格式化时间间隔。
-  - [ ] [ ] date_isodate_set()  设置 ISO 日期。
-  - [ ] [ ] date_modify() 修改时间戳。
-  - [ ] [ ] date_offset_get() 返回时区偏移。
-  - [ ] [ ] date_parse_from_format()  根据指定的格式返回带有关于指定日期的详细信息的关联数组。
-  - [ ] [ ] date_parse()  返回带有关于指定日期的详细信息的关联数组。
-  - [ ] [ ] date_sub()  从指定日期减去日、月、年、时、分和秒。
-  - [ ] [ ] date_sun_info() 返回包含有关指定日期与地点的日出/日落和黄昏开始/黄昏结束的信息的数组。
-  - [ ] [ ] date_sunrise()  返回指定日期与位置的日出时间。
-  - [ ] [ ] date_sunset() 返回指定日期与位置的日落时间。
-  - [ ] [ ] date_time_set() 设置时间。
-  - [ ] [ ] date_timestamp_get()  返回 Unix 时间戳。
-  - [ ] [ ] date_timestamp_set()  设置基于 Unix 时间戳的日期和时间。
-  - [ ] [ ] date_timezone_get() 返回给定 DateTime 对象的时区。
-  - [ ] [ ] date_timezone_set() 设置 DateTime 对象的时区。
-  - [ ] [ ] date()  格式化本地日期和时间。
-  - [ ] [ ] getdate() 返回某个时间戳或者当前本地的日期/时间的日期/时间信息。
-  - [ ] [ ] gettimeofday()  返回当前时间。
-  - [ ] [ ] gmdate()  格式化 GMT/UTC 日期和时间。
-  - [ ] [ ] gmmktime()  返回 GMT 日期的 UNIX 时间戳。
-  - [ ] [ ] gmstrftime()  根据区域设置对 GMT/UTC 日期和时间进行格式化。
-  - [ ] [ ] idate() 将本地时间/日期格式化为整数。
-  - [ ] [ ] localtime() 返回本地时间。
-  - [ ] [ ] microtime() 返回当前时间的微秒数。
-  - [ ] [ ] mktime()  返回日期的 Unix 时间戳。
-  - [ ] [ ] strftime()  根据区域设置对本地时间/日期进行格式化。
-  - [ ] [ ] strptime()  解析由 strftime() 生成的时间/日期。
-  - [ ] [ ] strtotime() 将任何英文文本的日期或时间描述解析为 Unix 时间戳。
-  - [ ] [ ] time()  返回当前时间的 Unix 时间戳。
-  - [ ] [ ] timezone_abbreviations_list() 返回包含夏令时、偏移量和时区名称的关联数组。
-  - [ ] [ ] timezone_identifiers_list() 返回带有所有时区标识符的索引数组。
-  - [ ] [ ] timezone_location_get() 返回指定时区的位置信息。
-  - [ ] [ ] timezone_name_from_abbr() 根据时区缩略语返回时区名称。
-  - [ ] [ ] timezone_name_get() 返回时区的名称。
-  - [ ] [ ] timezone_offset_get() 返回相对于 GMT 的时区偏移。
-  - [ ] [ ] timezone_open() 创建新的 DateTimeZone 对象。
-  - [ ] [ ] timezone_transitions_get()  返回时区的所有转换。
-  - [ ] [ ] timezone_version_get()  返回时区数据库的版本。
+  - [x] checkdate() 验证格利高里日期。
+  - [ ] date_add()  添加日、月、年、时、分和秒到日期。
+  - [ ] date_create_from_format() 返回根据指定格式进行格式化的新的 DateTime 对象。
+  - [ ] date_create() 返回新的 DateTime 对象。
+  - [ ] date_date_set() 设置新日期。
+  - [ ] date_default_timezone_get() 返回由所有的 Date/Time 函数使用的默认时区。
+  - [ ] date_default_timezone_set() 设置由所有的 Date/Time 函数使用的默认时区。
+  - [ ] date_diff() 返回两个日期间的差值。
+  - [ ] date_format() 返回根据指定格式进行格式化的日期。
+  - [ ] date_get_last_errors()  返回日期字符串中的警告/错误。
+  - [ ] date_interval_create_from_date_string() 从字符串的相关部分建立 DateInterval。
+  - [ ] date_interval_format()  格式化时间间隔。
+  - [ ] date_isodate_set()  设置 ISO 日期。
+  - [ ] date_modify() 修改时间戳。
+  - [ ] date_offset_get() 返回时区偏移。
+  - [ ] date_parse_from_format()  根据指定的格式返回带有关于指定日期的详细信息的关联数组。
+  - [ ] date_parse()  返回带有关于指定日期的详细信息的关联数组。
+  - [ ] date_sub()  从指定日期减去日、月、年、时、分和秒。
+  - [ ] date_sun_info() 返回包含有关指定日期与地点的日出/日落和黄昏开始/黄昏结束的信息的数组。
+  - [ ] date_sunrise()  返回指定日期与位置的日出时间。
+  - [ ] date_sunset() 返回指定日期与位置的日落时间。
+  - [ ] date_time_set() 设置时间。
+  - [ ] date_timestamp_get()  返回 Unix 时间戳。
+  - [ ] date_timestamp_set()  设置基于 Unix 时间戳的日期和时间。
+  - [ ] date_timezone_get() 返回给定 DateTime 对象的时区。
+  - [ ] date_timezone_set() 设置 DateTime 对象的时区。
+  - [ ] date()  格式化本地日期和时间。
+  - [ ] getdate() 返回某个时间戳或者当前本地的日期/时间的日期/时间信息。
+  - [ ] gettimeofday()  返回当前时间。
+  - [ ] gmdate()  格式化 GMT/UTC 日期和时间。
+  - [ ] gmmktime()  返回 GMT 日期的 UNIX 时间戳。
+  - [ ] gmstrftime()  根据区域设置对 GMT/UTC 日期和时间进行格式化。
+  - [ ] idate() 将本地时间/日期格式化为整数。
+  - [ ] localtime() 返回本地时间。
+  - [ ] microtime() 返回当前时间的微秒数。
+  - [ ] mktime()  返回日期的 Unix 时间戳。
+  - [ ] strftime()  根据区域设置对本地时间/日期进行格式化。
+  - [ ] strptime()  解析由 strftime() 生成的时间/日期。
+  - [ ] strtotime() 将任何英文文本的日期或时间描述解析为 Unix 时间戳。
+  - [ ] time()  返回当前时间的 Unix 时间戳。
+  - [ ] timezone_abbreviations_list() 返回包含夏令时、偏移量和时区名称的关联数组。
+  - [ ] timezone_identifiers_list() 返回带有所有时区标识符的索引数组。
+  - [ ] timezone_location_get() 返回指定时区的位置信息。
+  - [ ] timezone_name_from_abbr() 根据时区缩略语返回时区名称。
+  - [ ] timezone_name_get() 返回时区的名称。
+  - [ ] timezone_offset_get() 返回相对于 GMT 的时区偏移。
+  - [ ] timezone_open() 创建新的 DateTimeZone 对象。
+  - [ ] timezone_transitions_get()  返回时区的所有转换。
+  - [ ] timezone_version_get()  返回时区数据库的版本。
 
 ## Directory 函数
-  - [x] [ ] chdir() 改变当前的目录。
-  - [ ] [ ] chroot()  改变根目录。
-  - [ ] [ ] closedir()  关闭目录句柄。
-  - [ ] [ ] dir() 返回 Directory 类的实例。
-  - [ ] [ ] getcwd()  返回当前工作目录。
-  - [ ] [ ] opendir() 打开目录句柄。
-  - [ ] [ ] readdir() 返回目录句柄中的条目。
-  - [ ] [ ] rewinddir() 重置目录句柄。
-  - [ ] [ ] scandir() 返回指定目录中的文件和目录的数组。
+  - [x] chdir() 改变当前的目录。
+  - [ ] chroot()  改变根目录。
+  - [ ] closedir()  关闭目录句柄。
+  - [ ] dir() 返回 Directory 类的实例。
+  - [ ] getcwd()  返回当前工作目录。
+  - [ ] opendir() 打开目录句柄。
+  - [ ] readdir() 返回目录句柄中的条目。
+  - [ ] rewinddir() 重置目录句柄。
+  - [ ] scandir() 返回指定目录中的文件和目录的数组。
 
 ## Filesystem 函数
-  - [x] [ ] basename()  返回路径中的文件名部分。
-  - [ ] [ ] chgrp() 改变文件组。
-  - [ ] [ ] chmod() 改变文件模式。
-  - [ ] [ ] chown() 改变文件所有者。
-  - [ ] [ ] clearstatcache()  清除文件状态缓存。
-  - [ ] [ ] copy()  复制文件。
-  - [ ] [ ] delete()  参见 unlink() 或 unset()。
-  - [ ] [ ] dirname() 返回路径中的目录名称部分。
-  - [ ] [ ] disk_free_space() 返回目录的可用空间。
-  - [ ] [ ] disk_total_space()  返回一个目录的磁盘总容量。
-  - [ ] [ ] diskfreespace() disk_free_space() 的别名。
-  - [ ] [ ] fclose()  关闭打开的文件。
-  - [ ] [ ] feof()  测试文件指针是否到了文件结束的位置。
-  - [ ] [ ] fflush()  向打开的文件输出缓冲内容。
-  - [ ] [ ] fgetc() 从打开的文件中返回字符。
-  - [ ] [ ] fgetcsv() 从打开的文件中解析一行，校验 CSV 字段。
-  - [ ] [ ] fgets() 从打开的文件中返回一行。
-  - [ ] [ ] fgetss()  从打开的文件中读取一行并过滤掉 HTML 和 PHP 标记。
-  - [ ] [ ] file()  把文件读入一个数组中。
-  - [ ] [ ] file_exists() 检查文件或目录是否存在。
-  - [ ] [ ] file_get_contents() 将文件读入字符串。
-  - [ ] [ ] file_put_contents() 将字符串写入文件。
-  - [ ] [ ] fileatime() 返回文件的上次访问时间。
-  - [ ] [ ] filectime() 返回文件的上次改变时间。
-  - [ ] [ ] filegroup() 返回文件的组 ID。
-  - [ ] [ ] fileinode() 返回文件的 inode 编号。
-  - [ ] [ ] filemtime() 返回文件的上次修改时间。
-  - [ ] [ ] fileowner() 文件的 user ID （所有者）。
-  - [ ] [ ] fileperms() 返回文件的权限。
-  - [ ] [ ] filesize()  返回文件大小。
-  - [ ] [ ] filetype()  返回文件类型。
-  - [ ] [ ] flock() 锁定或释放文件。
-  - [ ] [ ] fnmatch() 根据指定的模式来匹配文件名或字符串。
-  - [ ] [ ] fopen() 打开一个文件或 URL。
-  - [ ] [ ] fpassthru() 从打开的文件中读数据，直到 EOF，并向输出缓冲写结果。
-  - [ ] [ ] fputcsv() 将行格式化为 CSV 并写入一个打开的文件中。
-  - [ ] [ ] fputs() fwrite() 的别名。
-  - [ ] [ ] fread() 读取打开的文件。
-  - [ ] [ ] fscanf()  根据指定的格式对输入进行解析。
-  - [ ] [ ] fseek() 在打开的文件中定位。
-  - [ ] [ ] fstat() 返回关于一个打开的文件的信息。
-  - [ ] [ ] ftell() 返回文件指针的读/写位置
-  - [ ] [ ] ftruncate() 将文件截断到指定的长度。
-  - [ ] [ ] fwrite()  写入文件。
-  - [ ] [ ] glob()  返回一个包含匹配指定模式的文件名/目录的数组。
-  - [ ] [ ] is_dir()  判断指定的文件名是否是一个目录。
-  - [ ] [ ] is_executable() 判断文件是否可执行。
-  - [ ] [ ] is_file() 判断指定文件是否为常规的文件。
-  - [ ] [ ] is_link() 判断指定的文件是否是连接。
-  - [ ] [ ] is_readable() 判断文件是否可读。
-  - [ ] [ ] is_uploaded_file()  判断文件是否是通过 HTTP POST 上传的。
-  - [ ] [ ] is_writable() 判断文件是否可写。
-  - [ ] [ ] is_writeable()  is_writable() 的别名。
-  - [ ] [ ] link()  创建一个硬连接。
-  - [ ] [ ] linkinfo()  返回有关一个硬连接的信息。
-  - [ ] [ ] lstat() 返回关于文件或符号连接的信息。
-  - [ ] [ ] mkdir() 创建目录。
-  - [ ] [ ] move_uploaded_file()  将上传的文件移动到新位置。
-  - [ ] [ ] parse_ini_file()  解析一个配置文件。
-  - [ ] [ ] pathinfo()  返回关于文件路径的信息。
-  - [ ] [ ] pclose()  关闭有 popen() 打开的进程。
-  - [ ] [ ] popen() 打开一个进程。
-  - [ ] [ ] readfile()  读取一个文件，并输出到输出缓冲。
-  - [ ] [ ] readlink()  返回符号连接的目标。
-  - [ ] [ ] realpath()  返回绝对路径名。
-  - [ ] [ ] rename()  重名名文件或目录。
-  - [ ] [ ] rewind()  倒回文件指针的位置。
-  - [ ] [ ] rmdir() 删除空的目录。
-  - [ ] [ ] set_file_buffer() 设置已打开文件的缓冲大小。
-  - [ ] [ ] stat()  返回关于文件的信息。
-  - [ ] [ ] symlink() 创建符号连接。
-  - [ ] [ ] tempnam() 创建唯一的临时文件。
-  - [ ] [ ] tmpfile() 建立临时文件。
-  - [ ] [ ] touch() 设置文件的访问和修改时间。
-  - [ ] [ ] umask() 改变文件的文件权限。
-  - [ ] [ ] unlink()  删除文件。
+  - [x] basename()  返回路径中的文件名部分。
+  - [ ] chgrp() 改变文件组。
+  - [ ] chmod() 改变文件模式。
+  - [ ] chown() 改变文件所有者。
+  - [ ] clearstatcache()  清除文件状态缓存。
+  - [ ] copy()  复制文件。
+  - [ ] delete()  参见 unlink() 或 unset()。
+  - [ ] dirname() 返回路径中的目录名称部分。
+  - [ ] disk_free_space() 返回目录的可用空间。
+  - [ ] disk_total_space()  返回一个目录的磁盘总容量。
+  - [ ] diskfreespace() disk_free_space() 的别名。
+  - [ ] fclose()  关闭打开的文件。
+  - [ ] feof()  测试文件指针是否到了文件结束的位置。
+  - [ ] fflush()  向打开的文件输出缓冲内容。
+  - [ ] fgetc() 从打开的文件中返回字符。
+  - [ ] fgetcsv() 从打开的文件中解析一行，校验 CSV 字段。
+  - [ ] fgets() 从打开的文件中返回一行。
+  - [ ] fgetss()  从打开的文件中读取一行并过滤掉 HTML 和 PHP 标记。
+  - [ ] file()  把文件读入一个数组中。
+  - [ ] file_exists() 检查文件或目录是否存在。
+  - [ ] file_get_contents() 将文件读入字符串。
+  - [ ] file_put_contents() 将字符串写入文件。
+  - [ ] fileatime() 返回文件的上次访问时间。
+  - [ ] filectime() 返回文件的上次改变时间。
+  - [ ] filegroup() 返回文件的组 ID。
+  - [ ] fileinode() 返回文件的 inode 编号。
+  - [ ] filemtime() 返回文件的上次修改时间。
+  - [ ] fileowner() 文件的 user ID （所有者）。
+  - [ ] fileperms() 返回文件的权限。
+  - [ ] filesize()  返回文件大小。
+  - [ ] filetype()  返回文件类型。
+  - [ ] flock() 锁定或释放文件。
+  - [ ] fnmatch() 根据指定的模式来匹配文件名或字符串。
+  - [ ] fopen() 打开一个文件或 URL。
+  - [ ] fpassthru() 从打开的文件中读数据，直到 EOF，并向输出缓冲写结果。
+  - [ ] fputcsv() 将行格式化为 CSV 并写入一个打开的文件中。
+  - [ ] fputs() fwrite() 的别名。
+  - [ ] fread() 读取打开的文件。
+  - [ ] fscanf()  根据指定的格式对输入进行解析。
+  - [ ] fseek() 在打开的文件中定位。
+  - [ ] fstat() 返回关于一个打开的文件的信息。
+  - [ ] ftell() 返回文件指针的读/写位置
+  - [ ] ftruncate() 将文件截断到指定的长度。
+  - [ ] fwrite()  写入文件。
+  - [ ] glob()  返回一个包含匹配指定模式的文件名/目录的数组。
+  - [ ] is_dir()  判断指定的文件名是否是一个目录。
+  - [ ] is_executable() 判断文件是否可执行。
+  - [ ] is_file() 判断指定文件是否为常规的文件。
+  - [ ] is_link() 判断指定的文件是否是连接。
+  - [ ] is_readable() 判断文件是否可读。
+  - [ ] is_uploaded_file()  判断文件是否是通过 HTTP POST 上传的。
+  - [ ] is_writable() 判断文件是否可写。
+  - [ ] is_writeable()  is_writable() 的别名。
+  - [ ] link()  创建一个硬连接。
+  - [ ] linkinfo()  返回有关一个硬连接的信息。
+  - [ ] lstat() 返回关于文件或符号连接的信息。
+  - [ ] mkdir() 创建目录。
+  - [ ] move_uploaded_file()  将上传的文件移动到新位置。
+  - [ ] parse_ini_file()  解析一个配置文件。
+  - [ ] pathinfo()  返回关于文件路径的信息。
+  - [ ] pclose()  关闭有 popen() 打开的进程。
+  - [ ] popen() 打开一个进程。
+  - [ ] readfile()  读取一个文件，并输出到输出缓冲。
+  - [ ] readlink()  返回符号连接的目标。
+  - [ ] realpath()  返回绝对路径名。
+  - [ ] rename()  重名名文件或目录。
+  - [ ] rewind()  倒回文件指针的位置。
+  - [ ] rmdir() 删除空的目录。
+  - [ ] set_file_buffer() 设置已打开文件的缓冲大小。
+  - [ ] stat()  返回关于文件的信息。
+  - [ ] symlink() 创建符号连接。
+  - [ ] tempnam() 创建唯一的临时文件。
+  - [ ] tmpfile() 建立临时文件。
+  - [ ] touch() 设置文件的访问和修改时间。
+  - [ ] umask() 改变文件的文件权限。
+  - [ ] unlink()  删除文件。
 
 ## Math 函数
-  - [ ] [ ] abs() 绝对值。
-  - [ ] [ ] acos()  反余弦。
-  - [ ] [ ] acosh() 反双曲余弦。
-  - [ ] [ ] asin()  反正弦。
-  - [ ] [ ] asinh() 反双曲正弦。
-  - [ ] [ ] atan()  反正切。
-  - [ ] [ ] atan2() 两个参数的反正切。
-  - [ ] [ ] atanh() 反双曲正切。
-  - [ ] [ ] base_convert()  在任意进制之间转换数字。
-  - [ ] [ ] bindec()  把二进制转换为十进制。
-  - [ ] [ ] ceil()  向上舍入为最接近的整数。
-  - [ ] [ ] cos() 余弦。
-  - [ ] [ ] cosh()  双曲余弦。
-  - [ ] [ ] decbin()  把十进制转换为二进制。
-  - [ ] [ ] dechex()  把十进制转换为十六进制。
-  - [ ] [ ] decoct()  把十进制转换为八进制。
-  - [ ] [ ] deg2rad() 将角度转换为弧度。
-  - [ ] [ ] exp() 返回 Ex 的值。
-  - [ ] [ ] expm1() 返回 Ex - 1 的值。
-  - [ ] [ ] floor() 向下舍入为最接近的整数。
-  - [ ] [ ] fmod()  返回除法的浮点数余数。
-  - [ ] [ ] getrandmax()  显示随机数最大的可能值。
-  - [ ] [ ] hexdec()  把十六进制转换为十进制。
-  - [ ] [ ] hypot() 计算直角三角形的斜边长度。
-  - [ ] [ ] is_finite() 判断是否为有限值。
-  - [ ] [ ] is_infinite() 判断是否为无限值。
-  - [ ] [ ] is_nan()  判断是否为合法数值。
-  - [ ] [ ] lcg_value() 返回范围为 (0, 1) 的一个伪随机数。
-  - [ ] [ ] log() 自然对数。
-  - [ ] [ ] log10() 以 10 为底的对数。
-  - [ ] [ ] log1p() 返回 log(1 + number)。
-  - [ ] [ ] max() 返回最大值。
-  - [ ] [ ] min() 返回最小值。
-  - [ ] [ ] mt_getrandmax() 显示随机数的最大可能值。
-  - [ ] [ ] mt_rand() 使用 Mersenne Twister 算法返回随机整数。
-  - [ ] [ ] mt_srand()  播种 Mersenne Twister 随机数生成器。
-  - [ ] [ ] octdec()  把八进制转换为十进制。
-  - [ ] [ ] pi()  返回圆周率的值。
-  - [ ] [ ] pow() 返回 x 的 y 次方。
-  - [ ] [ ] rad2deg() 把弧度数转换为角度数。
-  - [ ] [ ] rand()  返回随机整数。
-  - [ ] [ ] round() 对浮点数进行四舍五入。
-  - [ ] [ ] sin() 正弦。
-  - [ ] [ ] sinh()  双曲正弦。
-  - [ ] [ ] sqrt()  平方根。
-  - [ ] [ ] srand() 播下随机数发生器种子。
-  - [ ] [ ] tan() 正切。
-  - [ ] [ ] tanh()  双曲正切。
+  - [x] abs() 绝对值。
+  - [x] acos()  反余弦。
+  - [x] acosh() 反双曲余弦。
+  - [x] asin()  反正弦。
+  - [x] asinh() 反双曲正弦。
+  - [x] atan()  反正切。
+  - [x] atan2() 两个参数的反正切。
+  - [x] atanh() 反双曲正切。
+  - [x] base_convert()  在任意进制之间转换数字。
+  - [x] bindec()  把二进制转换为十进制。
+  - [x] ceil()  向上舍入为最接近的整数。
+  - [x] cos() 余弦。
+  - [x] cosh()  双曲余弦。
+  - [x] decbin()  把十进制转换为二进制。
+  - [x] dechex()  把十进制转换为十六进制。
+  - [x] decoct()  把十进制转换为八进制。
+  - [x] deg2rad() 将角度转换为弧度。
+  - [x] exp() 返回 Ex 的值。
+  - [x] expm1() 返回 Ex - 1 的值。
+  - [x] floor() 向下舍入为最接近的整数。
+  - [x] fmod()  返回除法的浮点数余数。
+  - [x] getrandmax()  显示随机数最大的可能值。
+  - [x] hexdec()  把十六进制转换为十进制。
+  - [x] hypot() 计算直角三角形的斜边长度。
+  - [x] is_finite() 判断是否为有限值。
+  - [x] is_infinite() 判断是否为无限值。
+  - [x] is_nan()  判断是否为合法数值。
+  - [x] lcg_value() 返回范围为 (0, 1) 的一个伪随机数。
+  - [x] log() 自然对数。
+  - [x] log10() 以 10 为底的对数。
+  - [x] log1p() 返回 log(1 + number)。
+  - [x] max() 返回最大值。
+  - [x] min() 返回最小值。
+  - [x] mt_getrandmax() 显示随机数的最大可能值。
+  - [x] mt_rand() 使用 Mersenne Twister 算法返回随机整数。
+  - [x] mt_srand()  播种 Mersenne Twister 随机数生成器。
+  - [x] octdec()  把八进制转换为十进制。
+  - [x] pi()  返回圆周率的值。
+  - [x] pow() 返回 x 的 y 次方。
+  - [x] rad2deg() 把弧度数转换为角度数。
+  - [x] rand()  返回随机整数。
+  - [x] round() 对浮点数进行四舍五入。
+  - [x] sin() 正弦。
+  - [x] sinh()  双曲正弦。
+  - [x] sqrt()  平方根。
+  - [x] srand() 播下随机数发生器种子。
+  - [x] tan() 正切。
+  - [x] tanh()  双曲正切。
 
 ## String 函数
-  - [ ] [ ] addcslashes() 返回在指定的字符前添加反斜杠的字符串。
-  - [ ] [ ] addslashes()  返回在预定义的字符前添加反斜杠的字符串。
-  - [ ] [ ] bin2hex() 把 ASCII 字符的字符串转换为十六进制值。
-  - [ ] [ ] chop()  删除字符串右侧的空白字符或其他字符。
-  - [ ] [ ] chr() 从指定的 ASCII 值返回字符。
-  - [ ] [ ] chunk_split() 把字符串分割为一系列更小的部分。
-  - [ ] [ ] convert_cyr_string()  把字符串由一种 Cyrillic 字符集转换为另一种。
-  - [ ] [ ] convert_uudecode()  解码 uuencode 编码字符串。
-  - [ ] [ ] convert_uuencode()  使用 uuencode 算法对字符串进行编码。
-  - [ ] [ ] count_chars() 返回有关字符串中所用字符的信息。
-  - [ ] [ ] crc32() 计算字符串的 32 位 CRC。
-  - [ ] [ ] crypt() 单向的字符串加密法（hashing）。
-  - [ ] [ ] echo()  输出一个或多个字符串。
-  - [ ] [ ] explode() 把字符串打散为数组。
-  - [ ] [ ] fprintf() 把格式化的字符串写入到指定的输出流。
-  - [ ] [ ] get_html_translation_table()  返回由 htmlspecialchars() 和 htmlentities() 使用的翻译表。
-  - [ ] [ ] hebrev()  把希伯来文本转换为可见文本。
-  - [ ] [ ] hebrevc() 把希伯来文本转换为可见文本，并把新行（\n）转换为 <br>。
-  - [ ] [ ] hex2bin() 把十六进制值的字符串转换为 ASCII 字符。
-  - [ ] [ ] html_entity_decode()  把 HTML 实体转换为字符。
-  - [ ] [ ] htmlentities()  把字符转换为 HTML 实体。
-  - [ ] [ ] htmlspecialchars_decode() 把一些预定义的 HTML 实体转换为字符。
-  - [ ] [ ] htmlspecialchars()  把一些预定义的字符转换为 HTML 实体。
-  - [ ] [ ] implode() 返回由数组元素组合成的字符串。
-  - [ ] [ ] join()  implode() 的别名。
-  - [ ] [ ] lcfirst() 把字符串的首字符转换为小写。
-  - [ ] [ ] levenshtein() 返回两个字符串之间的 Levenshtein 距离。
-  - [ ] [ ] localeconv()  返回本地数字及货币格式信息。
-  - [ ] [ ] ltrim() 移除字符串左侧的空白字符或其他字符。
-  - [ ] [ ] md5() 计算字符串的 MD5 散列。
-  - [ ] [ ] md5_file()  计算文件的 MD5 散列。
-  - [ ] [ ] metaphone() 计算字符串的 metaphone 键。
-  - [ ] [ ] money_format()  返回格式化为货币字符串的字符串。
-  - [ ] [ ] nl_langinfo() 返回特定的本地信息。
-  - [ ] [ ] nl2br() 在字符串中的每个新行之前插入 HTML 换行符。
-  - [ ] [ ] number_format() 以千位分组来格式化数字。
-  - [ ] [ ] ord() 返回字符串中第一个字符的 ASCII 值。
-  - [ ] [ ] parse_str() 把查询字符串解析到变量中。
-  - [ ] [ ] print() 输出一个或多个字符串。
-  - [ ] [ ] printf()  输出格式化的字符串。
-  - [ ] [ ] quoted_printable_decode() 把 quoted-printable 字符串转换为 8 位字符串。
-  - [ ] [ ] quoted_printable_encode() 把 8 位字符串转换为 quoted-printable 字符串。
-  - [ ] [ ] quotemeta() 引用元字符。
-  - [ ] [ ] rtrim() 移除字符串右侧的空白字符或其他字符。
-  - [ ] [ ] setlocale() 设置地区信息（地域信息）。
-  - [ ] [ ] sha1()  计算字符串的 SHA-1 散列。
-  - [ ] [ ] sha1_file() 计算文件的 SHA-1 散列。
-  - [ ] [ ] similar_text()  计算两个字符串的相似度。
-  - [ ] [ ] soundex() 计算字符串的 soundex 键。
-  - [ ] [ ] sprintf() 把格式化的字符串写入变量中。
-  - [ ] [ ] sscanf()  根据指定的格式解析来自字符串的输入。
-  - [ ] [ ] str_getcsv()  把 CSV 字符串解析到数组中。
-  - [ ] [ ] str_ireplace()  替换字符串中的一些字符（对大小写不敏感）。
-  - [ ] [ ] str_pad() 把字符串填充为新的长度。
-  - [ ] [ ] str_repeat()  把字符串重复指定的次数。
-  - [ ] [ ] str_replace() 替换字符串中的一些字符（对大小写敏感）。
-  - [ ] [ ] str_rot13() 对字符串执行 ROT13 编码。
-  - [ ] [ ] str_shuffle() 随机地打乱字符串中的所有字符。
-  - [ ] [ ] str_split() 把字符串分割到数组中。
-  - [ ] [ ] str_word_count()  计算字符串中的单词数。
-  - [ ] [ ] strcasecmp()  比较两个字符串（对大小写不敏感）。
-  - [ ] [ ] strchr()  查找字符串在另一字符串中的第一次出现。（strstr() 的别名。）
-  - [ ] [ ] strcmp()  比较两个字符串（对大小写敏感）。
-  - [ ] [ ] strcoll() 比较两个字符串（根据本地设置）。
-  - [ ] [ ] strcspn() 返回在找到某些指定字符的任何部分之前，在字符串中查找的字符数。
-  - [ ] [ ] strip_tags()  剥去字符串中的 HTML 和 PHP 标签。
-  - [ ] [ ] stripcslashes() 删除由 addcslashes() 函数添加的反斜杠。
-  - [ ] [ ] stripslashes()  删除由 addslashes() 函数添加的反斜杠。
-  - [ ] [ ] stripos() 返回字符串在另一字符串中第一次出现的位置（对大小写不敏感）。
-  - [ ] [ ] stristr() 查找字符串在另一字符串中第一次出现的位置（大小写不敏感）。
-  - [ ] [ ] strlen()  返回字符串的长度。
-  - [ ] [ ] strnatcasecmp() 使用一种"自然排序"算法来比较两个字符串（对大小写不敏感）。
-  - [ ] [ ] strnatcmp() 使用一种"自然排序"算法来比较两个字符串（对大小写敏感）。
-  - [ ] [ ] strncasecmp() 前 n 个字符的字符串比较（对大小写不敏感）。
-  - [ ] [ ] strncmp() 前 n 个字符的字符串比较（对大小写敏感）。
-  - [ ] [ ] strpbrk() 在字符串中查找一组字符的任何一个字符。
-  - [ ] [ ] strpos()  返回字符串在另一字符串中第一次出现的位置（对大小写敏感）。
-  - [ ] [ ] strrchr() 查找字符串在另一个字符串中最后一次出现。
-  - [ ] [ ] strrev()  反转字符串。
-  - [ ] [ ] strripos()  查找字符串在另一字符串中最后一次出现的位置（对大小写不敏感）。
-  - [ ] [ ] strrpos() 查找字符串在另一字符串中最后一次出现的位置（对大小写敏感）。
-  - [ ] [ ] strspn()  返回在字符串中包含的特定字符的数目。
-  - [ ] [ ] strstr()  查找字符串在另一字符串中的第一次出现（对大小写敏感）。
-  - [ ] [ ] strtok()  把字符串分割为更小的字符串。
-  - [ ] [ ] strtolower()  把字符串转换为小写字母。
-  - [ ] [ ] strtoupper()  把字符串转换为大写字母。
-  - [ ] [ ] strtr() 转换字符串中特定的字符。
-  - [ ] [ ] substr()  返回字符串的一部分。
-  - [ ] [ ] substr_compare()  从指定的开始位置（二进制安全和选择性区分大小写）比较两个字符串。
-  - [ ] [ ] substr_count()  计算子串在字符串中出现的次数。
-  - [ ] [ ] substr_replace()  把字符串的一部分替换为另一个字符串。
-  - [ ] [ ] trim()  移除字符串两侧的空白字符和其他字符。
-  - [ ] [ ] ucfirst() 把字符串中的首字符转换为大写。
-  - [ ] [ ] ucwords() 把字符串中每个单词的首字符转换为大写。
-  - [ ] [ ] vfprintf()  把格式化的字符串写到指定的输出流。
-  - [ ] [ ] vprintf() 输出格式化的字符串。
-  - [ ] [ ] vsprintf()  把格式化字符串写入变量中。
-  - [ ] [ ] wordwrap()  打断字符串为指定数量的字串.
+  - [x] addcslashes() 返回在指定的字符前添加反斜杠的字符串。
+  - [x] addslashes()  返回在预定义的字符前添加反斜杠的字符串。
+  - [x] bin2hex() 把 ASCII 字符的字符串转换为十六进制值。
+  - [x] chop()  删除字符串右侧的空白字符或其他字符。
+  - [x] chr() 从指定的 ASCII 值返回字符。
+  - [ ] chunk_split() 把字符串分割为一系列更小的部分。
+  - [ ] convert_cyr_string()  把字符串由一种 Cyrillic 字符集转换为另一种。
+  - [ ] convert_uudecode()  解码 uuencode 编码字符串。
+  - [ ] convert_uuencode()  使用 uuencode 算法对字符串进行编码。
+  - [ ] count_chars() 返回有关字符串中所用字符的信息。
+  - [ ] crc32() 计算字符串的 32 位 CRC。
+  - [ ] crypt() 单向的字符串加密法（hashing）。
+  - [ ] echo()  输出一个或多个字符串。
+  - [ ] explode() 把字符串打散为数组。
+  - [ ] fprintf() 把格式化的字符串写入到指定的输出流。
+  - [ ] get_html_translation_table()  返回由 htmlspecialchars() 和 htmlentities() 使用的翻译表。
+  - [ ] hebrev()  把希伯来文本转换为可见文本。
+  - [ ] hebrevc() 把希伯来文本转换为可见文本，并把新行（\n）转换为 <br>。
+  - [ ] hex2bin() 把十六进制值的字符串转换为 ASCII 字符。
+  - [ ] html_entity_decode()  把 HTML 实体转换为字符。
+  - [ ] htmlentities()  把字符转换为 HTML 实体。
+  - [ ] htmlspecialchars_decode() 把一些预定义的 HTML 实体转换为字符。
+  - [ ] htmlspecialchars()  把一些预定义的字符转换为 HTML 实体。
+  - [ ] implode() 返回由数组元素组合成的字符串。
+  - [ ] join()  implode() 的别名。
+  - [ ] lcfirst() 把字符串的首字符转换为小写。
+  - [ ] levenshtein() 返回两个字符串之间的 Levenshtein 距离。
+  - [ ] localeconv()  返回本地数字及货币格式信息。
+  - [ ] ltrim() 移除字符串左侧的空白字符或其他字符。
+  - [ ] md5() 计算字符串的 MD5 散列。
+  - [ ] md5_file()  计算文件的 MD5 散列。
+  - [ ] metaphone() 计算字符串的 metaphone 键。
+  - [ ] money_format()  返回格式化为货币字符串的字符串。
+  - [ ] nl_langinfo() 返回特定的本地信息。
+  - [ ] nl2br() 在字符串中的每个新行之前插入 HTML 换行符。
+  - [ ] number_format() 以千位分组来格式化数字。
+  - [ ] ord() 返回字符串中第一个字符的 ASCII 值。
+  - [ ] parse_str() 把查询字符串解析到变量中。
+  - [ ] print() 输出一个或多个字符串。
+  - [ ] printf()  输出格式化的字符串。
+  - [ ] quoted_printable_decode() 把 quoted-printable 字符串转换为 8 位字符串。
+  - [ ] quoted_printable_encode() 把 8 位字符串转换为 quoted-printable 字符串。
+  - [ ] quotemeta() 引用元字符。
+  - [ ] rtrim() 移除字符串右侧的空白字符或其他字符。
+  - [ ] setlocale() 设置地区信息（地域信息）。
+  - [ ] sha1()  计算字符串的 SHA-1 散列。
+  - [ ] sha1_file() 计算文件的 SHA-1 散列。
+  - [ ] similar_text()  计算两个字符串的相似度。
+  - [ ] soundex() 计算字符串的 soundex 键。
+  - [ ] sprintf() 把格式化的字符串写入变量中。
+  - [ ] sscanf()  根据指定的格式解析来自字符串的输入。
+  - [ ] str_getcsv()  把 CSV 字符串解析到数组中。
+  - [ ] str_ireplace()  替换字符串中的一些字符（对大小写不敏感）。
+  - [ ] str_pad() 把字符串填充为新的长度。
+  - [ ] str_repeat()  把字符串重复指定的次数。
+  - [ ] str_replace() 替换字符串中的一些字符（对大小写敏感）。
+  - [ ] str_rot13() 对字符串执行 ROT13 编码。
+  - [ ] str_shuffle() 随机地打乱字符串中的所有字符。
+  - [ ] str_split() 把字符串分割到数组中。
+  - [ ] str_word_count()  计算字符串中的单词数。
+  - [ ] strcasecmp()  比较两个字符串（对大小写不敏感）。
+  - [ ] strchr()  查找字符串在另一字符串中的第一次出现。（strstr() 的别名。）
+  - [ ] strcmp()  比较两个字符串（对大小写敏感）。
+  - [ ] strcoll() 比较两个字符串（根据本地设置）。
+  - [ ] strcspn() 返回在找到某些指定字符的任何部分之前，在字符串中查找的字符数。
+  - [ ] strip_tags()  剥去字符串中的 HTML 和 PHP 标签。
+  - [ ] stripcslashes() 删除由 addcslashes() 函数添加的反斜杠。
+  - [ ] stripslashes()  删除由 addslashes() 函数添加的反斜杠。
+  - [ ] stripos() 返回字符串在另一字符串中第一次出现的位置（对大小写不敏感）。
+  - [ ] stristr() 查找字符串在另一字符串中第一次出现的位置（大小写不敏感）。
+  - [x] strlen()  返回字符串的长度。
+  - [ ] strnatcasecmp() 使用一种"自然排序"算法来比较两个字符串（对大小写不敏感）。
+  - [ ] strnatcmp() 使用一种"自然排序"算法来比较两个字符串（对大小写敏感）。
+  - [ ] strncasecmp() 前 n 个字符的字符串比较（对大小写不敏感）。
+  - [ ] strncmp() 前 n 个字符的字符串比较（对大小写敏感）。
+  - [ ] strpbrk() 在字符串中查找一组字符的任何一个字符。
+  - [ ] strpos()  返回字符串在另一字符串中第一次出现的位置（对大小写敏感）。
+  - [ ] strrchr() 查找字符串在另一个字符串中最后一次出现。
+  - [ ] strrev()  反转字符串。
+  - [ ] strripos()  查找字符串在另一字符串中最后一次出现的位置（对大小写不敏感）。
+  - [ ] strrpos() 查找字符串在另一字符串中最后一次出现的位置（对大小写敏感）。
+  - [ ] strspn()  返回在字符串中包含的特定字符的数目。
+  - [ ] strstr()  查找字符串在另一字符串中的第一次出现（对大小写敏感）。
+  - [ ] strtok()  把字符串分割为更小的字符串。
+  - [ ] strtolower()  把字符串转换为小写字母。
+  - [ ] strtoupper()  把字符串转换为大写字母。
+  - [ ] strtr() 转换字符串中特定的字符。
+  - [ ] substr()  返回字符串的一部分。
+  - [ ] substr_compare()  从指定的开始位置（二进制安全和选择性区分大小写）比较两个字符串。
+  - [ ] substr_count()  计算子串在字符串中出现的次数。
+  - [ ] substr_replace()  把字符串的一部分替换为另一个字符串。
+  - [ ] trim()  移除字符串两侧的空白字符和其他字符。
+  - [ ] ucfirst() 把字符串中的首字符转换为大写。
+  - [ ] ucwords() 把字符串中每个单词的首字符转换为大写。
+  - [ ] vfprintf()  把格式化的字符串写到指定的输出流。
+  - [ ] vprintf() 输出格式化的字符串。
+  - [ ] vsprintf()  把格式化字符串写入变量中。
+  - [ ] wordwrap()  打断字符串为指定数量的字串.
