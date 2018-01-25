@@ -149,3 +149,14 @@
   - [ ] timezone_open()	创建新的 DateTimeZone 对象。
   - [ ] timezone_transitions_get()	返回时区的所有转换。
   - [ ] timezone_version_get()	返回时区数据库的版本。
+
+## Directory 函数
+  - [ ] chdir()	改变当前的目录。
+  - [ ] chroot()	改变根目录。
+  - [ ] closedir()	关闭目录句柄。
+  - [ ] dir()	返回 Directory 类的实例。
+  - [ ] getcwd()	返回当前工作目录。
+  - [ ] opendir()	打开目录句柄。
+  - [ ] readdir()	返回目录句柄中的条目。
+  - [ ] rewinddir()	重置目录句柄。
+  - [ ] scandir()	返回指定目录中的文件和目录的数组。
