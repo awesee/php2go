@@ -164,16 +164,19 @@ func Strrchr(s, substr string) string {
 	return s[i:]
 }
 
-// return string length
-func StrLen(s string) int {
+//Get string length
+func Strlen(s string) int {
+
 	return len(s)
 }
 
-//reverse strings
-func StrRev(s string) string {
+//Reverse a string
+func Strrev(s string) string {
+
 	runes := []rune(s)
-	for from, to := 0, len(runes)-1; from < to; from, to = from+1, to-1 {
-		runes[from], runes[to] = runes[to], runes[from]
+	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
+		runes[i], runes[j] = runes[j], runes[i]
 	}
+
 	return string(runes)
 }
