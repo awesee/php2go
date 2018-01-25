@@ -36,7 +36,7 @@ func main() {
 
 ### 贡献代码
 
-这是一个开源项目，期待你的加入。
+[贡献指南](https://github.com/openset/php2go/blob/master/.github/CONTRIBUTING.md)
 
 ## Contributors
 
