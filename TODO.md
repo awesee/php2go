@@ -100,7 +100,7 @@
   - [ ] unixtojd()	把 Unix 时间戳转换为儒略日计数。
 
 ## Date / Time 函数
-  - [ ] checkdate()	验证格利高里日期。
+  - [x] checkdate()	验证格利高里日期。
   - [ ] date_add()	添加日、月、年、时、分和秒到日期。
   - [ ] date_create_from_format()	返回根据指定格式进行格式化的新的 DateTime 对象。
   - [ ] date_create()	返回新的 DateTime 对象。
@@ -151,7 +151,7 @@
   - [ ] timezone_version_get()	返回时区数据库的版本。
 
 ## Directory 函数
-  - [ ] chdir()	改变当前的目录。
+  - [x] chdir()	改变当前的目录。
   - [ ] chroot()	改变根目录。
   - [ ] closedir()	关闭目录句柄。
   - [ ] dir()	返回 Directory 类的实例。
@@ -160,3 +160,81 @@
   - [ ] readdir()	返回目录句柄中的条目。
   - [ ] rewinddir()	重置目录句柄。
   - [ ] scandir()	返回指定目录中的文件和目录的数组。
+
+## Filesystem 函数
+  - [x] basename()	返回路径中的文件名部分。
+  - [ ] hgrp()	改变文件组。
+  - [ ] hmod()	改变文件模式。
+  - [ ] hown()	改变文件所有者。
+  - [ ] learstatcache()	清除文件状态缓存。
+  - [ ] opy()	复制文件。
+  - [ ] elete()	参见 unlink() 或 unset()。
+  - [ ] irname()	返回路径中的目录名称部分。
+  - [ ] isk_free_space()	返回目录的可用空间。
+  - [ ] isk_total_space()	返回一个目录的磁盘总容量。
+  - [ ] iskfreespace()	disk_free_space() 的别名。
+  - [ ] close()	关闭打开的文件。
+  - [ ] eof()	测试文件指针是否到了文件结束的位置。
+  - [ ] flush()	向打开的文件输出缓冲内容。
+  - [ ] getc()	从打开的文件中返回字符。
+  - [ ] getcsv()	从打开的文件中解析一行，校验 CSV 字段。
+  - [ ] gets()	从打开的文件中返回一行。
+  - [ ] getss()	从打开的文件中读取一行并过滤掉 HTML 和 PHP 标记。
+  - [ ] ile()	把文件读入一个数组中。
+  - [ ] ile_exists()	检查文件或目录是否存在。
+  - [ ] ile_get_contents()	将文件读入字符串。
+  - [ ] ile_put_contents()	将字符串写入文件。	5
+  - [ ] ileatime()	返回文件的上次访问时间。
+  - [ ] ilectime()	返回文件的上次改变时间。
+  - [ ] ilegroup()	返回文件的组 ID。
+  - [ ] ileinode()	返回文件的 inode 编号。
+  - [ ] ilemtime()	返回文件的上次修改时间。
+  - [ ] ileowner()	文件的 user ID （所有者）。
+  - [ ] ileperms()	返回文件的权限。
+  - [ ] ilesize()	返回文件大小。
+  - [ ] iletype()	返回文件类型。
+  - [ ] lock()	锁定或释放文件。
+  - [ ] nmatch()	根据指定的模式来匹配文件名或字符串。
+  - [ ] open()	打开一个文件或 URL。
+  - [ ] passthru()	从打开的文件中读数据，直到 EOF，并向输出缓冲写结果。
+  - [ ] putcsv()	将行格式化为 CSV 并写入一个打开的文件中。	5
+  - [ ] puts()	fwrite() 的别名。
+  - [ ] read()	读取打开的文件。
+  - [ ] scanf()	根据指定的格式对输入进行解析。
+  - [ ] seek()	在打开的文件中定位。
+  - [ ] stat()	返回关于一个打开的文件的信息。
+  - [ ] tell()	返回文件指针的读/写位置
+  - [ ] truncate()	将文件截断到指定的长度。
+  - [ ] write()	写入文件。
+  - [ ] lob()	返回一个包含匹配指定模式的文件名/目录的数组。
+  - [ ] s_dir()	判断指定的文件名是否是一个目录。
+  - [ ] s_executable()	判断文件是否可执行。
+  - [ ] s_file()	判断指定文件是否为常规的文件。
+  - [ ] s_link()	判断指定的文件是否是连接。
+  - [ ] s_readable()	判断文件是否可读。
+  - [ ] s_uploaded_file()	判断文件是否是通过 HTTP POST 上传的。
+  - [ ] s_writable()	判断文件是否可写。
+  - [ ] s_writeable()	is_writable() 的别名。
+  - [ ] ink()	创建一个硬连接。
+  - [ ] inkinfo()	返回有关一个硬连接的信息。
+  - [ ] stat()	返回关于文件或符号连接的信息。
+  - [ ] kdir()	创建目录。
+  - [ ] ove_uploaded_file()	将上传的文件移动到新位置。
+  - [ ] arse_ini_file()	解析一个配置文件。
+  - [ ] athinfo()	返回关于文件路径的信息。
+  - [ ] close()	关闭有 popen() 打开的进程。
+  - [ ] open()	打开一个进程。
+  - [ ] eadfile()	读取一个文件，并输出到输出缓冲。
+  - [ ] eadlink()	返回符号连接的目标。
+  - [ ] ealpath()	返回绝对路径名。
+  - [ ] ename()	重名名文件或目录。
+  - [ ] ewind()	倒回文件指针的位置。
+  - [ ] mdir()	删除空的目录。
+  - [ ] et_file_buffer()	设置已打开文件的缓冲大小。
+  - [ ] tat()	返回关于文件的信息。
+  - [ ] ymlink()	创建符号连接。
+  - [ ] empnam()	创建唯一的临时文件。
+  - [ ] mpfile()	建立临时文件。
+  - [ ] ouch()	设置文件的访问和修改时间。
+  - [ ] mask()	改变文件的文件权限。
+  - [ ] nlink()	删除文件。
