@@ -6,11 +6,12 @@
 
   1. 函数名称严格按照 PHP下划线 -> Go大驼峰命名
      - array() -> Array()
-     - array_change_key_case() -> ArrayChangeKeyCase()
+     - [array_change_key_case() -> ArrayChangeKeyCase()](https://github.com/openset/php2go/blob/master/php/array_change_key_case.go)
 
   2. 函数名后第一行留空
   3. 缩紧统一4个空格
   4. 每次提交一个函数，注释可以添加个人GitHub信息
+  5. 新增函数最好以PHP函数名命名文件单独提交，方面后期函数排序整理
 
 示例:
 
@@ -19,12 +20,11 @@
 // +------------------------------------------------------------
 // | @desc      Description of function do
 // | @param     args  ...Type
+// | @return    Type
 // |
 // | @author    Openset <openset.wang@gmail.com>
 // | @link      https://github.com/openset
 // | @date      2018/01/01
-// |
-// | @return    Type
 // +------------------------------------------------------------
 func FuncName(args ...Type) Type {
     //此处空一行
