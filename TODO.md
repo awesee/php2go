@@ -170,7 +170,7 @@
   - [x] chmod() 改变文件模式。
   - [x] chown() 改变文件所有者。
   - [ ] clearstatcache()  清除文件状态缓存。
-  - [ ] copy()  复制文件。
+  - [x] copy()  复制文件。
   - [ ] delete()  参见 unlink() 或 unset()。
   - [ ] dirname() 返回路径中的目录名称部分。
   - [ ] disk_free_space() 返回目录的可用空间。
