@@ -9,9 +9,10 @@
      - [array_change_key_case() => ArrayChangeKeyCase()](https://github.com/openset/php2go/blob/master/php/array_change_key_case.go)
 
   2. 函数名后第一行留空
-  3. 缩进统一Tab
+  3. 缩进统一使用Tab
   4. 每次提交一个函数，注释可以添加个人GitHub信息
   5. 新增函数最好以PHP函数名命名文件单独提交，方面后期函数排序整理
+  6. 不要提交二进制文件(本地测试可以使用go run命名)
 
 示例:
 
