@@ -142,7 +142,7 @@
   - [ ] strftime()  根据区域设置对本地时间/日期进行格式化。
   - [ ] strptime()  解析由 strftime() 生成的时间/日期。
   - [ ] strtotime() 将任何英文文本的日期或时间描述解析为 Unix 时间戳。
-  - [ ] time()  返回当前时间的 Unix 时间戳。
+  - [x] time()  返回当前时间的 Unix 时间戳。
   - [ ] timezone_abbreviations_list() 返回包含夏令时、偏移量和时区名称的关联数组。
   - [ ] timezone_identifiers_list() 返回带有所有时区标识符的索引数组。
   - [ ] timezone_location_get() 返回指定时区的位置信息。
@@ -172,7 +172,7 @@
   - [ ] clearstatcache()  清除文件状态缓存。
   - [x] copy()  复制文件。
   - [ ] delete()  参见 unlink() 或 unset()。
-  - [ ] dirname() 返回路径中的目录名称部分。
+  - [x] dirname() 返回路径中的目录名称部分。
   - [ ] disk_free_space() 返回目录的可用空间。
   - [ ] disk_total_space()  返回一个目录的磁盘总容量。
   - [ ] diskfreespace() disk_free_space() 的别名。
@@ -212,7 +212,7 @@
   - [ ] glob()  返回一个包含匹配指定模式的文件名/目录的数组。
   - [x] is_dir()  判断指定的文件名是否是一个目录。
   - [ ] is_executable() 判断文件是否可执行。
-  - [ ] is_file() 判断指定文件是否为常规的文件。
+  - [x] is_file() 判断指定文件是否为常规的文件。
   - [ ] is_link() 判断指定的文件是否是连接。
   - [ ] is_readable() 判断文件是否可读。
   - [ ] is_uploaded_file()  判断文件是否是通过 HTTP POST 上传的。
@@ -305,8 +305,8 @@
   - [ ] count_chars() 返回有关字符串中所用字符的信息。
   - [ ] crc32() 计算字符串的 32 位 CRC。
   - [ ] crypt() 单向的字符串加密法（hashing）。
-  - [ ] echo()  输出一个或多个字符串。
-  - [ ] explode() 把字符串打散为数组。
+  - [x] echo()  输出一个或多个字符串。
+  - [x] explode() 把字符串打散为数组。
   - [ ] fprintf() 把格式化的字符串写入到指定的输出流。
   - [ ] get_html_translation_table()  返回由 htmlspecialchars() 和 htmlentities() 使用的翻译表。
   - [ ] hebrev()  把希伯来文本转换为可见文本。
@@ -316,30 +316,30 @@
   - [ ] htmlentities()  把字符转换为 HTML 实体。
   - [ ] htmlspecialchars_decode() 把一些预定义的 HTML 实体转换为字符。
   - [ ] htmlspecialchars()  把一些预定义的字符转换为 HTML 实体。
-  - [ ] implode() 返回由数组元素组合成的字符串。
-  - [ ] join()  implode() 的别名。
+  - [x] implode() 返回由数组元素组合成的字符串。
+  - [x] join()  implode() 的别名。
   - [ ] lcfirst() 把字符串的首字符转换为小写。
   - [ ] levenshtein() 返回两个字符串之间的 Levenshtein 距离。
   - [ ] localeconv()  返回本地数字及货币格式信息。
-  - [ ] ltrim() 移除字符串左侧的空白字符或其他字符。
-  - [ ] md5() 计算字符串的 MD5 散列。
-  - [ ] md5_file()  计算文件的 MD5 散列。
+  - [x] ltrim() 移除字符串左侧的空白字符或其他字符。
+  - [x] md5() 计算字符串的 MD5 散列。
+  - [x] md5_file()  计算文件的 MD5 散列。
   - [ ] metaphone() 计算字符串的 metaphone 键。
   - [ ] money_format()  返回格式化为货币字符串的字符串。
   - [ ] nl_langinfo() 返回特定的本地信息。
   - [ ] nl2br() 在字符串中的每个新行之前插入 HTML 换行符。
   - [ ] number_format() 以千位分组来格式化数字。
-  - [ ] ord() 返回字符串中第一个字符的 ASCII 值。
+  - [x] ord() 返回字符串中第一个字符的 ASCII 值。
   - [ ] parse_str() 把查询字符串解析到变量中。
-  - [ ] print() 输出一个或多个字符串。
+  - [x] print() 输出一个或多个字符串。
   - [ ] printf()  输出格式化的字符串。
   - [ ] quoted_printable_decode() 把 quoted-printable 字符串转换为 8 位字符串。
   - [ ] quoted_printable_encode() 把 8 位字符串转换为 quoted-printable 字符串。
   - [ ] quotemeta() 引用元字符。
-  - [ ] rtrim() 移除字符串右侧的空白字符或其他字符。
+  - [x] rtrim() 移除字符串右侧的空白字符或其他字符。
   - [ ] setlocale() 设置地区信息（地域信息）。
-  - [ ] sha1()  计算字符串的 SHA-1 散列。
-  - [ ] sha1_file() 计算文件的 SHA-1 散列。
+  - [x] sha1()  计算字符串的 SHA-1 散列。
+  - [x] sha1_file() 计算文件的 SHA-1 散列。
   - [ ] similar_text()  计算两个字符串的相似度。
   - [ ] soundex() 计算字符串的 soundex 键。
   - [ ] sprintf() 把格式化的字符串写入变量中。
@@ -354,37 +354,37 @@
   - [ ] str_split() 把字符串分割到数组中。
   - [ ] str_word_count()  计算字符串中的单词数。
   - [ ] strcasecmp()  比较两个字符串（对大小写不敏感）。
-  - [ ] strchr()  查找字符串在另一字符串中的第一次出现。（strstr() 的别名。）
+  - [x] strchr()  查找字符串在另一字符串中的第一次出现。（strstr() 的别名。）
   - [ ] strcmp()  比较两个字符串（对大小写敏感）。
   - [ ] strcoll() 比较两个字符串（根据本地设置）。
   - [ ] strcspn() 返回在找到某些指定字符的任何部分之前，在字符串中查找的字符数。
   - [ ] strip_tags()  剥去字符串中的 HTML 和 PHP 标签。
   - [ ] stripcslashes() 删除由 addcslashes() 函数添加的反斜杠。
   - [ ] stripslashes()  删除由 addslashes() 函数添加的反斜杠。
-  - [ ] stripos() 返回字符串在另一字符串中第一次出现的位置（对大小写不敏感）。
-  - [ ] stristr() 查找字符串在另一字符串中第一次出现的位置（大小写不敏感）。
+  - [x] stripos() 返回字符串在另一字符串中第一次出现的位置（对大小写不敏感）。
+  - [x] stristr() 查找字符串在另一字符串中第一次出现的位置（大小写不敏感）。
   - [x] strlen()  返回字符串的长度。
   - [ ] strnatcasecmp() 使用一种"自然排序"算法来比较两个字符串（对大小写不敏感）。
   - [ ] strnatcmp() 使用一种"自然排序"算法来比较两个字符串（对大小写敏感）。
   - [ ] strncasecmp() 前 n 个字符的字符串比较（对大小写不敏感）。
   - [ ] strncmp() 前 n 个字符的字符串比较（对大小写敏感）。
   - [ ] strpbrk() 在字符串中查找一组字符的任何一个字符。
-  - [ ] strpos()  返回字符串在另一字符串中第一次出现的位置（对大小写敏感）。
-  - [ ] strrchr() 查找字符串在另一个字符串中最后一次出现。
-  - [ ] strrev()  反转字符串。
-  - [ ] strripos()  查找字符串在另一字符串中最后一次出现的位置（对大小写不敏感）。
-  - [ ] strrpos() 查找字符串在另一字符串中最后一次出现的位置（对大小写敏感）。
+  - [x] strpos()  返回字符串在另一字符串中第一次出现的位置（对大小写敏感）。
+  - [x] strrchr() 查找字符串在另一个字符串中最后一次出现。
+  - [x] strrev()  反转字符串。
+  - [x] strripos()  查找字符串在另一字符串中最后一次出现的位置（对大小写不敏感）。
+  - [x] strrpos() 查找字符串在另一字符串中最后一次出现的位置（对大小写敏感）。
   - [ ] strspn()  返回在字符串中包含的特定字符的数目。
-  - [ ] strstr()  查找字符串在另一字符串中的第一次出现（对大小写敏感）。
+  - [x] strstr()  查找字符串在另一字符串中的第一次出现（对大小写敏感）。
   - [ ] strtok()  把字符串分割为更小的字符串。
-  - [ ] strtolower()  把字符串转换为小写字母。
-  - [ ] strtoupper()  把字符串转换为大写字母。
+  - [x] strtolower()  把字符串转换为小写字母。
+  - [x] strtoupper()  把字符串转换为大写字母。
   - [ ] strtr() 转换字符串中特定的字符。
   - [ ] substr()  返回字符串的一部分。
   - [ ] substr_compare()  从指定的开始位置（二进制安全和选择性区分大小写）比较两个字符串。
   - [ ] substr_count()  计算子串在字符串中出现的次数。
   - [ ] substr_replace()  把字符串的一部分替换为另一个字符串。
-  - [ ] trim()  移除字符串两侧的空白字符和其他字符。
+  - [x] trim()  移除字符串两侧的空白字符和其他字符。
   - [ ] ucfirst() 把字符串中的首字符转换为大写。
   - [ ] ucwords() 把字符串中每个单词的首字符转换为大写。
   - [ ] vfprintf()  把格式化的字符串写到指定的输出流。
