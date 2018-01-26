@@ -4,9 +4,9 @@
 
 ## 代码格式
 
-  1. 函数名称严格按照 PHP下划线 -> Go大驼峰命名
-     - array() -> Array()
-     - [array_change_key_case() -> ArrayChangeKeyCase()](https://github.com/openset/php2go/blob/master/php/array_change_key_case.go)
+  1. 函数名称严格按照 PHP下划线 => Go大驼峰命名
+     - array() => Array()
+     - [array_change_key_case() => ArrayChangeKeyCase()](https://github.com/openset/php2go/blob/master/php/array_change_key_case.go)
 
   2. 函数名后第一行留空
   3. 缩进统一4个空格

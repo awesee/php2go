@@ -12,7 +12,7 @@ go get github.com/openset/php2go/php
 
 ### 关于命名
 
-PHP下划线命名改为大驼峰命名。
+PHP下划线命名转为Go大驼峰命名。
 
 ### Example:
 
