@@ -83,6 +83,24 @@ func Cosh(x float64) float64 {
 	return math.Cosh(x)
 }
 
+//Decimal to binary
+func Decbin(x int64) string {
+
+	return strconv.FormatInt(x, 2)
+}
+
+//Decimal to hexadecimal
+func Dechex(x int64) string {
+
+	return strconv.FormatInt(x, 16)
+}
+
+//Decimal to octal
+func Decoct(x int64) string {
+
+	return strconv.FormatInt(x, 8)
+}
+
 //Calculates the exponent of e
 func Exp(x float64) float64 {
 
@@ -179,45 +197,4 @@ func Tan(x float64) float64 {
 func Tanh(x float64) float64 {
 
 	return math.Tanh(x)
-}
-
-//10 to 2
-func Decbin(s interface{}) string {
-
-	switch a := s.(type) {
-	case int:
-		return fmt.Sprintf("%b", a)
-	case string:
-		x, _ := strconv.Atoi(a)
-		return fmt.Sprintf("%b", x)
-	default:
-		return fmt.Sprintf("%b", 0)
-	}
-
-}
-
-// 10 to 16
-func Dechex(s interface{}) string {
-	switch a := s.(type) {
-	case int:
-		return fmt.Sprintf("%x", a)
-	case string:
-		x, _ := strconv.Atoi(a)
-		return fmt.Sprintf("%x", x)
-	default:
-		return fmt.Sprintf("%x", 0)
-	}
-}
-
-// 10 to 8
-func Decoct(s interface{}) string {
-	switch a := s.(type) {
-	case int:
-		return fmt.Sprintf("%o", a)
-	case string:
-		x, _ := strconv.Atoi(a)
-		return fmt.Sprintf("%o", x)
-	default:
-		return fmt.Sprintf("%o", 0)
-	}
 }
