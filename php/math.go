@@ -83,22 +83,94 @@ func Cosh(x float64) float64 {
 	return math.Cosh(x)
 }
 
-//Decimal to binary
-func Decbin(x int64) string {
+// +------------------------------------------------------------
+// | @desc      Decimal To Bytes
+// | @param     n int
+// | @return    []byte
 
-	return strconv.FormatInt(x, 2)
+// | @since     https://studygolang.com/articles/1599
+
+// | @author    Openset <jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/01/26
+// +------------------------------------------------------------
+func IntToBytes(n int) []byte {
+	tmp := int32(n)
+	bytesBuffer := bytes.NewBuffer([]byte{})
+	binary.Write(bytesBuffer, binary.BigEndian, tmp)
+	return bytesBuffer.Bytes()
+}
+
+// +------------------------------------------------------------
+// | @desc      Byte To Hex
+// | @param     input []byte, hex_count int
+// | @return    []byte
+
+// | @since     https://studygolang.com/articles/1599
+
+// | @author    Openset <jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/01/26
+// +------------------------------------------------------------
+func intToHex(input []byte, hex_count int) []byte {
+	out := make([]byte, len(input)+int(hex_count))
+	copy(out, input)
+	for i := 0; i < hex_count; i++ {
+		out[len(input)+i] = byte(hex_count)
+	}
+	return out
+}
+
+//Decimal to binary
+
+// +------------------------------------------------------------
+// | @desc      Decimal to binary
+// | @param     x int64
+// | @return    []byte
+
+// | @since     https://studygolang.com/articles/1599
+
+// | @author    Openset <jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/01/26
+// +------------------------------------------------------------
+func Decbin(x int64) []byte {
+
+	return intToHex(IntToBytes(x), 2)
 }
 
 //Decimal to hexadecimal
+// +------------------------------------------------------------
+// | @desc      Decimal to hexadecimal
+// | @param     x int64
+// | @return    []byte
+
+// | @since     https://studygolang.com/articles/1599
+
+// | @author    Openset <jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/01/26
+// +------------------------------------------------------------
 func Dechex(x int64) string {
 
-	return strconv.FormatInt(x, 16)
+	return intToHex(IntToBytes(x), 16)
 }
 
 //Decimal to octal
+// +------------------------------------------------------------
+// | @desc      Decimal to octal
+// | @param     x int64
+// | @return    []byte
+
+// | @since     https://studygolang.com/articles/1599
+
+// | @author    Openset <jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/01/26
+// +------------------------------------------------------------
 func Decoct(x int64) string {
 
-	return strconv.FormatInt(x, 8)
+	return intToHex(IntToBytes(x), 8)
 }
 
 //Calculates the exponent of e
