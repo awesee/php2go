@@ -1,7 +1,6 @@
 package php
 
 import (
-	"fmt"
 	"math"
 	"math/cmplx"
 	"strconv"
