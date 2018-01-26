@@ -1,6 +1,9 @@
 package php
 
-import "os"
+import (
+	"io"
+	"os"
+)
 
 //Changes file mode
 func Chmod(name string, mode os.FileMode) error {
@@ -54,4 +57,30 @@ func IsDir(name string) (b bool, err error) {
 
 	fm := fd.Mode()
 	return fm.IsDir(), err
+}
+
+// +------------------------------------------------------------
+// | @desc     copy file
+// | @param     dstName string, srcName string
+// | @return    int64 , error
+
+// | @since     https://studygolang.com/articles/1599
+
+// | @author    Openset <jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/01/26
+// +------------------------------------------------------------
+func Copy(dstName string, srcName string) (written int64, err error) {
+
+	src, err := os.Open(srcName)
+	if err != nil {
+		return
+	}
+	defer src.Close()
+	dst, err := os.OpenFile(dstName, os.O_WRONLY|os.O_CREATE, 0644)
+	if err != nil {
+		return
+	}
+	defer dst.Close()
+	return io.Copy(dst, src)
 }
