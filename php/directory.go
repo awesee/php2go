@@ -16,7 +16,7 @@ func Chdir(dir string) error {
 // | @param
 // | @return    string, error
 // |
-// | @author    Openset <jinheking@gmail.com>
+// | @author    Openset <jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
 // +------------------------------------------------------------
@@ -35,7 +35,7 @@ func Getcwd() (dir string) {
 // | @param
 // | @return    error
 // |
-// | @author    Openset <jinheking@gmail.com>
+// | @author    Openset <jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
 // +------------------------------------------------------------
