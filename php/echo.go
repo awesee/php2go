@@ -1,9 +1,9 @@
 package php
 
-//Output one or more strings
-func Echo(args ...string) {
+import "fmt"
 
-	for _, v := range args {
-		print(v)
-	}
+//Output one or more strings
+func Echo(args ...interface{}) {
+
+	fmt.Print(args...)
 }

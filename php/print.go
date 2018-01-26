@@ -1,7 +1,7 @@
 package php
 
 //Output a string
-func Print(s string) {
+func Print(v interface{}) {
 
-	print(s)
+	print(v)
 }
