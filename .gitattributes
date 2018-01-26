@@ -7,5 +7,6 @@
 
 # Test files...
 php/*_test.go export-ignore
+tests/ export-ignore
 
 TODO.md export-ignore
