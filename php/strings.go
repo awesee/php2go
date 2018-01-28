@@ -1,9 +1,9 @@
 package php
 
 import (
+	"html"
 	"strconv"
 	"strings"
-	"html"
 )
 
 //Convert binary data into hexadecimal representation
@@ -54,13 +54,24 @@ func Ord(s byte) byte {
 }
 
 //Split a string by string
-func Explode(s, sep string) ([]string) {
+func Explode(s, sep string) []string {
 
 	if s == "" {
 		return []string{s}
 	}
 
 	return strings.Split(s, sep)
+}
+
+//Returns the translation table used by htmlspecialchars() and htmlentities()
+func GetHtmlTranslationTable() map[string]string {
+
+	return map[string]string{
+		`"`: "&quot;",
+		`&`: "&amp;",
+		`<`: "&lt;",
+		`>`: "&gt;",
+	}
 }
 
 //Convert special characters to HTML entities
