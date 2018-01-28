@@ -128,6 +128,12 @@ func IsFinite(f float64, sign int) bool {
 	return !math.IsInf(f, sign)
 }
 
+//Finds whether a value is infinite
+func IsInfinite(f float64, sign int) bool {
+
+	return math.IsInf(f, sign)
+}
+
 //Natural logarithm
 func Log(x float64) float64 {
 
