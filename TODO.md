@@ -5,7 +5,7 @@
 ## Array 函数
   - [x] array() 创建数组。
   - [x] array_change_key_case() 把数组中所有键更改为小写或大写。
-  - [ ] array_chunk() 把一个数组分割为新的数组块。
+  - [x] array_chunk() 把一个数组分割为新的数组块。
   - [ ] array_column()  返回输入数组中某个单一列的值。
   - [ ] array_combine() 通过合并两个数组来创建一个新数组。
   - [ ] array_count_values()  用于统计数组中所有值出现的次数。
@@ -32,12 +32,12 @@
   - [ ] array_pad() 用值将数组填补到指定长度。
   - [ ] array_pop() 删除数组的最后一个元素（出栈）。
   - [ ] array_product() 计算数组中所有值的乘积。
-  - [ ] array_push()  将一个或多个元素插入数组的末尾（入栈）。
+  - [x] array_push()  将一个或多个元素插入数组的末尾（入栈）。
   - [ ] array_rand()  返回数组中一个或多个随机的键。
   - [ ] array_reduce()  通过使用用户自定义函数，以字符串返回数组。
   - [ ] array_replace() 使用后面数组的值替换第一个数组的值。
   - [ ] array_replace_recursive() 递归地使用后面数组的值替换第一个数组的值。
-  - [ ] array_reverse() 以相反的顺序返回数组。
+  - [x] array_reverse() 以相反的顺序返回数组。
   - [ ] array_search()  搜索数组中给定的值并返回键名。
   - [ ] array_shift() 删除数组中首个元素，并返回被删除元素的值。
   - [ ] array_slice() 返回数组中被选定的部分。
