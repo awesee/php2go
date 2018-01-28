@@ -203,11 +203,34 @@ func Substr(s string, start int, length ...int) string {
 
 	if len(length) > 0 {
 		l := length[0]
-		end := start + l
-		return s[start:end]
+		if l < 0 {
+			end := len(s) + l
+			return string(s[start:end])
+		} else {
+			end := start + l
+			return string(s[start:end])
+		}
 	}
 
 	return s[start:]
+}
+
+//Get part of string
+func MbSubstr(s string, start int, length ...int) string {
+
+	runes := []rune(s)
+	if len(length) > 0 {
+		l := length[0]
+		if l < 0 {
+			end := len(runes) + l
+			return string(runes[start:end])
+		} else {
+			end := start + l
+			return string(runes[start:end])
+		}
+	}
+
+	return string(runes[start:])
 }
 
 //Make a string's first character uppercase
