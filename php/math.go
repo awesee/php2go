@@ -122,6 +122,12 @@ func Floor(x float64) float64 {
 	return math.Floor(x)
 }
 
+//Finds whether a value is a legal finite number
+func IsFinite(f float64, sign int) bool {
+
+	return !math.IsInf(f, sign)
+}
+
 //Natural logarithm
 func Log(x float64) float64 {
 
