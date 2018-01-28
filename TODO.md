@@ -308,7 +308,7 @@
   - [x] echo()  输出一个或多个字符串。
   - [x] explode() 把字符串打散为数组。
   - [ ] fprintf() 把格式化的字符串写入到指定的输出流。
-  - [ ] get_html_translation_table()  返回由 htmlspecialchars() 和 htmlentities() 使用的翻译表。
+  - [x] get_html_translation_table()  返回由 htmlspecialchars() 和 htmlentities() 使用的翻译表。
   - [ ] hebrev()  把希伯来文本转换为可见文本。
   - [ ] hebrevc() 把希伯来文本转换为可见文本，并把新行（\n）转换为 <br>。
   - [ ] hex2bin() 把十六进制值的字符串转换为 ASCII 字符。
