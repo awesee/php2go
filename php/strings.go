@@ -132,10 +132,22 @@ func Nl2br(s string) string {
 	return string(html)
 }
 
+//Pad a string to a certain length with another string
+func StrPad(s string, length int, args ...interface{}) string {
+
+	return s
+}
+
 //Repeat a string
 func StrRepeat(s string, count int) string {
 
 	return strings.Repeat(s, count)
+}
+
+//Replace all occurrences of the search string with the replacement string
+func StrReplace(s, old, new string, n int) string {
+
+	return strings.Replace(s, old, new, n)
 }
 
 //Make a string lowercase
