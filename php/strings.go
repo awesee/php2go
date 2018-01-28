@@ -116,6 +116,22 @@ func Rtrim(s, cutset string) string {
 	return strings.TrimRight(s, cutset)
 }
 
+//Inserts HTML line breaks before all newlines in a string
+func Nl2br(s string) string {
+
+	runes := []rune(s)
+	html := make([]rune, len(runes), len(runes)*2)
+	for _, c := range runes {
+		if string(c) == "\n" {
+			br := []rune("<br />")
+			html = append(html, br...)
+		}
+		html = append(html, c)
+	}
+
+	return string(html)
+}
+
 //Make a string lowercase
 func Strtolower(s string) string {
 
