@@ -233,6 +233,12 @@ func MbSubstr(s string, start int, length ...int) string {
 	return string(runes[start:])
 }
 
+//Count the number of substring occurrences
+func SubstrCount(s, substr string) int {
+
+	return strings.Count(s, substr)
+}
+
 //Make a string's first character uppercase
 func Ucfirst(s string) string {
 
