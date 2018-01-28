@@ -198,6 +198,18 @@ func Strrev(s string) string {
 	return string(runes)
 }
 
+//Return part of a string
+func Substr(s string, start int, length ...int) string {
+
+	if len(length) > 0 {
+		l := length[0]
+		end := start + l
+		return s[start:end]
+	}
+
+	return s[start:]
+}
+
 //Make a string's first character uppercase
 func Ucfirst(s string) string {
 
