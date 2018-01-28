@@ -132,6 +132,12 @@ func Nl2br(s string) string {
 	return string(html)
 }
 
+//Repeat a string
+func StrRepeat(s string, count int) string {
+
+	return strings.Repeat(s, count)
+}
+
 //Make a string lowercase
 func Strtolower(s string) string {
 
