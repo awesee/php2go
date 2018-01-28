@@ -3,7 +3,9 @@ package php
 import (
 	"math"
 	"math/cmplx"
+	"math/rand"
 	"strconv"
+	"time"
 )
 
 //Absolute xue
@@ -161,6 +163,22 @@ func Pi() float64 {
 func Pow(x, y float64) float64 {
 
 	return math.Pow(x, y)
+}
+
+//Generate a random integer
+func Rand(args ...int) int {
+
+	rand.Seed(time.Now().Unix())
+	l := len(args)
+	if l > 1 {
+		min := math.Min(float64(args[0]), float64(args[1]))
+		max := math.Max(float64(args[0]), float64(args[1]))
+		return int(min + rand.Float64()*(max-min))
+	} else if l > 0 {
+		return rand.Intn(args[0])
+	} else {
+		return rand.Intn(1 << 32)
+	}
 }
 
 //Rounds a float
