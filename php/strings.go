@@ -197,3 +197,14 @@ func Strrev(s string) string {
 
 	return string(runes)
 }
+
+//Make a string's first character uppercase
+func Ucfirst(s string) string {
+
+	runes := []rune(s)
+	if len(runes) < 1 {
+		return s
+	}
+
+	return strings.ToUpper(string(runes[0])) + string(runes[1:])
+}
