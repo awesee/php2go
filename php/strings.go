@@ -149,9 +149,9 @@ func StrPad(s string, length int, args ...string) string {
 	padType := StrPadRight
 	if len(args) > 1 {
 		padString = args[0]
+		padType = args[1]
 	} else if len(args) > 0 {
 		padString = args[0]
-		padType = args[1]
 	}
 
 	padStringLen := len([]rune(padString))
