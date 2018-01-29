@@ -6,6 +6,11 @@ import (
 	"strings"
 )
 
+const (
+	StrPadRight = "STR_PAD_RIGHT"
+	StrPadLeft  = "STR_PAD_LEFT"
+)
+
 //Convert binary data into hexadecimal representation
 func Bin2hex(b string) string {
 
@@ -133,9 +138,33 @@ func Nl2br(s string) string {
 }
 
 //Pad a string to a certain length with another string
-func StrPad(s string, length int, args ...interface{}) string {
+func StrPad(s string, length int, args ...string) string {
 
-	return s
+	runes := []rune(s)
+	l := len(runes)
+	if l > length {
+		return s
+	}
+	padString := " "
+	padType := StrPadRight
+	if len(args) > 1 {
+		padString = args[0]
+	} else if len(args) > 0 {
+		padString = args[0]
+		padType = args[1]
+	}
+
+	padStringLen := len([]rune(padString))
+	count := (length-l)/padStringLen + 1
+	out := ""
+	padString = strings.Repeat(padString, count)
+	if padType == StrPadLeft {
+		out = string([]rune(padString)[:length-l]) + s
+	} else {
+		out = s + string([]rune(padString)[:length-l])
+	}
+
+	return out
 }
 
 //Repeat a string
