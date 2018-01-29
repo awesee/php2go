@@ -2,6 +2,7 @@ package php
 
 import (
 	"io"
+	"io/ioutil"
 	"os"
 )
 
@@ -83,4 +84,31 @@ func Copy(dstName string, srcName string) (written int64, err error) {
 	}
 	defer dst.Close()
 	return io.Copy(dst, src)
+}
+
+// +------------------------------------------------------------
+// | @desc      close file
+// | @param     file *os.File
+// | @return    error
+
+// | @author    Openset <jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/01/26
+// +------------------------------------------------------------
+func Fclose(file *os.File) error {
+	return file.Close()
+}
+
+// +------------------------------------------------------------
+// | @desc      ReadDir reads the directory named by dirname and returns a list of directory entries sorted by filename.
+// | @param     dirPth string
+// | @return    []os.FileInfo, error
+
+// | @author    Openset <jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/01/26
+// +------------------------------------------------------------
+func Dirname(dirPth string) ([]os.FileInfo, error) {
+
+	dir, err := ioutil.ReadDir(dirPth)
 }

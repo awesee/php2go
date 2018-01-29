@@ -176,7 +176,7 @@
   - [ ] disk_free_space() 返回目录的可用空间。
   - [ ] disk_total_space()  返回一个目录的磁盘总容量。
   - [ ] diskfreespace() disk_free_space() 的别名。
-  - [ ] fclose()  关闭打开的文件。
+  - [x] fclose()  关闭打开的文件。
   - [ ] feof()  测试文件指针是否到了文件结束的位置。
   - [ ] fflush()  向打开的文件输出缓冲内容。
   - [ ] fgetc() 从打开的文件中返回字符。
