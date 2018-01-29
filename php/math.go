@@ -3,7 +3,9 @@ package php
 import (
 	"math"
 	"math/cmplx"
+	"math/rand"
 	"strconv"
+	"time"
 )
 
 //Absolute xue
@@ -192,6 +194,24 @@ func Floor(x float64) float64 {
 	return math.Floor(x)
 }
 
+//Finds whether a value is a legal finite number
+func IsFinite(f float64, sign int) bool {
+
+	return !math.IsInf(f, sign)
+}
+
+//Finds whether a value is infinite
+func IsInfinite(f float64, sign int) bool {
+
+	return math.IsInf(f, sign)
+}
+
+//Finds whether a value is not a number
+func IsNan(f float64) bool {
+
+	return math.IsNaN(f)
+}
+
 //Natural logarithm
 func Log(x float64) float64 {
 
@@ -233,6 +253,22 @@ func Pi() float64 {
 func Pow(x, y float64) float64 {
 
 	return math.Pow(x, y)
+}
+
+//Generate a random integer
+func Rand(args ...int) int {
+
+	rand.Seed(time.Now().Unix())
+	l := len(args)
+	if l > 1 {
+		min := math.Min(float64(args[0]), float64(args[1]))
+		max := math.Max(float64(args[0]), float64(args[1]))
+		return int(min + rand.Float64()*(max-min))
+	} else if l > 0 {
+		return rand.Intn(args[0])
+	} else {
+		return rand.Intn(1 << 32)
+	}
 }
 
 //Rounds a float

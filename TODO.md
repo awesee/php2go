@@ -5,7 +5,7 @@
 ## Array 函数
   - [x] array() 创建数组。
   - [x] array_change_key_case() 把数组中所有键更改为小写或大写。
-  - [ ] array_chunk() 把一个数组分割为新的数组块。
+  - [x] array_chunk() 把一个数组分割为新的数组块。
   - [ ] array_column()  返回输入数组中某个单一列的值。
   - [ ] array_combine() 通过合并两个数组来创建一个新数组。
   - [ ] array_count_values()  用于统计数组中所有值出现的次数。
@@ -32,12 +32,12 @@
   - [ ] array_pad() 用值将数组填补到指定长度。
   - [ ] array_pop() 删除数组的最后一个元素（出栈）。
   - [ ] array_product() 计算数组中所有值的乘积。
-  - [ ] array_push()  将一个或多个元素插入数组的末尾（入栈）。
+  - [x] array_push()  将一个或多个元素插入数组的末尾（入栈）。
   - [ ] array_rand()  返回数组中一个或多个随机的键。
   - [ ] array_reduce()  通过使用用户自定义函数，以字符串返回数组。
   - [ ] array_replace() 使用后面数组的值替换第一个数组的值。
   - [ ] array_replace_recursive() 递归地使用后面数组的值替换第一个数组的值。
-  - [ ] array_reverse() 以相反的顺序返回数组。
+  - [x] array_reverse() 以相反的顺序返回数组。
   - [ ] array_search()  搜索数组中给定的值并返回键名。
   - [ ] array_shift() 删除数组中首个元素，并返回被删除元素的值。
   - [ ] array_slice() 返回数组中被选定的部分。
@@ -57,7 +57,7 @@
   - [ ] arsort()  对关联数组按照键值进行降序排序。
   - [ ] asort() 对关联数组按照键值进行升序排序。
   - [ ] compact() 创建包含变量名和它们的值的数组。
-  - [ ] count() 返回数组中元素的数目。
+  - [x] count() 返回数组中元素的数目。
   - [ ] current() 返回数组中的当前元素。
   - [ ] each()  返回数组中当前的键／值对。
   - [ ] end() 将数组的内部指针指向最后一个元素。
@@ -308,7 +308,7 @@
   - [x] echo()  输出一个或多个字符串。
   - [x] explode() 把字符串打散为数组。
   - [ ] fprintf() 把格式化的字符串写入到指定的输出流。
-  - [ ] get_html_translation_table()  返回由 htmlspecialchars() 和 htmlentities() 使用的翻译表。
+  - [x] get_html_translation_table()  返回由 htmlspecialchars() 和 htmlentities() 使用的翻译表。
   - [ ] hebrev()  把希伯来文本转换为可见文本。
   - [ ] hebrevc() 把希伯来文本转换为可见文本，并把新行（\n）转换为 <br>。
   - [ ] hex2bin() 把十六进制值的字符串转换为 ASCII 字符。
@@ -347,8 +347,8 @@
   - [ ] str_getcsv()  把 CSV 字符串解析到数组中。
   - [ ] str_ireplace()  替换字符串中的一些字符（对大小写不敏感）。
   - [ ] str_pad() 把字符串填充为新的长度。
-  - [ ] str_repeat()  把字符串重复指定的次数。
-  - [ ] str_replace() 替换字符串中的一些字符（对大小写敏感）。
+  - [x] str_repeat()  把字符串重复指定的次数。
+  - [x] str_replace() 替换字符串中的一些字符（对大小写敏感）。
   - [ ] str_rot13() 对字符串执行 ROT13 编码。
   - [ ] str_shuffle() 随机地打乱字符串中的所有字符。
   - [ ] str_split() 把字符串分割到数组中。
@@ -380,12 +380,12 @@
   - [x] strtolower()  把字符串转换为小写字母。
   - [x] strtoupper()  把字符串转换为大写字母。
   - [ ] strtr() 转换字符串中特定的字符。
-  - [ ] substr()  返回字符串的一部分。
+  - [x] substr()  返回字符串的一部分。
   - [ ] substr_compare()  从指定的开始位置（二进制安全和选择性区分大小写）比较两个字符串。
-  - [ ] substr_count()  计算子串在字符串中出现的次数。
+  - [x] substr_count()  计算子串在字符串中出现的次数。
   - [ ] substr_replace()  把字符串的一部分替换为另一个字符串。
   - [x] trim()  移除字符串两侧的空白字符和其他字符。
-  - [ ] ucfirst() 把字符串中的首字符转换为大写。
+  - [x] ucfirst() 把字符串中的首字符转换为大写。
   - [ ] ucwords() 把字符串中每个单词的首字符转换为大写。
   - [ ] vfprintf()  把格式化的字符串写到指定的输出流。
   - [ ] vprintf() 输出格式化的字符串。

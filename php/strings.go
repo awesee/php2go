@@ -1,9 +1,9 @@
 package php
 
 import (
+	"html"
 	"strconv"
 	"strings"
-	"html"
 )
 
 //Convert binary data into hexadecimal representation
@@ -54,13 +54,24 @@ func Ord(s byte) byte {
 }
 
 //Split a string by string
-func Explode(s, sep string) ([]string) {
+func Explode(s, sep string) []string {
 
 	if s == "" {
 		return []string{s}
 	}
 
 	return strings.Split(s, sep)
+}
+
+//Returns the translation table used by htmlspecialchars() and htmlentities()
+func GetHtmlTranslationTable() map[string]string {
+
+	return map[string]string{
+		`"`: "&quot;",
+		`&`: "&amp;",
+		`<`: "&lt;",
+		`>`: "&gt;",
+	}
 }
 
 //Convert special characters to HTML entities
@@ -103,6 +114,40 @@ func Ltrim(s, cutset string) string {
 func Rtrim(s, cutset string) string {
 
 	return strings.TrimRight(s, cutset)
+}
+
+//Inserts HTML line breaks before all newlines in a string
+func Nl2br(s string) string {
+
+	runes := []rune(s)
+	html := make([]rune, len(runes), len(runes)*2)
+	for _, c := range runes {
+		if string(c) == "\n" {
+			br := []rune("<br />")
+			html = append(html, br...)
+		}
+		html = append(html, c)
+	}
+
+	return string(html)
+}
+
+//Pad a string to a certain length with another string
+func StrPad(s string, length int, args ...interface{}) string {
+
+	return s
+}
+
+//Repeat a string
+func StrRepeat(s string, count int) string {
+
+	return strings.Repeat(s, count)
+}
+
+//Replace all occurrences of the search string with the replacement string
+func StrReplace(s, old, new string, n int) string {
+
+	return strings.Replace(s, old, new, n)
 }
 
 //Make a string lowercase
@@ -185,4 +230,56 @@ func Strrev(s string) string {
 	}
 
 	return string(runes)
+}
+
+//Return part of a string
+func Substr(s string, start int, length ...int) string {
+
+	if len(length) > 0 {
+		l := length[0]
+		if l < 0 {
+			end := len(s) + l
+			return string(s[start:end])
+		} else {
+			end := start + l
+			return string(s[start:end])
+		}
+	}
+
+	return s[start:]
+}
+
+//Get part of string
+func MbSubstr(s string, start int, length ...int) string {
+
+	runes := []rune(s)
+	if len(length) > 0 {
+		l := length[0]
+		if l < 0 {
+			end := len(runes) + l
+			return string(runes[start:end])
+		} else {
+			end := start + l
+			return string(runes[start:end])
+		}
+	}
+
+	return string(runes[start:])
+}
+
+//Count the number of substring occurrences
+func SubstrCount(s, substr string) int {
+
+	return strings.Count(s, substr)
+}
+
+//Make a string's first character uppercase
+func Ucfirst(s string) string {
+
+	runes := []rune(s)
+	if len(runes) < 1 {
+		return s
+	}
+
+	return strings.ToUpper(string(runes[0])) + string(runes[1:])
 }
