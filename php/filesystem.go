@@ -96,6 +96,7 @@ func Copy(dstName string, srcName string) (written int64, err error) {
 // | @date      2018/01/26
 // +------------------------------------------------------------
 func Fclose(file *os.File) error {
+
 	return file.Close()
 }
 
@@ -110,5 +111,19 @@ func Fclose(file *os.File) error {
 // +------------------------------------------------------------
 func Dirname(dirPth string) ([]os.FileInfo, error) {
 
-	dir, err := ioutil.ReadDir(dirPth)
+	return ioutil.ReadDir(dirPth)
+}
+
+// +------------------------------------------------------------
+// | @desc      Remove file.
+// | @param     file string
+// | @return     error
+
+// | @author    Openset <jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/01/30
+// +------------------------------------------------------------
+func Delete(file string) error {
+
+	return os.Remove()
 }
