@@ -1,6 +1,8 @@
 package php
 
-import "net/url"
+import (
+	"net/url"
+)
 
 //Parse a URL and return its components
 func ParseUrl(rawurl string) (*url.URL, error) {
@@ -12,4 +14,10 @@ func ParseUrl(rawurl string) (*url.URL, error) {
 func ParseStr(query string) (url.Values, error) {
 
 	return url.ParseQuery(query)
+}
+
+//URL-encodes string
+func Urlencode(s string) string {
+
+	return url.PathEscape(s)
 }
