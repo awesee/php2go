@@ -23,6 +23,12 @@ func Rawurlencode(s string) string {
 	return url.PathEscape(s)
 }
 
+//Decodes URL-encoded string
+func Rawurldecode(s string) (string, error) {
+
+	return url.PathUnescape(s)
+}
+
 //URL-encodes string
 func Urlencode(s string) string {
 
