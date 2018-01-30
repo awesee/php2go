@@ -17,6 +17,12 @@ func ParseStr(query string) (url.Values, error) {
 	return url.ParseQuery(query)
 }
 
+//URL-encode according to RFC 3986
+func Rawurlencode(s string) string {
+
+	return url.PathEscape(s)
+}
+
 //URL-encodes string
 func Urlencode(s string) string {
 
