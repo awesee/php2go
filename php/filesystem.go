@@ -113,3 +113,17 @@ func Dirname(dirPth string) ([]os.FileInfo, error) {
 
 	return ioutil.ReadDir(dirPth)
 }
+
+// +------------------------------------------------------------
+// | @desc      Remove file.
+// | @param     file string
+// | @return     error
+
+// | @author    Openset <jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/01/30
+// +------------------------------------------------------------
+func Delete(file string) error {
+
+	return os.Remove(file)
+}
