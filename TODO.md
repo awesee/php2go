@@ -330,7 +330,7 @@
   - [ ] nl2br() 在字符串中的每个新行之前插入 HTML 换行符。
   - [ ] number_format() 以千位分组来格式化数字。
   - [x] ord() 返回字符串中第一个字符的 ASCII 值。
-  - [ ] parse_str() 把查询字符串解析到变量中。
+  - [x] parse_str() 把查询字符串解析到变量中。
   - [x] print() 输出一个或多个字符串。
   - [ ] printf()  输出格式化的字符串。
   - [ ] quoted_printable_decode() 把 quoted-printable 字符串转换为 8 位字符串。
@@ -398,7 +398,7 @@
   - [ ] get_headers() 取得服务器响应一个 HTTP 请求所发送的所有标头
   - [ ] get_meta_tags() 从一个文件中提取所有的 meta 标签 content 属性，返回一个数组
   - [ ] http_build_query() 生成 URL-encode 之后的请求字符串
-  - [ ] parse_url() 解析 URL，返回其组成部分
+  - [x] parse_url() 解析 URL，返回其组成部分
   - [ ] rawurldecode() 对已编码的 URL 字符串进行解码
   - [ ] rawurlencode() 按照 RFC 3986 对 URL 进行编码
   - [ ] urldecode() 解码已编码的 URL 字符串
