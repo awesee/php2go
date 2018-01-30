@@ -125,5 +125,5 @@ func Dirname(dirPth string) ([]os.FileInfo, error) {
 // +------------------------------------------------------------
 func Delete(file string) error {
 
-	return os.Remove()
+	return os.Remove(file)
 }
