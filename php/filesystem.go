@@ -4,6 +4,8 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
+	"runtime"
+	"path/filepath"
 )
 
 //Changes file mode
@@ -64,9 +66,9 @@ func IsDir(name string) (b bool, err error) {
 // | @desc     copy file
 // | @param     dstName string, srcName string
 // | @return    int64 , error
-
+// |
 // | @since     https://studygolang.com/articles/1599
-
+// |
 // | @author    Openset <jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
@@ -90,7 +92,7 @@ func Copy(dstName string, srcName string) (written int64, err error) {
 // | @desc      close file
 // | @param     file *os.File
 // | @return    error
-
+// |
 // | @author    Openset <jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
@@ -104,7 +106,7 @@ func Fclose(file *os.File) error {
 // | @desc      ReadDir reads the directory named by dirname and returns a list of directory entries sorted by filename.
 // | @param     dirPth string
 // | @return    []os.FileInfo, error
-
+// |
 // | @author    Openset <jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
@@ -118,7 +120,7 @@ func Dirname(dirPth string) ([]os.FileInfo, error) {
 // | @desc      Remove file.
 // | @param     file string
 // | @return     error
-
+// |
 // | @author    Openset <jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/30
@@ -126,4 +128,28 @@ func Dirname(dirPth string) ([]os.FileInfo, error) {
 func Delete(file string) error {
 
 	return os.Remove(file)
+}
+
+//Returns canonicalized absolute pathname
+func Realpath(name string) string {
+
+	_, err := os.Stat(name)
+	if err != nil {
+		return ""
+	}
+
+	if filepath.IsAbs(name) {
+		return name
+	}
+	wd, err := os.Getwd()
+	if err != nil {
+		return ""
+	}
+
+	directorySeparator := `/`
+	if runtime.GOOS == "windows" {
+		directorySeparator = `\`
+	}
+
+	return filepath.Clean(wd + directorySeparator + name)
 }
