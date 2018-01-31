@@ -268,9 +268,15 @@ func Substr(s string, start int, length ...int) string {
 		l := length[0]
 		if l < 0 {
 			end := len(s) + l
+			if end < 0 {
+				end = 0
+			}
 			return string(s[start:end])
 		} else {
 			end := start + l
+			if end > len(s) {
+				end = len(s)
+			}
 			return string(s[start:end])
 		}
 	}
@@ -286,9 +292,15 @@ func MbSubstr(s string, start int, length ...int) string {
 		l := length[0]
 		if l < 0 {
 			end := len(runes) + l
+			if end < 0 {
+				end = 0
+			}
 			return string(runes[start:end])
 		} else {
 			end := start + l
+			if end > len(runes) {
+				end = len(runes)
+			}
 			return string(runes[start:end])
 		}
 	}
