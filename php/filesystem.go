@@ -213,3 +213,20 @@ func IsReadable(name string) bool {
 
 	return true
 }
+
+//Tells whether the filename is writable
+func IsWritable(name string) bool {
+
+	_, err := syscall.Open(name, syscall.O_WRONLY, 0)
+	if err != nil {
+		return false
+	}
+
+	return true
+}
+
+//Alias of IsWritable()
+func IsWriteable(name string) bool {
+
+	return IsWritable(name)
+}
