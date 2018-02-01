@@ -132,30 +132,6 @@ func Delete(file string) error {
 	return os.Remove(file)
 }
 
-//Returns canonicalized absolute pathname
-func Realpath(name string) string {
-
-	_, err := os.Stat(name)
-	if err != nil {
-		return ""
-	}
-
-	if filepath.IsAbs(name) {
-		return name
-	}
-	wd, err := os.Getwd()
-	if err != nil {
-		return ""
-	}
-
-	directorySeparator := `/`
-	if runtime.GOOS == "windows" {
-		directorySeparator = `\`
-	}
-
-	return filepath.Clean(wd + directorySeparator + name)
-}
-
 // +------------------------------------------------------------
 // | @desc      Get the last  mofify file time.
 // | @param     file string
@@ -229,4 +205,34 @@ func IsWritable(name string) bool {
 func IsWriteable(name string) bool {
 
 	return IsWritable(name)
+}
+
+//Returns canonicalized absolute pathname
+func Realpath(name string) string {
+
+	_, err := os.Stat(name)
+	if err != nil {
+		return ""
+	}
+
+	if filepath.IsAbs(name) {
+		return name
+	}
+	wd, err := os.Getwd()
+	if err != nil {
+		return ""
+	}
+
+	directorySeparator := `/`
+	if runtime.GOOS == "windows" {
+		directorySeparator = `\`
+	}
+
+	return filepath.Clean(wd + directorySeparator + name)
+}
+
+//Renames a file or directory
+func Rename(oldpath, newpath string) error {
+
+	return os.Rename(oldpath, newpath)
 }
