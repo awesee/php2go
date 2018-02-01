@@ -6,6 +6,7 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
+	"syscall"
 	"time"
 )
 
@@ -200,4 +201,15 @@ func FileExists(path string) bool {
 	}
 
 	return false
+}
+
+//Tells whether a file exists and is readable
+func IsReadable(name string) bool {
+
+	_, err := syscall.Open(name, syscall.O_RDONLY, 0)
+	if err != nil {
+		return false
+	}
+
+	return true
 }
