@@ -214,10 +214,10 @@
   - [ ] is_executable() 判断文件是否可执行。
   - [x] is_file() 判断指定文件是否为常规的文件。
   - [ ] is_link() 判断指定的文件是否是连接。
-  - [ ] is_readable() 判断文件是否可读。
+  - [x] is_readable() 判断文件是否可读。
   - [ ] is_uploaded_file()  判断文件是否是通过 HTTP POST 上传的。
-  - [ ] is_writable() 判断文件是否可写。
-  - [ ] is_writeable()  is_writable() 的别名。
+  - [x] is_writable() 判断文件是否可写。
+  - [x] is_writeable()  is_writable() 的别名。
   - [ ] link()  创建一个硬连接。
   - [ ] linkinfo()  返回有关一个硬连接的信息。
   - [ ] lstat() 返回关于文件或符号连接的信息。
