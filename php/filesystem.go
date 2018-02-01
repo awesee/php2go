@@ -4,6 +4,7 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
+	"time"
 )
 
 //Changes file mode
@@ -126,4 +127,52 @@ func Dirname(dirPth string) ([]os.FileInfo, error) {
 func Delete(file string) error {
 
 	return os.Remove(file)
+}
+
+// +------------------------------------------------------------
+// | @desc      Get the last  mofify file time.
+// | @param     file string
+// | @return    int64, error
+
+// | @author    Openset <jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/02/01
+// +------------------------------------------------------------
+func Filemtime(file string) (int64, error) {
+
+	var t int64
+	f, err := os.Open(file)
+	if err != nil {
+		t = time.Now().Unix()
+	} else {
+		fi, err := f.Stat()
+		if err != nil {
+			t = time.Now().Unix()
+		} else {
+			t = fi.ModTime().Unix()
+		}
+	}
+	defer f.Close()
+
+	return t, err
+}
+
+// +------------------------------------------------------------
+// | @desc      Get file IsExist:If return true,the path is exist.If return false and err is nil,the path is not exist.
+// | @param     path string
+// | @return    bool, error
+
+// | @author    Openset <jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/02/01
+// +------------------------------------------------------------
+func FileExists(path string) (bool, error) {
+	_, err := os.Stat(path)
+	if err == nil {
+		return true, nil
+	}
+	if os.IsNotExist(err) {
+		return false, nil
+	}
+	return false, err
 }
