@@ -6,6 +6,7 @@ import (
 	"os"
 	"path/filepath"
 	"runtime"
+	"time"
 )
 
 //Changes file mode
@@ -191,13 +192,12 @@ func Filemtime(file string) (int64, error) {
 // | @link      https://github.com/sunnyregion
 // | @date      2018/02/01
 // +------------------------------------------------------------
-func FileExists(path string) (bool, error) {
+func FileExists(path string) bool {
+
 	_, err := os.Stat(path)
 	if err == nil {
-		return true, nil
+		return true
 	}
-	if os.IsNotExist(err) {
-		return false, nil
-	}
-	return false, err
+
+	return false
 }
