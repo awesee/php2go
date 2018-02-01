@@ -230,7 +230,7 @@
   - [ ] readfile()  读取一个文件，并输出到输出缓冲。
   - [ ] readlink()  返回符号连接的目标。
   - [x] realpath()  返回绝对路径名。
-  - [ ] rename()  重名名文件或目录。
+  - [x] rename()  重名名文件或目录。
   - [ ] rewind()  倒回文件指针的位置。
   - [ ] rmdir() 删除空的目录。
   - [ ] set_file_buffer() 设置已打开文件的缓冲大小。
