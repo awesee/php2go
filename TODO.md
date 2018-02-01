@@ -184,14 +184,14 @@
   - [ ] fgets() 从打开的文件中返回一行。
   - [ ] fgetss()  从打开的文件中读取一行并过滤掉 HTML 和 PHP 标记。
   - [ ] file()  把文件读入一个数组中。
-  - [ ] file_exists() 检查文件或目录是否存在。
+  - [x] file_exists() 检查文件或目录是否存在。
   - [ ] file_get_contents() 将文件读入字符串。
   - [ ] file_put_contents() 将字符串写入文件。
   - [ ] fileatime() 返回文件的上次访问时间。
   - [ ] filectime() 返回文件的上次改变时间。
   - [ ] filegroup() 返回文件的组 ID。
   - [ ] fileinode() 返回文件的 inode 编号。
-  - [ ] filemtime() 返回文件的上次修改时间。
+  - [x] filemtime() 返回文件的上次修改时间。
   - [ ] fileowner() 文件的 user ID （所有者）。
   - [ ] fileperms() 返回文件的权限。
   - [ ] filesize()  返回文件大小。
