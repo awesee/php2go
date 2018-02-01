@@ -4,8 +4,8 @@ import (
 	"io"
 	"io/ioutil"
 	"os"
-	"runtime"
 	"path/filepath"
+	"runtime"
 )
 
 //Changes file mode
@@ -19,7 +19,7 @@ func Chmod(name string, mode os.FileMode) error {
 // | @param     name string, uid int, gid int
 // | @return    error
 // |
-// | @author    Openset <jinheking@sina.com>
+// | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
 // +------------------------------------------------------------
@@ -33,7 +33,7 @@ func Chown(name string, uid int, gid int) error {
 // | @param     name string, mode os.FileMode
 // | @return    error
 // |
-// | @author    Openset <jinheking@sina.com>
+// | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
 // +------------------------------------------------------------
@@ -47,7 +47,7 @@ func Mkdir(name string, mode os.FileMode) error {
 // | @param     name string
 // | @return    bool , error
 // |
-// | @author    Openset <jinheking@sina.com>
+// | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
 // +------------------------------------------------------------
@@ -69,7 +69,7 @@ func IsDir(name string) (b bool, err error) {
 // |
 // | @since     https://studygolang.com/articles/1599
 // |
-// | @author    Openset <jinheking@sina.com>
+// | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
 // +------------------------------------------------------------
@@ -93,7 +93,7 @@ func Copy(dstName string, srcName string) (written int64, err error) {
 // | @param     file *os.File
 // | @return    error
 // |
-// | @author    Openset <jinheking@sina.com>
+// | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
 // +------------------------------------------------------------
@@ -107,7 +107,7 @@ func Fclose(file *os.File) error {
 // | @param     dirPth string
 // | @return    []os.FileInfo, error
 // |
-// | @author    Openset <jinheking@sina.com>
+// | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
 // +------------------------------------------------------------
@@ -121,7 +121,7 @@ func Dirname(dirPth string) ([]os.FileInfo, error) {
 // | @param     file string
 // | @return     error
 // |
-// | @author    Openset <jinheking@sina.com>
+// | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/30
 // +------------------------------------------------------------
@@ -152,4 +152,52 @@ func Realpath(name string) string {
 	}
 
 	return filepath.Clean(wd + directorySeparator + name)
+}
+
+// +------------------------------------------------------------
+// | @desc      Get the last  mofify file time.
+// | @param     file string
+// | @return    int64, error
+// |
+// | @author    Sunny<jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/02/01
+// +------------------------------------------------------------
+func Filemtime(file string) (int64, error) {
+
+	var t int64
+	f, err := os.Open(file)
+	if err != nil {
+		t = time.Now().Unix()
+	} else {
+		fi, err := f.Stat()
+		if err != nil {
+			t = time.Now().Unix()
+		} else {
+			t = fi.ModTime().Unix()
+		}
+	}
+	defer f.Close()
+
+	return t, err
+}
+
+// +------------------------------------------------------------
+// | @desc      Get file IsExist:If return true,the path is exist.If return false and err is nil,the path is not exist.
+// | @param     path string
+// | @return    bool, error
+// |
+// | @author    Sunny<jinheking@sina.com>
+// | @link      https://github.com/sunnyregion
+// | @date      2018/02/01
+// +------------------------------------------------------------
+func FileExists(path string) (bool, error) {
+	_, err := os.Stat(path)
+	if err == nil {
+		return true, nil
+	}
+	if os.IsNotExist(err) {
+		return false, nil
+	}
+	return false, err
 }
