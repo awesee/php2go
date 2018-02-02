@@ -4,9 +4,9 @@
 [![GitHub issues](https://img.shields.io/github/issues/openset/php2go.svg?style=plastic)](https://github.com/openset/php2go/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/openset/php2go.svg?style=plastic)](https://github.com/openset/php2go/pulls)
 [![GitHub commits](https://img.shields.io/github/commits-since/openset/php2go/latest.svg?style=plastic)](https://github.com/openset/php2go/commits/master)
-[![GitHub release](https://img.shields.io/github/release/openset/php2go.svg?style=plastic)](https://github.com/openset/php2go/releases)
 [![GitHub contributors](https://img.shields.io/github/contributors/openset/php2go.svg?style=plastic)](https://github.com/openset/php2go/graphs/contributors)
 [![license](https://img.shields.io/github/license/openset/php2go.svg)](https://github.com/openset/php2go/blob/master/LICENSE)
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/openset/php2go.svg?colorB=green&style=plastic)](https://github.com/openset/php2go/archive/master.zip)
 
 这是一个用Go语言开发的辅助库，尤其适用于熟悉PHP内置函数的开发者，将会实现PHP内置函数。
 
