@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/openset/php2go.svg?branch=master)](https://travis-ci.org/openset/php2go)
 [![GitHub issues](https://img.shields.io/github/issues/openset/php2go.svg?style=plastic)](https://github.com/openset/php2go/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/openset/php2go.svg?style=plastic)](https://github.com/openset/php2go/pulls)
+[![Github commits (since latest release)](https://img.shields.io/github/commits-since/openset/php2go/v1.0.0.svg?style=plastic)](https://github.com/openset/php2go/commits/master)
 [![GitHub release](https://img.shields.io/github/release/openset/php2go.svg?style=plastic)](https://github.com/openset/php2go/releases)
 [![GitHub tag](https://img.shields.io/github/tag/openset/php2go.svg?style=plastic)](https://github.com/openset/php2go/tags)
 [![license](https://img.shields.io/github/license/openset/php2go.svg)](https://github.com/openset/php2go/blob/master/LICENSE)
