@@ -7,6 +7,7 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/openset/php2go.svg)](https://github.com/openset/php2go/graphs/contributors)
 [![license](https://img.shields.io/github/license/openset/php2go.svg)](https://github.com/openset/php2go/blob/master/LICENSE)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/openset/php2go.svg?colorB=green)](https://github.com/openset/php2go/archive/master.zip)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopenset%2Fphp2go.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fopenset%2Fphp2go?ref=badge_shield)
 
 [English](https://github.com/openset/go4php) | [简体中文](https://github.com/openset/php2go)
 
@@ -59,3 +60,6 @@ func main() {
 ## LICENSE
 
 Released under [MIT](https://github.com/openset/php2go/blob/master/LICENSE) LICENSE
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fopenset%2Fphp2go.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fopenset%2Fphp2go?ref=badge_large)
