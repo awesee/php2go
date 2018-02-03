@@ -1,6 +1,7 @@
 ## [用Go语言实现PHP内置函数](https://openset.github.io/php2go)
 
 [![Build Status](https://travis-ci.org/openset/php2go.svg?branch=master)](https://travis-ci.org/openset/php2go)
+[![Go Report Card](https://goreportcard.com/badge/github.com/openset/php2go)](https://goreportcard.com/report/github.com/openset/php2go)
 [![GitHub issues](https://img.shields.io/github/issues/openset/php2go.svg)](https://github.com/openset/php2go/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/openset/php2go.svg)](https://github.com/openset/php2go/pulls)
 [![GitHub commits](https://img.shields.io/github/commits-since/openset/php2go/latest.svg)](https://github.com/openset/php2go/commits/master)
