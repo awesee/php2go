@@ -5,5 +5,4 @@
 /*
 PHP built-in function library with Go language
 */
-
 package php // import "github.com/openset/php2go/php"
