@@ -5,22 +5,13 @@ import (
 	"syscall"
 )
 
-//Change directory
+//Chdir - Change directory
 func Chdir(dir string) error {
 
 	return os.Chdir(dir)
 }
 
-// +------------------------------------------------------------
-// | @desc      Get current directory
-// | @param
-// | @return    string, error
-// |
-// | @author    Openset <jinheking@sina.com>
-// | @link      https://github.com/sunnyregion
-// | @date      2018/01/26
-// +------------------------------------------------------------
-
+//Getcwd - Get current directory
 func Getcwd() (dir string) {
 
 	dir, err := os.Getwd()
@@ -30,11 +21,8 @@ func Getcwd() (dir string) {
 	return
 }
 
+// Closedir - Close directory's handle
 // +------------------------------------------------------------
-// | @desc      Close directory's handle
-// | @param
-// | @return    error
-// |
 // | @author    Openset <jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26

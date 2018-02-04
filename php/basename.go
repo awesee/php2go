@@ -4,7 +4,7 @@ import (
 	"strings"
 )
 
-//Returns trailing name component of path
+//Basename - Returns trailing name component of path
 func Basename(s string, suffix ...string) string {
 
 	slash := strings.LastIndex(s, "/")

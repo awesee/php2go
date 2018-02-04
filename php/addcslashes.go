@@ -1,6 +1,6 @@
 package php
 
-//Addslashes - Quote string with slashes in a C style
+//Addcslashes - Quote string with slashes in a C style
 func Addcslashes(s string, c byte) string {
 
 	l := len(s)

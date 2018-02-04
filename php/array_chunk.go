@@ -5,8 +5,10 @@ import (
 	"math"
 )
 
+//ArraySlice type
 type ArraySlice []interface{}
 
+//ArrayChunk - Divide um array em pedaços
 func ArrayChunk(input ArraySlice, size int) ArraySlice {
 
 	length := len(input)

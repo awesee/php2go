@@ -2,15 +2,17 @@ package php
 
 import "strings"
 
+//ArrayMap Array type
 type ArrayMap map[string]interface{}
 
+//const
 const (
 	CaseLOWER = iota
 	CaseUPPER
 )
 
+// ArrayChangeKeyCase - Changes the case of all keys in an array
 // +------------------------------------------------------------
-// | @desc      Changes the case of all keys in an array
 // | @param     arr  ArrayMap
 // | @return    ArrayMap
 // |
