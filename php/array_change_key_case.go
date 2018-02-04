@@ -2,16 +2,16 @@ package php
 
 import "strings"
 
-//ArrayMap Array type
+// ArrayMap Array type
 type ArrayMap map[string]interface{}
 
-//const
+// const
 const (
 	CaseLOWER = iota
 	CaseUPPER
 )
 
-//ArrayChangeKeyCase - Changes the case of all keys in an array
+// ArrayChangeKeyCase - Changes the case of all keys in an array
 func ArrayChangeKeyCase(arr ArrayMap, Case int) ArrayMap {
 
 	var tmp = ArrayMap{}

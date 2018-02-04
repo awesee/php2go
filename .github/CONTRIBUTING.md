@@ -18,9 +18,9 @@
 
 ```go
 
-//Function name - Description of function do
+// Function name - Description of function do
 func FuncName(args Type) Type {
-    //此处空一行
+    // 此处空一行
     return args
 }
 

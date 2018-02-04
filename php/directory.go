@@ -5,13 +5,13 @@ import (
 	"syscall"
 )
 
-//Chdir - Change directory
+// Chdir - Change directory
 func Chdir(dir string) error {
 
 	return os.Chdir(dir)
 }
 
-//Getcwd - Get current directory
+// Getcwd - Get current directory
 func Getcwd() (dir string) {
 
 	dir, err := os.Getwd()
@@ -21,7 +21,7 @@ func Getcwd() (dir string) {
 	return
 }
 
-//Closedir - Close directory's handle
+// Closedir - Close directory's handle
 func Closedir(fd int) (err error) {
 
 	return syscall.Close(fd)
