@@ -17,7 +17,7 @@
 
 ```shell
 
-go get github.com/openset/php2go/php
+go get -u github.com/openset/php2go/php
 
 ```
 
