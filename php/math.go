@@ -8,55 +8,55 @@ import (
 	"time"
 )
 
-//Absolute xue
+//Abs - Absolute xue
 func Abs(x float64) float64 {
 
 	return math.Abs(x)
 }
 
-//Arc cosine
+//Acos - Arc cosine
 func Acos(x complex128) complex128 {
 
 	return cmplx.Acos(x)
 }
 
-//Inverse hyperbolic cosine
+//Acosh - Inverse hyperbolic cosine
 func Acosh(x complex128) complex128 {
 
 	return cmplx.Acosh(x)
 }
 
-//Arc sine
+//Asin - Arc sine
 func Asin(x complex128) complex128 {
 
 	return cmplx.Asin(x)
 }
 
-//Inverse hyperbolic sine
+//Asinh - Inverse hyperbolic sine
 func Asinh(x complex128) complex128 {
 
 	return cmplx.Asinh(x)
 }
 
-//Arc tangent of two variables
+//Atan2 - Arc tangent of two variables
 func Atan2(y, x float64) float64 {
 
 	return math.Atan2(y, x)
 }
 
-//Arc tangent
+//Atan - Arc tangent
 func Atan(x complex128) complex128 {
 
 	return cmplx.Atan(x)
 }
 
-//Inverse hyperbolic tangent
+//Atanh - Inverse hyperbolic tangent
 func Atanh(x complex128) complex128 {
 
 	return cmplx.Atanh(x)
 }
 
-//Convert a number between arbitrary bases
+//BaseConvert - Convert a number between arbitrary bases
 func BaseConvert(num string, frombase, tobase int) (string, error) {
 
 	i, err := strconv.ParseInt(num, frombase, 0)
@@ -67,123 +67,123 @@ func BaseConvert(num string, frombase, tobase int) (string, error) {
 	return strconv.FormatInt(i, tobase), nil
 }
 
-//Round fractions up
+//Ceil - Round fractions up
 func Ceil(x float64) float64 {
 
 	return math.Ceil(x)
 }
 
-//Cosine
+//Cos - Cosine
 func Cos(x float64) float64 {
 
 	return math.Cos(x)
 }
 
-//Hyperbolic cosine
+//Cosh - Hyperbolic cosine
 func Cosh(x float64) float64 {
 
 	return math.Cosh(x)
 }
 
-//Decimal to binary
+//Decbin - Decimal to binary
 func Decbin(x int64) string {
 
 	return strconv.FormatInt(x, 2)
 }
 
-//Decimal to hexadecimal
+//Dechex - Decimal to hexadecimal
 func Dechex(x int64) string {
 
 	return strconv.FormatInt(x, 16)
 }
 
-//Decimal to octal
+//Decoct - Decimal to octal
 func Decoct(x int64) string {
 
 	return strconv.FormatInt(x, 8)
 }
 
-//Calculates the exponent of e
+//Exp - Calculates the exponent of e
 func Exp(x float64) float64 {
 
 	return math.Exp(x)
 }
 
-// Returns exp(number) - 1
+//Expm1 - Returns exp(number) - 1
 // computed in a way that is accurate even when the value of number is close to zero
 func Expm1(x float64) float64 {
 
 	return math.Exp(x) - 1
 }
 
-//Round fractions down
+//Floor - Round fractions down
 func Floor(x float64) float64 {
 
 	return math.Floor(x)
 }
 
-//Finds whether a value is a legal finite number
+//IsFinite - Finds whether a value is a legal finite number
 func IsFinite(f float64, sign int) bool {
 
 	return !math.IsInf(f, sign)
 }
 
-//Finds whether a value is infinite
+//IsInfinite - Finds whether a value is infinite
 func IsInfinite(f float64, sign int) bool {
 
 	return math.IsInf(f, sign)
 }
 
-//Finds whether a value is not a number
+//IsNan - Finds whether a value is not a number
 func IsNan(f float64) bool {
 
 	return math.IsNaN(f)
 }
 
-//Natural logarithm
+//Log - Natural logarithm
 func Log(x float64) float64 {
 
 	return math.Log(x)
 }
 
-//Base-10 logarithm
+//Log10 - Base-10 logarithm
 func Log10(x float64) float64 {
 
 	return math.Log10(x)
 }
 
-// Returns log(1 + number)
+// Log1p - Returns log(1 + number)
 // computed in a way that is accurate even when the value of number is close to zero
 func Log1p(x float64) float64 {
 
 	return math.Log1p(x)
 }
 
-//Find highest value
+//Max - Find highest value
 func Max(x, y float64) float64 {
 
 	return math.Max(x, y)
 }
 
-//Find lowest value
+//Min - Find lowest value
 func Min(x, y float64) float64 {
 
 	return math.Min(x, y)
 }
 
-//Get value of pi
+//Pi - Get value of pi
 func Pi() float64 {
 
 	return math.Pi
 }
 
-//Exponential expression
+//Pow - Exponential expression
 func Pow(x, y float64) float64 {
 
 	return math.Pow(x, y)
 }
 
-//Generate a random integer
+//Rand - Generate a random integer
 func Rand(args ...int) int {
 
 	rand.Seed(time.Now().Unix())
@@ -199,37 +199,37 @@ func Rand(args ...int) int {
 	}
 }
 
-//Rounds a float
+//Round - Rounds a float
 func Round(x float64) float64 {
 
 	return math.Floor(x + 0.5)
 }
 
-//Sine
+//Sin - Sine
 func Sin(x float64) float64 {
 
 	return math.Sin(x)
 }
 
-//Hyperbolic sine
+//Sinh - Hyperbolic sine
 func Sinh(x float64) float64 {
 
 	return math.Sinh(x)
 }
 
-//Square root
+//Sqrt - Square root
 func Sqrt(x float64) float64 {
 
 	return math.Sqrt(x)
 }
 
-//Tangent
+//Tan - Tangent
 func Tan(x float64) float64 {
 
 	return math.Tan(x)
 }
 
-//Hyperbolic tangent
+//Tanh - Hyperbolic tangent
 func Tanh(x float64) float64 {
 
 	return math.Tanh(x)
