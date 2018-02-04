@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 )
 
-//Calculate the md5 hash of a string
+//Md5 - Calculate the md5 hash of a string
 func Md5(s string) string {
 
 	byte := md5.Sum([]byte(s))
@@ -14,7 +14,7 @@ func Md5(s string) string {
 	return hex.EncodeToString(byte[:])
 }
 
-//Calculates the md5 hash of a given file
+//Md5File - Calculates the md5 hash of a given file
 func Md5File(filename string) string {
 
 	data, err := ioutil.ReadFile(filename)
