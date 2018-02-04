@@ -5,8 +5,8 @@ import (
 	"strings"
 )
 
-//ParseURL - Parse a URL and return its components
-func ParseURL(rawurl string) (*url.URL, error) {
+//ParseUrl - Parse a URL and return its components
+func ParseUrl(rawurl string) (*url.URL, error) {
 
 	return url.Parse(rawurl)
 }
