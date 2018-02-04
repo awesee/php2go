@@ -10,17 +10,14 @@ import (
 	"time"
 )
 
-//Changes file mode
+//Chmod - Changes file mode
 func Chmod(name string, mode os.FileMode) error {
 
 	return os.Chmod(name, mode)
 }
 
+// Chown - Chown changes the numeric uid and gid of the named file.
 // +------------------------------------------------------------
-// | @desc      Chown changes the numeric uid and gid of the named file.
-// | @param     name string, uid int, gid int
-// | @return    error
-// |
 // | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
@@ -30,11 +27,8 @@ func Chown(name string, uid int, gid int) error {
 	return os.Chown(name, uid, gid)
 }
 
+// Mkdir - Makes directory
 // +------------------------------------------------------------
-// | @desc      make directort
-// | @param     name string, mode os.FileMode
-// | @return    error
-// |
 // | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
@@ -44,11 +38,8 @@ func Mkdir(name string, mode os.FileMode) error {
 	return os.Mkdir(name, mode)
 }
 
+// IsDir - Tells whether the filename is a directory
 // +------------------------------------------------------------
-// | @desc      is directort
-// | @param     name string
-// | @return    bool , error
-// |
 // | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
@@ -64,13 +55,9 @@ func IsDir(name string) (b bool, err error) {
 	return fm.IsDir(), err
 }
 
+// Copy - Copies file
 // +------------------------------------------------------------
-// | @desc     copy file
-// | @param     dstName string, srcName string
-// | @return    int64 , error
-// |
 // | @since     https://studygolang.com/articles/1599
-// |
 // | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
@@ -90,11 +77,8 @@ func Copy(dstName string, srcName string) (written int64, err error) {
 	return io.Copy(dst, src)
 }
 
+// Fclose - Closes an open file pointer
 // +------------------------------------------------------------
-// | @desc      close file
-// | @param     file *os.File
-// | @return    error
-// |
 // | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
@@ -104,11 +88,8 @@ func Fclose(file *os.File) error {
 	return file.Close()
 }
 
+//Dirname - Returns a parent directory's path
 // +------------------------------------------------------------
-// | @desc      ReadDir reads the directory named by dirname and returns a list of directory entries sorted by filename.
-// | @param     dirPth string
-// | @return    []os.FileInfo, error
-// |
 // | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/26
@@ -118,25 +99,25 @@ func Dirname(dirPth string) ([]os.FileInfo, error) {
 	return ioutil.ReadDir(dirPth)
 }
 
+// Delete - Deletes a file
 // +------------------------------------------------------------
-// | @desc      Remove file.
-// | @param     file string
-// | @return     error
-// |
 // | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/01/30
 // +------------------------------------------------------------
-func Delete(file string) error {
+func Delete(name string) error {
 
-	return os.Remove(file)
+	return Unlink(name)
 }
 
+//Unlink - Deletes a file
+func Unlink(name string) error {
+
+	return os.Remove(name)
+}
+
+// Filemtime - Gets file modification time
 // +------------------------------------------------------------
-// | @desc      Get the last  mofify file time.
-// | @param     file string
-// | @return    int64, error
-// |
 // | @author    Sunny<jinheking@sina.com>
 // | @link      https://github.com/sunnyregion
 // | @date      2018/02/01
@@ -160,15 +141,7 @@ func Filemtime(file string) (int64, error) {
 	return t, err
 }
 
-// +------------------------------------------------------------
-// | @desc      Get file IsExist:If return true,the path is exist.If return false and err is nil,the path is not exist.
-// | @param     path string
-// | @return    bool, error
-// |
-// | @author    Sunny<jinheking@sina.com>
-// | @link      https://github.com/sunnyregion
-// | @date      2018/02/01
-// +------------------------------------------------------------
+//FileExists - Checks whether a file or directory exists
 func FileExists(path string) bool {
 
 	_, err := os.Stat(path)
@@ -179,7 +152,7 @@ func FileExists(path string) bool {
 	return false
 }
 
-//Tells whether a file exists and is readable
+//IsReadable - Tells whether a file exists and is readable
 func IsReadable(name string) bool {
 
 	_, err := syscall.Open(name, syscall.O_RDONLY, 0)
@@ -190,7 +163,7 @@ func IsReadable(name string) bool {
 	return true
 }
 
-//Tells whether the filename is writable
+//IsWritable - Tells whether the filename is writable
 func IsWritable(name string) bool {
 
 	_, err := syscall.Open(name, syscall.O_WRONLY, 0)
@@ -201,13 +174,13 @@ func IsWritable(name string) bool {
 	return true
 }
 
-//Alias of IsWritable()
+//IsWriteable - Alias of IsWritable()
 func IsWriteable(name string) bool {
 
 	return IsWritable(name)
 }
 
-//Returns canonicalized absolute pathname
+//Realpath - Returns canonicalized absolute pathname
 func Realpath(name string) string {
 
 	_, err := os.Stat(name)
@@ -231,7 +204,7 @@ func Realpath(name string) string {
 	return filepath.Clean(wd + directorySeparator + name)
 }
 
-//Renames a file or directory
+//Rename - Renames a file or directory
 func Rename(oldpath, newpath string) error {
 
 	return os.Rename(oldpath, newpath)

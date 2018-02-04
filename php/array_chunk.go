@@ -8,7 +8,7 @@ import (
 //ArraySlice type
 type ArraySlice []interface{}
 
-//ArrayChunk - Divide um array em pedaços
+//ArrayChunk - Split an array into chunks
 func ArrayChunk(input ArraySlice, size int) ArraySlice {
 
 	length := len(input)
