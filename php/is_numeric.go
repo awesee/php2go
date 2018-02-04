@@ -3,7 +3,7 @@ package php
 //IsNumeric - Finds whether a variable is a number or a numeric string
 func IsNumeric(x interface{}) (result bool) {
 
-	// Figure out result
+	//Figure out result
 	switch x.(type) {
 
 	case int, uint:

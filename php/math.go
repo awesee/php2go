@@ -110,7 +110,7 @@ func Exp(x float64) float64 {
 }
 
 //Expm1 - Returns exp(number) - 1
-// computed in a way that is accurate even when the value of number is close to zero
+//computed in a way that is accurate even when the value of number is close to zero
 func Expm1(x float64) float64 {
 
 	return math.Exp(x) - 1
@@ -152,8 +152,8 @@ func Log10(x float64) float64 {
 	return math.Log10(x)
 }
 
-// Log1p - Returns log(1 + number)
-// computed in a way that is accurate even when the value of number is close to zero
+//Log1p - Returns log(1 + number)
+//computed in a way that is accurate even when the value of number is close to zero
 func Log1p(x float64) float64 {
 
 	return math.Log1p(x)

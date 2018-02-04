@@ -21,12 +21,7 @@ func Getcwd() (dir string) {
 	return
 }
 
-// Closedir - Close directory's handle
-// +------------------------------------------------------------
-// | @author    Openset <jinheking@sina.com>
-// | @link      https://github.com/sunnyregion
-// | @date      2018/01/26
-// +------------------------------------------------------------
+//Closedir - Close directory's handle
 func Closedir(fd int) (err error) {
 
 	return syscall.Close(fd)

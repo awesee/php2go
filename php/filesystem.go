@@ -16,34 +16,19 @@ func Chmod(name string, mode os.FileMode) error {
 	return os.Chmod(name, mode)
 }
 
-// Chown - Chown changes the numeric uid and gid of the named file.
-// +------------------------------------------------------------
-// | @author    Sunny<jinheking@sina.com>
-// | @link      https://github.com/sunnyregion
-// | @date      2018/01/26
-// +------------------------------------------------------------
+//Chown - Chown changes the numeric uid and gid of the named file.
 func Chown(name string, uid int, gid int) error {
 
 	return os.Chown(name, uid, gid)
 }
 
-// Mkdir - Makes directory
-// +------------------------------------------------------------
-// | @author    Sunny<jinheking@sina.com>
-// | @link      https://github.com/sunnyregion
-// | @date      2018/01/26
-// +------------------------------------------------------------
+//Mkdir - Makes directory
 func Mkdir(name string, mode os.FileMode) error {
 
 	return os.Mkdir(name, mode)
 }
 
-// IsDir - Tells whether the filename is a directory
-// +------------------------------------------------------------
-// | @author    Sunny<jinheking@sina.com>
-// | @link      https://github.com/sunnyregion
-// | @date      2018/01/26
-// +------------------------------------------------------------
+//IsDir - Tells whether the filename is a directory
 func IsDir(name string) (b bool, err error) {
 
 	fd, err := os.Stat(name)
@@ -55,13 +40,7 @@ func IsDir(name string) (b bool, err error) {
 	return fm.IsDir(), err
 }
 
-// Copy - Copies file
-// +------------------------------------------------------------
-// | @since     https://studygolang.com/articles/1599
-// | @author    Sunny<jinheking@sina.com>
-// | @link      https://github.com/sunnyregion
-// | @date      2018/01/26
-// +------------------------------------------------------------
+//Copy - Copies file
 func Copy(dstName string, srcName string) (written int64, err error) {
 
 	src, err := os.Open(srcName)
@@ -77,34 +56,19 @@ func Copy(dstName string, srcName string) (written int64, err error) {
 	return io.Copy(dst, src)
 }
 
-// Fclose - Closes an open file pointer
-// +------------------------------------------------------------
-// | @author    Sunny<jinheking@sina.com>
-// | @link      https://github.com/sunnyregion
-// | @date      2018/01/26
-// +------------------------------------------------------------
+//Fclose - Closes an open file pointer
 func Fclose(file *os.File) error {
 
 	return file.Close()
 }
 
 //Dirname - Returns a parent directory's path
-// +------------------------------------------------------------
-// | @author    Sunny<jinheking@sina.com>
-// | @link      https://github.com/sunnyregion
-// | @date      2018/01/26
-// +------------------------------------------------------------
 func Dirname(dirPth string) ([]os.FileInfo, error) {
 
 	return ioutil.ReadDir(dirPth)
 }
 
-// Delete - Deletes a file
-// +------------------------------------------------------------
-// | @author    Sunny<jinheking@sina.com>
-// | @link      https://github.com/sunnyregion
-// | @date      2018/01/30
-// +------------------------------------------------------------
+//Delete - Deletes a file
 func Delete(name string) error {
 
 	return Unlink(name)
@@ -116,12 +80,7 @@ func Unlink(name string) error {
 	return os.Remove(name)
 }
 
-// Filemtime - Gets file modification time
-// +------------------------------------------------------------
-// | @author    Sunny<jinheking@sina.com>
-// | @link      https://github.com/sunnyregion
-// | @date      2018/02/01
-// +------------------------------------------------------------
+//Filemtime - Gets file modification time
 func Filemtime(file string) (int64, error) {
 
 	var t int64
