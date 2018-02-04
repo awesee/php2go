@@ -1,6 +1,6 @@
 package php
 
-//Quote string with slashes
+//Addslashes - Quote string with slashes
 func Addslashes(s string) string {
 
 	l := len(s)
