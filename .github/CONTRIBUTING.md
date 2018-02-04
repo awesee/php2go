@@ -18,15 +18,7 @@
 
 ```go
 
-// +------------------------------------------------------------
-// | @desc      Description of function do
-// | @param     args  Type
-// | @return    Type
-// |
-// | @author    Openset <openset.wang@gmail.com>
-// | @link      https://github.com/openset
-// | @date      2018/01/01
-// +------------------------------------------------------------
+// Function name - Description of function do
 func FuncName(args Type) Type {
     //此处空一行
     return args
