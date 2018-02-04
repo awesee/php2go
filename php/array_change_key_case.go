@@ -2,10 +2,10 @@ package php
 
 import "strings"
 
-// ArrayMap Array type
+// ArrayMap is one of Array type
 type ArrayMap map[string]interface{}
 
-// const
+// Constants for ArrayChangeKeyCase
 const (
 	CaseLOWER = iota
 	CaseUPPER

@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-//const
+// Constants for StrPad
 const (
 	StrPadRight = "STR_PAD_RIGHT"
 	StrPadLeft  = "STR_PAD_LEFT"
