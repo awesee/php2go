@@ -2,10 +2,11 @@ package php
 
 import (
 	"fmt"
+	"reflect"
 	"strconv"
 )
 
-//Boolval - Get the boolean value of a variable
+// Boolval - Get the boolean value of a variable
 func Boolval(val interface{}) bool {
 
 	switch v := val.(type) {
@@ -37,14 +38,22 @@ func Boolval(val interface{}) bool {
 	return false
 }
 
-//Intval - Get the integer value of a variable
+// Intval - Get the integer value of a variable
 func Intval(v interface{}) (int, error) {
 
 	return strconv.Atoi(fmt.Sprintf("%v", v))
 }
 
-//Strval - Get string value of a variable
+// Strval - Get string value of a variable
 func Strval(val interface{}) string {
 
 	return fmt.Sprintf("%v", val)
+}
+
+// Gettype - Get the type of a variable
+func Gettype(v interface{}) string {
+
+	t := reflect.TypeOf(v)
+
+	return t.String()
 }
