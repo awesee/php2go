@@ -2,7 +2,6 @@ package php
 
 import (
 	"fmt"
-	"reflect"
 	"strconv"
 )
 
@@ -53,9 +52,10 @@ func Strval(val interface{}) string {
 // Gettype - Get the type of a variable
 func Gettype(v interface{}) string {
 
-	t := reflect.TypeOf(v)
-
-	return t.String()
+	//t := reflect.TypeOf(v)
+	//
+	//return t.String()
+	return fmt.Sprintf("%T", v)
 }
 
 // IsBool - Finds out whether a variable is a boolean
