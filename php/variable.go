@@ -37,6 +37,29 @@ func Boolval(val interface{}) bool {
 	return false
 }
 
+// Empty - Determine whether a variable is empty
+func Empty(v interface{}) bool {
+
+	switch value := v.(type) {
+	case bool:
+		return value == false
+	case string:
+		return value == ""
+	case int, uint, int8, uint8, int16, uint16, int32, uint32, int64, uint64:
+		return value == 0
+	case complex64:
+		return value == complex64(0)
+	case complex128:
+		return value == complex128(0)
+	case []int:
+		return len(value) == 0
+	case []interface{}:
+		return len(value) == 0
+	default:
+		return value == nil
+	}
+}
+
 // Intval - Get the integer value of a variable
 func Intval(v interface{}) (int, error) {
 
