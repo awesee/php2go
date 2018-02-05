@@ -10,7 +10,7 @@
 
   2. 函数名后第一行留空
   3. 缩进统一使用Tab
-  4. 每次提交一个函数，注释可以添加个人GitHub信息
+  4. 每次提交一个函数，注释以函数名开头
   5. 新增函数最好以PHP函数名命名文件单独提交，方面后期函数排序整理
   6. 不要提交二进制文件(本地测试可以使用go run命名)
 
@@ -18,7 +18,7 @@
 
 ```go
 
-// Function name - Description of function do
+// FuncName - Description of function do
 func FuncName(args Type) Type {
     // 此处空一行
     return args
