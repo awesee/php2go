@@ -1,6 +1,6 @@
 ## 贡献指南
 
-我们欢迎广大开发者贡献大家的智慧，让我们共同让它变得更完美.
+你好！我们很高兴你想为这个项目做出贡献。 你的帮助对保持它的完美是至关重要的。
 
 ## 代码格式
 
@@ -8,11 +8,11 @@
      - array() => Array()
      - [array_change_key_case() => ArrayChangeKeyCase()](https://github.com/openset/php2go/blob/master/php/array_change_key_case.go)
 
-  2. 函数名后第一行留空
-  3. 缩进统一使用Tab
-  4. 每次提交一个函数，注释以函数名开头
-  5. 新增函数最好以PHP函数名命名文件单独提交，方面后期函数排序整理
-  6. 不要提交二进制文件(本地测试可以使用go run命名)
+  1. 函数名后第一行留空
+  1. 缩进统一使用Tab
+  1. 每次提交一个函数，注释以函数名开头
+  1. 新增函数最好以PHP函数名命名文件单独提交，方面后期函数排序整理
+  1. 不要提交二进制文件(本地测试可以使用go run命名)
 
 示例:
 
@@ -28,18 +28,29 @@ func FuncName(args Type) Type {
 
 ### 贡献代码
 
-1. Fork [openset/php2go](https://github.com/openset/php2go) 到本地.
-2. 创建新的分支：
+0. Fork [`https://github.com/openset/php2go`](https://github.com/openset/php2go) 并克隆到本地.
+0. 创建新的分支：
 
     ```shell
-    $ git checkout -b new_feature
+    $ git checkout -b my-new-feature
     ```
 
-3. 编写代码。
-4. Push 到你的分支:
+0. 编写提交代码。
 
     ```shell
-    $ git push origin new_feature
+    $ git commit -am 'Add some feature'
+    ```
+    
+0. Push 到你的分支。
+
+    ```shell
+    $ git push origin my-new-feature
     ```
 
-5. 创建 Pull Request 并描述你完成的功能或者做出的修改。
+0. 创建 Pull Request 并描述你完成的功能或者做出的修改。
+
+## Resources
+
+- [Contributing to Open Source on GitHub](https://guides.github.com/activities/contributing-to-open-source/)
+- [Using Pull Requests](https://help.github.com/articles/using-pull-requests/)
+- [GitHub Help](https://help.github.com)
