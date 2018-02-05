@@ -4,7 +4,7 @@
 
 ## 代码格式
 
-  1. 函数名称严格按照 PHP下划线 => Go大驼峰命名
+  1. 函数名严格按照 PHP下划线 => Go大驼峰命名
      - array() => Array()
      - [array_change_key_case() => ArrayChangeKeyCase()](https://github.com/openset/php2go/blob/master/php/array_change_key_case.go)
 
@@ -12,7 +12,7 @@
   1. 缩进统一使用Tab
   1. 每次提交一个函数，注释以函数名开头
   1. 新增函数最好以PHP函数名命名文件单独提交，方面后期函数排序整理
-  1. 不要提交二进制文件(本地测试可以使用go run命名)
+  1. 不要提交二进制文件(本地测试可以使用go run命令)
 
 示例:
 
