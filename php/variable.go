@@ -57,3 +57,12 @@ func Gettype(v interface{}) string {
 
 	return t.String()
 }
+
+// IsBool - Finds out whether a variable is a boolean
+func IsBool(v interface{}) bool {
+
+	//_, ok := v.(bool)
+	//
+	//return ok
+	return v == true || v == false
+}
