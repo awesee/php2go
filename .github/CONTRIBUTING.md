@@ -8,11 +8,11 @@
      - array() => Array()
      - [array_change_key_case() => ArrayChangeKeyCase()](https://github.com/openset/php2go/blob/master/php/array_change_key_case.go)
 
-  0. 函数名后第一行留空
-  0. 缩进统一使用Tab
-  0. 每次提交一个函数，注释以函数名开头
-  0. 新增函数最好以PHP函数名命名文件单独提交，方面后期函数排序整理
-  0. 不要提交二进制文件(本地测试可以使用go run命名)
+  1. 函数名后第一行留空
+  1. 缩进统一使用Tab
+  1. 每次提交一个函数，注释以函数名开头
+  1. 新增函数最好以PHP函数名命名文件单独提交，方面后期函数排序整理
+  1. 不要提交二进制文件(本地测试可以使用go run命名)
 
 示例:
 
@@ -29,25 +29,25 @@ func FuncName(args Type) Type {
 ### 贡献代码
 
 1. Fork [`https://github.com/openset/php2go`](https://github.com/openset/php2go) 并克隆到本地.
-0. 创建新的分支：
+1. 创建新的分支：
 
     ```shell
     $ git checkout -b my-new-feature
     ```
 
-0. 编写提交代码。
+1. 编写提交代码。
 
     ```shell
     $ git commit -am 'Add some feature'
     ```
     
-0. Push 到你的分支。
+1. Push 到你的分支。
 
     ```shell
     $ git push origin my-new-feature
     ```
 
-0. 创建 Pull Request 并描述你完成的功能或者做出的修改。
+1. 创建 Pull Request 并描述你完成的功能或者做出的修改。
 
 ## Resources
 
