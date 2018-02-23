@@ -4,6 +4,7 @@ import (
 	"html"
 	"strconv"
 	"strings"
+	"unicode/utf8"
 )
 
 // Constants for StrPad
@@ -248,7 +249,8 @@ func Strlen(s string) int {
 //MbStrlen - Get string length
 func MbStrlen(s string) int {
 
-	return len([]rune(s))
+	//return len([]rune(s))
+	return utf8.RuneCountInString(s)
 }
 
 //Strrev - Reverse a string
