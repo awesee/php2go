@@ -1,6 +1,6 @@
 package php
 
-//IsNumeric - Finds whether a variable is a number or a numeric string
+// IsNumeric - Finds whether a variable is a number or a numeric string
 func IsNumeric(x interface{}) (result bool) {
 
 	//Figure out result
