@@ -1,6 +1,6 @@
 package php
 
-//Checkdate - Validate a Gregorian date
+// Checkdate - Validate a Gregorian date
 func Checkdate(month, day, year uint) bool {
 
 	//check month
