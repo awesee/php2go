@@ -10,25 +10,25 @@ import (
 	"time"
 )
 
-//Chmod - Changes file mode
+// Chmod - Changes file mode
 func Chmod(name string, mode os.FileMode) error {
 
 	return os.Chmod(name, mode)
 }
 
-//Chown - Chown changes the numeric uid and gid of the named file.
+// Chown - Chown changes the numeric uid and gid of the named file.
 func Chown(name string, uid int, gid int) error {
 
 	return os.Chown(name, uid, gid)
 }
 
-//Mkdir - Makes directory
+// Mkdir - Makes directory
 func Mkdir(name string, mode os.FileMode) error {
 
 	return os.Mkdir(name, mode)
 }
 
-//IsDir - Tells whether the filename is a directory
+// IsDir - Tells whether the filename is a directory
 func IsDir(name string) (b bool, err error) {
 
 	fd, err := os.Stat(name)
@@ -40,7 +40,7 @@ func IsDir(name string) (b bool, err error) {
 	return fm.IsDir(), err
 }
 
-//Copy - Copies file
+// Copy - Copies file
 func Copy(dstName string, srcName string) (written int64, err error) {
 
 	src, err := os.Open(srcName)
@@ -56,31 +56,31 @@ func Copy(dstName string, srcName string) (written int64, err error) {
 	return io.Copy(dst, src)
 }
 
-//Fclose - Closes an open file pointer
+// Fclose - Closes an open file pointer
 func Fclose(file *os.File) error {
 
 	return file.Close()
 }
 
-//Dirname - Returns a parent directory's path
+// Dirname - Returns a parent directory's path
 func Dirname(dirPth string) ([]os.FileInfo, error) {
 
 	return ioutil.ReadDir(dirPth)
 }
 
-//Delete - Deletes a file
+// Delete - Deletes a file
 func Delete(name string) error {
 
 	return Unlink(name)
 }
 
-//Unlink - Deletes a file
+// Unlink - Deletes a file
 func Unlink(name string) error {
 
 	return os.Remove(name)
 }
 
-//Filemtime - Gets file modification time
+// Filemtime - Gets file modification time
 func Filemtime(file string) (int64, error) {
 
 	var t int64
@@ -100,7 +100,7 @@ func Filemtime(file string) (int64, error) {
 	return t, err
 }
 
-//FileExists - Checks whether a file or directory exists
+// FileExists - Checks whether a file or directory exists
 func FileExists(path string) bool {
 
 	_, err := os.Stat(path)
@@ -111,7 +111,7 @@ func FileExists(path string) bool {
 	return false
 }
 
-//IsReadable - Tells whether a file exists and is readable
+// IsReadable - Tells whether a file exists and is readable
 func IsReadable(name string) bool {
 
 	_, err := syscall.Open(name, syscall.O_RDONLY, 0)
@@ -122,7 +122,7 @@ func IsReadable(name string) bool {
 	return true
 }
 
-//IsWritable - Tells whether the filename is writable
+// IsWritable - Tells whether the filename is writable
 func IsWritable(name string) bool {
 
 	_, err := syscall.Open(name, syscall.O_WRONLY, 0)
@@ -133,13 +133,13 @@ func IsWritable(name string) bool {
 	return true
 }
 
-//IsWriteable - Alias of IsWritable()
+// IsWriteable - Alias of IsWritable()
 func IsWriteable(name string) bool {
 
 	return IsWritable(name)
 }
 
-//Realpath - Returns canonicalized absolute pathname
+// Realpath - Returns canonicalized absolute pathname
 func Realpath(name string) string {
 
 	_, err := os.Stat(name)
@@ -163,7 +163,7 @@ func Realpath(name string) string {
 	return filepath.Clean(wd + directorySeparator + name)
 }
 
-//Rename - Renames a file or directory
+// Rename - Renames a file or directory
 func Rename(oldpath, newpath string) error {
 
 	return os.Rename(oldpath, newpath)
