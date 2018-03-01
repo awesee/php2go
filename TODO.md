@@ -7,7 +7,7 @@
   - [x] array_change_key_case() 把数组中所有键更改为小写或大写。
   - [x] array_chunk() 把一个数组分割为新的数组块。
   - [ ] array_column()  返回输入数组中某个单一列的值。
-  - [ ] array_combine() 通过合并两个数组来创建一个新数组。
+  - [x] array_combine() 通过合并两个数组来创建一个新数组。
   - [ ] array_count_values()  用于统计数组中所有值出现的次数。
   - [ ] array_diff()  比较数组，返回差集（只比较键值）。
   - [ ] array_diff_assoc()  比较数组，返回差集（比较键名和键值）。
