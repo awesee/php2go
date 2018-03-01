@@ -412,7 +412,7 @@
   - [ ] floatval() 获取变量的浮点值
   - [ ] get_defined_vars() 返回由所有已定义变量所组成的数组
   - [ ] get_resource_type() 返回资源（resource）类型
-  - [ ] gettype() 获取变量的类型
+  - [x] gettype() 获取变量的类型
   - [ ] import_request_variables() 将 GET／POST／Cookie 变量导入到全局作用域中
   - [x] intval() 获取变量的整数值
   - [ ] is_array() 检测变量是否是数组
