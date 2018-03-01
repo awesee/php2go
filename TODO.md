@@ -408,7 +408,7 @@
   - [x] boolval() 获取变量的布尔值
   - [ ] debug_zval_dump() Dumps a string representation of an internal zend value to output
   - [ ] doubleval() floatval 的别名
-  - [ ] empty() 检查一个变量是否为空
+  - [x] empty() 检查一个变量是否为空
   - [ ] floatval() 获取变量的浮点值
   - [ ] get_defined_vars() 返回由所有已定义变量所组成的数组
   - [ ] get_resource_type() 返回资源（resource）类型
