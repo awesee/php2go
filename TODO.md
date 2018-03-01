@@ -425,7 +425,7 @@
   - [ ] is_iterable() Verify that the contents of a variable is an iterable value
   - [ ] is_long() is_int 的别名
   - [ ] is_null() 检测变量是否为 NULL
-  - [ ] is_numeric() 检测变量是否为数字或数字字符串
+  - [x] is_numeric() 检测变量是否为数字或数字字符串
   - [ ] is_object() 检测变量是否是一个对象
   - [ ] is_real() is_float 的别名
   - [ ] is_resource() 检测变量是否为资源类型
