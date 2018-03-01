@@ -414,7 +414,7 @@
   - [ ] get_resource_type() 返回资源（resource）类型
   - [ ] gettype() 获取变量的类型
   - [ ] import_request_variables() 将 GET／POST／Cookie 变量导入到全局作用域中
-  - [ ] intval() 获取变量的整数值
+  - [x] intval() 获取变量的整数值
   - [ ] is_array() 检测变量是否是数组
   - [ ] is_bool() 检测变量是否是布尔型
   - [ ] is_callable() 检测参数是否为合法的可调用结构
