@@ -435,7 +435,7 @@
   - [ ] print_r() 打印关于变量的易于理解的信息。
   - [ ] serialize() 产生一个可存储的值的表示
   - [ ] settype() 设置变量的类型
-  - [ ] strval() 获取变量的字符串值
+  - [x] strval() 获取变量的字符串值
   - [ ] unserialize() 从已存储的表示中创建 PHP 的值
   - [ ] unset() 释放给定的变量
   - [ ] var_dump() 打印变量的相关信息
