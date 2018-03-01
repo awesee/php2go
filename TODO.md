@@ -405,7 +405,7 @@
   - [x] urlencode() 编码 URL 字符串
   
 ## Variable handling 函数
-  - [ ] boolval() 获取变量的布尔值
+  - [x] boolval() 获取变量的布尔值
   - [ ] debug_zval_dump() Dumps a string representation of an internal zend value to output
   - [ ] doubleval() floatval 的别名
   - [ ] empty() 检查一个变量是否为空
