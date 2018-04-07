@@ -108,6 +108,9 @@ func Join(a []string, sep string) string {
 // Trim - Strip whitespace (or other characters) from the beginning and end of a string
 func Trim(s, cutset string) string {
 
+	if cutset == "" {
+		return strings.TrimSpace(s)
+	}
 	return strings.Trim(s, cutset)
 }
 
