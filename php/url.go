@@ -2,7 +2,6 @@ package php
 
 import (
 	"net/url"
-	"strings"
 )
 
 // ParseUrl - Parse a URL and return its components
@@ -32,11 +31,11 @@ func Rawurldecode(s string) (string, error) {
 // Urlencode - URL-encodes string
 func Urlencode(s string) string {
 
-	return strings.Replace(url.PathEscape(s), "%20", "+", -1)
+	return url.QueryEscape(s)
 }
 
 // Urldecode - Decodes URL-encoded string
 func Urldecode(s string) (string, error) {
 
-	return url.PathUnescape(strings.Replace(s, "+", "%20", -1))
+	return url.QueryUnescape(s)
 }
