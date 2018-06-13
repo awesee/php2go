@@ -358,7 +358,7 @@
   - [ ] strcmp()  比较两个字符串（对大小写敏感）。
   - [ ] strcoll() 比较两个字符串（根据本地设置）。
   - [ ] strcspn() 返回在找到某些指定字符的任何部分之前，在字符串中查找的字符数。
-  - [ ] strip_tags()  剥去字符串中的 HTML 和 PHP 标签。
+  - [x] strip_tags()  剥去字符串中的 HTML 和 PHP 标签。
   - [ ] stripcslashes() 删除由 addcslashes() 函数添加的反斜杠。
   - [ ] stripslashes()  删除由 addslashes() 函数添加的反斜杠。
   - [x] stripos() 返回字符串在另一字符串中第一次出现的位置（对大小写不敏感）。
