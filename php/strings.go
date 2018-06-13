@@ -2,6 +2,7 @@ package php
 
 import (
 	"html"
+	"regexp"
 	"strconv"
 	"strings"
 	"unicode/utf8"
@@ -105,12 +106,36 @@ func Join(a []string, sep string) string {
 	return Implode(a, sep)
 }
 
+//StripTags - Strip HTML and PHP tags from a string
+func StripTags(s string) string {
+
+	reg, _ := regexp.Compile(`<[\S\s]+?>`)
+	s = reg.ReplaceAllStringFunc(s, strings.ToLower)
+
+	//remove style
+	reg, _ = regexp.Compile(`<style[\S\s]+?</style>`)
+	s = reg.ReplaceAllString(s, "")
+
+	//remove script
+	reg, _ = regexp.Compile(`<script[\S\s]+?</script>`)
+	s = reg.ReplaceAllString(s, "")
+
+	reg, _ = regexp.Compile(`<[\S\s]+?>`)
+	s = reg.ReplaceAllString(s, "\n")
+
+	reg, _ = regexp.Compile(`\s{2,}`)
+	s = reg.ReplaceAllString(s, "\n")
+
+	return strings.TrimSpace(s)
+}
+
 // Trim - Strip whitespace (or other characters) from the beginning and end of a string
 func Trim(s, cutset string) string {
 
 	if cutset == "" {
 		return strings.TrimSpace(s)
 	}
+
 	return strings.Trim(s, cutset)
 }
 
