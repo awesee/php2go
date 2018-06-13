@@ -10,7 +10,7 @@ import (
 var datePatterns = []string{
 	// year
 	"Y", "2006", // A full numeric representation of a year, 4 digits   Examples: 1999 or 2003
-	"y", "06",   //A two digit representation of a year   Examples: 99 or 03
+	"y", "06",   // A two digit representation of a year   Examples: 99 or 03
 
 	// month
 	"m", "01",      // Numeric representation of a month, with leading zeros 01 through 12
