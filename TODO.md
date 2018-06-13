@@ -129,7 +129,7 @@
   - [ ] date_timestamp_set()  设置基于 Unix 时间戳的日期和时间。
   - [ ] date_timezone_get() 返回给定 DateTime 对象的时区。
   - [ ] date_timezone_set() 设置 DateTime 对象的时区。
-  - [ ] date()  格式化本地日期和时间。
+  - [x] date()  格式化本地日期和时间。
   - [ ] getdate() 返回某个时间戳或者当前本地的日期/时间的日期/时间信息。
   - [ ] gettimeofday()  返回当前时间。
   - [ ] gmdate()  格式化 GMT/UTC 日期和时间。
