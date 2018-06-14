@@ -1,8 +1,9 @@
 package php_test
 
 import (
-	. "github.com/openset/php2go/php"
 	"testing"
+
+	. "github.com/openset/php2go/php"
 )
 
 // +------------------------------------------------------------
