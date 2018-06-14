@@ -7,7 +7,6 @@ import (
 )
 
 func TestStrrev(t *testing.T) {
-
 	cases := []struct {
 		in, want string
 	}{
