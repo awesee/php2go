@@ -17,5 +17,4 @@ func TestChr(t *testing.T) {
 	if Chr(x) != "A" {
 		t.Errorf("Chr() should have returned A for [%d]", x)
 	}
-
 }

@@ -1,8 +1,9 @@
 package php_test
 
 import (
-	. "github.com/openset/php2go/php"
 	"testing"
+
+	. "github.com/openset/php2go/php"
 )
 
 // +------------------------------------------------------------
@@ -30,5 +31,4 @@ func TestMbStrlen(t *testing.T) {
 	if MbStrlen(s) != 5 {
 		t.Errorf("MbStrlen() should have returned 5 for string [%s]", s)
 	}
-
 }
