@@ -1,9 +1,7 @@
-package php_test
+package php
 
 import (
 	"testing"
-
-	. "github.com/openset/php2go/php"
 )
 
 func TestChr(t *testing.T) {
