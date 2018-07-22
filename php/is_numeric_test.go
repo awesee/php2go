@@ -1,9 +1,7 @@
-package php_test
+package php
 
 import (
 	"testing"
-
-	. "github.com/openset/php2go/php"
 )
 
 func TestIsNumericUint8(t *testing.T) {
