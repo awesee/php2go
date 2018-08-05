@@ -29,15 +29,11 @@ func Mkdir(name string, mode os.FileMode) error {
 }
 
 // IsDir - Tells whether the filename is a directory
-func IsDir(name string) (b bool, err error) {
+func IsDir(name string) bool {
 
-	fd, err := os.Stat(name)
-	if err != nil {
-		return false, err
-	}
+	fi, err := os.Stat(name)
 
-	fm := fd.Mode()
-	return fm.IsDir(), err
+	return err == nil && fi.IsDir()
 }
 
 // Copy - Copies file
@@ -53,6 +49,7 @@ func Copy(dstName string, srcName string) (written int64, err error) {
 		return
 	}
 	defer dst.Close()
+
 	return io.Copy(dst, src)
 }
 
