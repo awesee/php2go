@@ -5,13 +5,13 @@ import (
 )
 
 // JsonEncode - Returns the JSON representation of a value
-func JsonEncode(data []byte, v interface{}) error {
+func JsonEncode(v interface{}) ([]byte, error) {
 
-	return json.Unmarshal(data, v)
+	return json.Marshal(v)
 }
 
 // JsonDecode - Decodes a JSON string
-func JsonDecode(v interface{}) ([]byte, error) {
+func JsonDecode(data []byte, v interface{}) error {
 
-	return json.Marshal(v)
+	return json.Unmarshal(data, v)
 }
