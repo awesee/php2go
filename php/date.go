@@ -48,8 +48,12 @@ var datePatterns = []string{
 }
 
 // Date - Format a local time/date
-func Date(format string, t time.Time) string {
+func Date(format string, ts ...time.Time) string {
 	replacer := strings.NewReplacer(datePatterns...)
 	format = replacer.Replace(format)
+	t := time.Now()
+	if len(ts) > 0 {
+		t = ts[0]
+	}
 	return t.Format(format)
 }
