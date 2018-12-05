@@ -12,5 +12,6 @@ php/intval_test.go              export-ignore
 php/is_numeric_test.go          export-ignore
 php/mb_strlen_test.go           export-ignore
 php/strings_test.go             export-ignore
+php/strrev_test.go              export-ignore
 
 TODO.md export-ignore
