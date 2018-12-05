@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"reflect"
 	"strconv"
+	"strings"
+	"unicode"
 )
 
 // Boolval - Get the boolean value of a variable
@@ -77,9 +79,26 @@ func Empty(v interface{}) bool {
 }
 
 // Intval - Get the integer value of a variable
-func Intval(v interface{}) (int, error) {
+func Intval(str string) (int, error) {
 
-	return strconv.Atoi(fmt.Sprintf("%v", v))
+	str = strings.TrimSpace(str)
+	pre := ""
+	if strings.HasPrefix(str, "-") || strings.HasPrefix(str, "+") {
+		pre = str[0:1]
+		str = str[1:]
+	}
+
+	i := strings.IndexFunc(str, func(r rune) bool {
+		return !unicode.IsNumber(r)
+	})
+	if i > -1 {
+		str = str[0:i]
+	}
+	if str == "" {
+		str = "0"
+	}
+
+	return strconv.Atoi(pre + str)
 }
 
 // Strval - Get string value of a variable
@@ -91,17 +110,17 @@ func Strval(val interface{}) string {
 // Gettype - Get the type of a variable
 func Gettype(v interface{}) string {
 
-	//t := reflect.TypeOf(v)
+	// t := reflect.TypeOf(v)
 	//
-	//return t.String()
+	// return t.String()
 	return fmt.Sprintf("%T", v)
 }
 
 // IsBool - Finds out whether a variable is a boolean
 func IsBool(v interface{}) bool {
 
-	//_, ok := v.(bool)
+	// _, ok := v.(bool)
 	//
-	//return ok
+	// return ok
 	return v == true || v == false
 }
