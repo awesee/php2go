@@ -4,6 +4,7 @@
 .gitattributes                  export-ignore
 # .gitignore
 .github/                        export-ignore
+.travis.yml                     export-ignore
 
 # Test files...
 tests/                          export-ignore
