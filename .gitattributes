@@ -1,12 +1,16 @@
 # This file tells which files and directories should be ignored
 
 # git files
-.gitattributes export-ignore
+.gitattributes                  export-ignore
 # .gitignore
-.github/ export-ignore
+.github/                        export-ignore
 
 # Test files...
-php/*_test.go export-ignore
-tests/ export-ignore
+tests/                          export-ignore
+php/*_test.go                   export-ignore
+php/intval_test.go              export-ignore
+php/is_numeric_test.go          export-ignore
+php/mb_strlen_test.go           export-ignore
+php/strings_test.go             export-ignore
 
 TODO.md export-ignore
