@@ -78,23 +78,12 @@ func Unlink(name string) error {
 }
 
 // Filemtime - Gets file modification time
-func Filemtime(file string) (int64, error) {
-
-	var t int64
-	f, err := os.Open(file)
+func Filemtime(file string) time.Time {
+	fi, err := os.Stat(file)
 	if err != nil {
-		t = time.Now().Unix()
-	} else {
-		fi, err := f.Stat()
-		if err != nil {
-			t = time.Now().Unix()
-		} else {
-			t = fi.ModTime().Unix()
-		}
+		return time.Time{}
 	}
-	defer f.Close()
-
-	return t, err
+	return fi.ModTime()
 }
 
 // FileExists - Checks whether a file or directory exists
