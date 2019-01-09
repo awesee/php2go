@@ -88,13 +88,8 @@ func Filemtime(file string) time.Time {
 
 // FileExists - Checks whether a file or directory exists
 func FileExists(path string) bool {
-
 	_, err := os.Stat(path)
-	if err == nil {
-		return true
-	}
-
-	return false
+	return err == nil
 }
 
 // IsReadable - Tells whether a file exists and is readable
