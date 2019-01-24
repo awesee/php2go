@@ -7,8 +7,6 @@
 [![license](https://img.shields.io/github/license/openset/php2go.svg)](https://github.com/openset/php2go/blob/master/LICENSE)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/openset/php2go.svg?colorB=green)](https://github.com/openset/php2go/archive/master.zip)
 
-[English](https://github.com/openset/go4php) | [简体中文](https://github.com/openset/php2go)
-
 这是一个用Go语言开发的辅助库，尤其适用于熟悉PHP内置函数的开发者，将会实现PHP内置函数。
 
 ### 下载安装
