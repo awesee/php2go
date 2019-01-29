@@ -8,10 +8,9 @@
      - array() => Array()
      - [array_change_key_case() => ArrayChangeKeyCase()](https://github.com/openset/php2go/blob/master/php/array_change_key_case.go)
 
-  1. 函数名后第一行留空
   1. 缩进统一使用Tab
   1. 每次提交一个函数，注释以函数名开头
-  1. 新增函数最好以PHP函数名命名文件单独提交，方面后期函数排序整理
+  1. 新增函数文件以PHP函数名命名单独提交，方便后期函数排序整理
   1. 不要提交二进制文件(本地测试可以使用go run命令)
 
 示例:
@@ -20,7 +19,6 @@
 
 // FuncName - Description of function do
 func FuncName(args Type) Type {
-    // 此处空一行
     return args
 }
 
