@@ -24,7 +24,7 @@
   - [ ] array_intersect_uassoc()  比较数组，返回交集（比较键名和键值，使用用户自定义的键名比较函数）。
   - [ ] array_intersect_ukey()  比较数组，返回交集（只比较键名，使用用户自定义的键名比较函数）。
   - [ ] array_key_exists()  检查指定的键名是否存在于数组中。
-  - [ ] array_keys()  返回数组中所有的键名。
+  - [x] array_keys()  返回数组中所有的键名。
   - [ ] array_map() 把数组中的每个值发送到用户自定义函数，返回新的值。
   - [ ] array_merge() 把一个或多个数组合并为一个数组。
   - [ ] array_merge_recursive() 递归地合并一个或多个数组。
