@@ -3,7 +3,7 @@ package test
 import (
 	"fmt"
 	"log"
-	"php2go/php"
+	"github.com/openset/php2go/php"
 	"testing"
 )
 
