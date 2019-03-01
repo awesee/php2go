@@ -10,7 +10,7 @@ import (
 func TestFilePutContents(t *testing.T) {
 	data := "who are u"
 	dataByte := []byte(data)
-	err := php.FilePutContents("/home/www/go/src/php2go/test/test_fpc.txt",dataByte)
+	err := php.FilePutContents("test/test_fpc.txt",dataByte)
 	if err!=nil {
 		t.Error(err)
 		log.Fatal(err)

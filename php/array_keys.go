@@ -1,5 +1,6 @@
 package php
 
+// ArrayKeys - get keys of map data as a Array
 // in php,the keys you want always is string or number
 // here,let it be string
 func ArrayKeys(data map[string]interface{}) []string {
