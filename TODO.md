@@ -185,8 +185,8 @@
   - [ ] fgetss()  从打开的文件中读取一行并过滤掉 HTML 和 PHP 标记。
   - [ ] file()  把文件读入一个数组中。
   - [x] file_exists() 检查文件或目录是否存在。
-  - [ ] file_get_contents() 将文件读入字符串。
-  - [ ] file_put_contents() 将字符串写入文件。
+  - [x] file_get_contents() 将文件读入字符串。
+  - [x] file_put_contents() 将字符串写入文件。
   - [ ] fileatime() 返回文件的上次访问时间。
   - [ ] filectime() 返回文件的上次改变时间。
   - [ ] filegroup() 返回文件的组 ID。
