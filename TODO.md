@@ -104,7 +104,7 @@
 
 ## Date / Time 函数
   - [x] checkdate() 验证格利高里日期。
-  - [ ] date_add()  添加日、月、年、时、分和秒到日期。
+  - [x] date_add()  添加日、月、年、时、分和秒到日期。
   - [ ] date_create_from_format() 返回根据指定格式进行格式化的新的 DateTime 对象。
   - [ ] date_create() 返回新的 DateTime 对象。
   - [ ] date_date_set() 设置新日期。
