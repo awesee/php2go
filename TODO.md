@@ -162,7 +162,7 @@
   - [ ] opendir() 打开目录句柄。
   - [ ] readdir() 返回目录句柄中的条目。
   - [ ] rewinddir() 重置目录句柄。
-  - [ ] scandir() 返回指定目录中的文件和目录的数组。
+  - [x] scandir() 返回指定目录中的文件和目录的数组。
 
 ## Filesystem 函数
   - [x] basename()  返回路径中的文件名部分。
