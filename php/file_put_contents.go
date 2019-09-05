@@ -3,12 +3,12 @@ package php
 import (
 	"io/ioutil"
 	"os"
-	"path"
+	"path/filepath"
 )
 
 // FilePutContents - Write data to a file
 func FilePutContents(filename string, data []byte) error {
-	if dir := path.Dir(filename); dir != "" {
+	if dir := filepath.Dir(filename); dir != "" {
 		if err := os.MkdirAll(dir, 0755); err != nil {
 			return err
 		}
