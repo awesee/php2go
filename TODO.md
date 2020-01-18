@@ -166,7 +166,7 @@
 
 ## Filesystem 函数
   - [x] basename()  返回路径中的文件名部分。
-  - [ ] chgrp() 改变文件组。
+  - [x] chgrp() 改变文件组。
   - [x] chmod() 改变文件模式。
   - [x] chown() 改变文件所有者。
   - [ ] clearstatcache()  清除文件状态缓存。
@@ -234,7 +234,7 @@
   - [ ] rewind()  倒回文件指针的位置。
   - [ ] rmdir() 删除空的目录。
   - [ ] set_file_buffer() 设置已打开文件的缓冲大小。
-  - [ ] stat()  返回关于文件的信息。
+  - [x] stat()  返回关于文件的信息。
   - [ ] symlink() 创建符号连接。
   - [ ] tempnam() 创建唯一的临时文件。
   - [ ] tmpfile() 建立临时文件。

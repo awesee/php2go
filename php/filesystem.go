@@ -9,6 +9,11 @@ import (
 	"time"
 )
 
+// Chgrp - Changes file group
+func Chgrp(name string, uid, gid int) error {
+	return Chown(name, uid, gid)
+}
+
 // Chmod - Changes file mode
 func Chmod(name string, mode os.FileMode) error {
 	return os.Chmod(name, mode)
@@ -105,6 +110,11 @@ func Realpath(path string) (string, error) {
 // Rename - Renames a file or directory
 func Rename(oldpath, newpath string) error {
 	return os.Rename(oldpath, newpath)
+}
+
+// Stat - Gives information about a file
+func Stat(name string) (os.FileInfo, error) {
+	return os.Stat(name)
 }
 
 // Unlink - Deletes a file
