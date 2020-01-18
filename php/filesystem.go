@@ -112,6 +112,11 @@ func Rename(oldpath, newpath string) error {
 	return os.Rename(oldpath, newpath)
 }
 
+// Stat - Gives information about a file
+func Stat(name string) (os.FileInfo, error) {
+	return os.Stat(name)
+}
+
 // Unlink - Deletes a file
 func Unlink(name string) error {
 	return os.Remove(name)
