@@ -19,17 +19,6 @@ func Chown(name string, uid int, gid int) error {
 	return os.Chown(name, uid, gid)
 }
 
-// Mkdir - Makes directory
-func Mkdir(name string, mode os.FileMode) error {
-	return os.Mkdir(name, mode)
-}
-
-// IsDir - Tells whether the filename is a directory
-func IsDir(name string) bool {
-	fi, err := os.Stat(name)
-	return err == nil && fi.IsDir()
-}
-
 // Copy - Copies file
 func Copy(dstName string, srcName string) (written int64, err error) {
 	src, err := os.Open(srcName)
@@ -45,9 +34,9 @@ func Copy(dstName string, srcName string) (written int64, err error) {
 	return io.Copy(dst, src)
 }
 
-// Fclose - Closes an open file pointer
-func Fclose(file *os.File) error {
-	return file.Close()
+// Delete - Deletes a file
+func Delete(name string) error {
+	return Unlink(name)
 }
 
 // Dirname - Returns a parent directory's path
@@ -55,14 +44,15 @@ func Dirname(dirPth string) ([]os.FileInfo, error) {
 	return ioutil.ReadDir(dirPth)
 }
 
-// Delete - Deletes a file
-func Delete(name string) error {
-	return Unlink(name)
+// Fclose - Closes an open file pointer
+func Fclose(file *os.File) error {
+	return file.Close()
 }
 
-// Unlink - Deletes a file
-func Unlink(name string) error {
-	return os.Remove(name)
+// FileExists - Checks whether a file or directory exists
+func FileExists(path string) bool {
+	_, err := os.Stat(path)
+	return err == nil
 }
 
 // Filemtime - Gets file modification time
@@ -74,10 +64,15 @@ func Filemtime(file string) time.Time {
 	return fi.ModTime()
 }
 
-// FileExists - Checks whether a file or directory exists
-func FileExists(path string) bool {
-	_, err := os.Stat(path)
-	return err == nil
+// Glob - Find pathnames matching a pattern
+func Glob(pattern string) (matches []string, err error) {
+	return filepath.Glob(pattern)
+}
+
+// IsDir - Tells whether the filename is a directory
+func IsDir(name string) bool {
+	fi, err := os.Stat(name)
+	return err == nil && fi.IsDir()
 }
 
 // IsReadable - Tells whether a file exists and is readable
@@ -97,6 +92,11 @@ func IsWriteable(name string) bool {
 	return IsWritable(name)
 }
 
+// Mkdir - Makes directory
+func Mkdir(name string, mode os.FileMode) error {
+	return os.Mkdir(name, mode)
+}
+
 // Realpath - Returns canonicalized absolute pathname
 func Realpath(path string) (string, error) {
 	return filepath.Abs(path)
@@ -105,4 +105,9 @@ func Realpath(path string) (string, error) {
 // Rename - Renames a file or directory
 func Rename(oldpath, newpath string) error {
 	return os.Rename(oldpath, newpath)
+}
+
+// Unlink - Deletes a file
+func Unlink(name string) error {
+	return os.Remove(name)
 }
