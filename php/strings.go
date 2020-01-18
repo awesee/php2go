@@ -53,9 +53,6 @@ func Ord(s byte) byte {
 
 // Explode - Split a string by string
 func Explode(s, sep string) []string {
-	if s == "" {
-		return []string{s}
-	}
 	return strings.Split(s, sep)
 }
 
