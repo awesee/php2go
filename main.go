@@ -28,7 +28,7 @@ func main() {
 
 	fmt.Println(php.IsNumeric("-123.45"))
 
-	fmt.Println(php.Basename("abc/cde.ext", "xt"))
+	fmt.Println(php.Basename("foo/bar.ext"))
 
 	fmt.Println(php.Addcslashes("abc/cde.ext", 'c'))
 

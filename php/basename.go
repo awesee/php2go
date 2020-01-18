@@ -1,18 +1,8 @@
 package php
 
-import (
-	"strings"
-)
+import "path/filepath"
 
 // Basename - Returns trailing name component of path
-func Basename(s string, suffix ...string) string {
-
-	slash := strings.LastIndex(s, "/")
-	s = s[slash+1:]
-	if len(suffix) > 0 {
-		suf := strings.LastIndex(s, suffix[0])
-		s = s[:suf]
-	}
-
-	return s
+func Basename(path string) string {
+	return filepath.Base(path)
 }
