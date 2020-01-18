@@ -112,6 +112,11 @@ func Rename(oldpath, newpath string) error {
 	return os.Rename(oldpath, newpath)
 }
 
+// Rmdir — Removes directory
+func Rmdir(path string) error {
+	return os.RemoveAll(path)
+}
+
 // Stat - Gives information about a file
 func Stat(name string) (os.FileInfo, error) {
 	return os.Stat(name)
