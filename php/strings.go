@@ -43,8 +43,7 @@ func Chr(ascii int) string {
 	for ascii < 0 {
 		ascii += 256
 	}
-	ascii %= 256
-	return string(ascii)
+	return string(ascii % 256)
 }
 
 // Ord - Return ASCII value of character
@@ -287,11 +286,10 @@ func SubstrCount(s, substr string) int {
 
 // Ucfirst - Make a string's first character uppercase
 func Ucfirst(s string) string {
-	runes := []rune(s)
-	if len(runes) < 1 {
+	if s == "" {
 		return s
 	}
-	return strings.ToUpper(string(runes[0])) + string(runes[1:])
+	return strings.ToUpper(s[:1]) + s[1:]
 }
 
 // Ucwords — Uppercase the first character of each word in a string
