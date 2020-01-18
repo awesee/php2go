@@ -9,6 +9,11 @@ import (
 	"time"
 )
 
+// Chgrp - Changes file group
+func Chgrp(name string, uid, gid int) error {
+	return Chown(name, uid, gid)
+}
+
 // Chmod - Changes file mode
 func Chmod(name string, mode os.FileMode) error {
 	return os.Chmod(name, mode)
