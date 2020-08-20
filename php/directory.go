@@ -1,9 +1,6 @@
 package php
 
-import (
-	"os"
-	"syscall"
-)
+import "os"
 
 // Chdir - Change directory
 func Chdir(dir string) error {
@@ -19,10 +16,4 @@ func Getcwd() (dir string) {
 		dir = err.Error()
 	}
 	return
-}
-
-// Closedir - Close directory's handle
-func Closedir(fd int) (err error) {
-
-	return syscall.Close(fd)
 }
