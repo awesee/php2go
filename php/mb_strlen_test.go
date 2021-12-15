@@ -9,8 +9,8 @@ import (
 // | @param     arr  ArrayMap
 // | @return    ArrayMap
 // |
-// | @author    Openset <openset.wang@gmail.com>
-// | @link      https://github.com/openset
+// | @author    awesee <openset.wang@gmail.com>
+// | @link      https://github.com/awesee
 // | @date      2018/01/24
 // +------------------------------------------------------------
 func TestMbStrlen(t *testing.T) {

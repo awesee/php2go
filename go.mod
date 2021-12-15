@@ -1,3 +1,3 @@
-module github.com/openset/php2go
+module github.com/awesee/php2go
 
-go 1.12
+go 1.16

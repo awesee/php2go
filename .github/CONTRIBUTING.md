@@ -6,7 +6,7 @@
 
   1. 函数名严格按照 PHP下划线 => Go大驼峰命名
      - array() => Array()
-     - [array_change_key_case() => ArrayChangeKeyCase()](https://github.com/openset/php2go/blob/master/php/array_change_key_case.go)
+     - [array_change_key_case() => ArrayChangeKeyCase()](https://github.com/awesee/php2go/blob/master/php/array_change_key_case.go)
 
   1. 缩进统一使用Tab
   1. 每次提交一个函数，注释以函数名开头
@@ -26,7 +26,7 @@ func FuncName(args Type) Type {
 
 ### 贡献代码
 
-1. Fork [`https://github.com/openset/php2go`](https://github.com/openset/php2go) 并克隆到本地.
+1. Fork [`https://github.com/awesee/php2go`](https://github.com/awesee/php2go) 并克隆到本地.
 1. 创建新的分支：
 
     ```shell
