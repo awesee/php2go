@@ -1,1 +1,1 @@
-# &copy;2019 Openset. All rights reserved.
+# &copy;2022 Awesee. All rights reserved.

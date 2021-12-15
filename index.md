@@ -1,11 +1,11 @@
-## [用Go语言实现PHP内置函数](https://openset.github.io/php2go)
+## [用Go语言实现PHP内置函数](https://awesee.github.io/php2go)
 
-[![Build Status](https://travis-ci.org/openset/php2go.svg?branch=master)](https://travis-ci.org/openset/php2go){:target="_blank"}
-[![Go Report Card](https://goreportcard.com/badge/github.com/openset/php2go)](https://goreportcard.com/report/github.com/openset/php2go){:target="_blank"}
-[![GoDoc](https://godoc.org/github.com/openset/php2go/php?status.svg)](https://godoc.org/github.com/openset/php2go/php){:target="_blank"}
-[![GitHub contributors](https://img.shields.io/github/contributors/openset/php2go.svg)](https://github.com/openset/php2go/graphs/contributors){:target="_blank"}
-[![license](https://img.shields.io/github/license/openset/php2go.svg)](https://github.com/openset/php2go/blob/master/LICENSE){:target="_blank"}
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/openset/php2go.svg?colorB=green)](https://github.com/openset/php2go/archive/master.zip){:target="_blank"}
+[![Build Status](https://travis-ci.org/awesee/php2go.svg?branch=master)](https://travis-ci.org/awesee/php2go){:target="_blank"}
+[![Go Report Card](https://goreportcard.com/badge/github.com/awesee/php2go)](https://goreportcard.com/report/github.com/awesee/php2go){:target="_blank"}
+[![GoDoc](https://godoc.org/github.com/awesee/php2go/php?status.svg)](https://godoc.org/github.com/awesee/php2go/php){:target="_blank"}
+[![GitHub contributors](https://img.shields.io/github/contributors/awesee/php2go.svg)](https://github.com/awesee/php2go/graphs/contributors){:target="_blank"}
+[![license](https://img.shields.io/github/license/awesee/php2go.svg)](https://github.com/awesee/php2go/blob/master/LICENSE){:target="_blank"}
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/awesee/php2go.svg?colorB=green)](https://github.com/awesee/php2go/archive/master.zip){:target="_blank"}
 
 这是一个用Go语言开发的辅助库，尤其适用于熟悉PHP内置函数的开发者，将会实现PHP内置函数。
 
@@ -13,7 +13,7 @@
 
 ```shell
 
-go get -u github.com/openset/php2go/php
+go get -u github.com/awesee/php2go/php
 
 ```
 
@@ -28,7 +28,7 @@ PHP下划线命名转为Go大驼峰命名。
 package main
 
 import (
-    "github.com/openset/php2go/php"
+    "github.com/awesee/php2go/php"
 )
 
 func main() {
@@ -39,20 +39,20 @@ func main() {
 
 ```
 
-[More](https://github.com/openset/php2go/blob/master/main.go){:target="_blank"}
+[More](https://github.com/awesee/php2go/blob/master/main.go){:target="_blank"}
 
 ### 项目进度
 
-[TODO List](https://github.com/openset/php2go/blob/master/TODO.md){:target="_blank"}
+[TODO List](https://github.com/awesee/php2go/blob/master/TODO.md){:target="_blank"}
 
 ### 贡献代码
 
-[贡献指南](https://github.com/openset/php2go/blob/master/.github/CONTRIBUTING.md){:target="_blank"}
+[贡献指南](https://github.com/awesee/php2go/blob/master/.github/CONTRIBUTING.md){:target="_blank"}
 
 ## Contributors
 
-[Your contributions are always welcome!](https://github.com/openset/php2go/graphs/contributors){:target="_blank"}
+[Your contributions are always welcome!](https://github.com/awesee/php2go/graphs/contributors){:target="_blank"}
 
 ## LICENSE
 
-Released under [MIT](https://github.com/openset/php2go/blob/master/LICENSE){:target="_blank"} LICENSE
+Released under [MIT](https://github.com/awesee/php2go/blob/master/LICENSE){:target="_blank"} LICENSE
