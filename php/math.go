@@ -155,18 +155,14 @@ func Pow(x, y float64) float64 {
 }
 
 // Rand - Generate a random integer
-func Rand(args ...int) int {
+func Rand(num ...int) int {
 	rand.Seed(time.Now().Unix())
-	l := len(args)
-	if l > 1 {
-		min := math.Min(float64(args[0]), float64(args[1]))
-		max := math.Max(float64(args[0]), float64(args[1]))
-		return int(min + rand.Float64()*(max-min))
-	} else if l > 0 {
-		return rand.Intn(args[0])
-	} else {
-		return rand.Int()
+	if l := len(num); l == 1 && num[0] >= 1 {
+		return rand.Intn(num[0] + 1)
+	} else if l >= 2 && num[0] < num[1] {
+		return num[0] + rand.Intn(num[1]-num[0]+1)
 	}
+	return rand.Int()
 }
 
 // Round - Rounds a float
