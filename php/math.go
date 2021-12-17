@@ -165,7 +165,7 @@ func Rand(args ...int) int {
 	} else if l > 0 {
 		return rand.Intn(args[0])
 	} else {
-		return rand.Intn(1 << 32)
+		return rand.Int()
 	}
 }
 
