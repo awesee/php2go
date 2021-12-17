@@ -1,6 +1,7 @@
 package php
 
 import (
+	"fmt"
 	"html"
 	"regexp"
 	"strconv"
@@ -43,7 +44,7 @@ func Chr(ascii int) string {
 	for ascii < 0 {
 		ascii += 256
 	}
-	return string(ascii % 256)
+	return fmt.Sprintf("%c", ascii%256)
 }
 
 // Ord - Return ASCII value of character
